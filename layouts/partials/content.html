@@ -1,0 +1,57 @@
+
+    <!-- 正文 -->
+    <article>
+        <header class="posted-header">
+            <h1 class="posted-title">{{ .Title }}</h1>
+            <p class="posted-meta">
+                <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                <span>By</span>
+                <span>
+                    {{ if ne .Params.author "" }}
+                        {{ .Params.author }}
+                    {{ else }}
+                        {{ .Site.Author.name }}
+                    {{ end }}
+                </span>
+            </p>
+        </header>
+        <div class="posted-content markdown">{{ .Content }}</div>
+    </article>
+
+
+    <div class="posted-annex">
+        <!-- 标签 -->
+       {{ with .Params.tags }}
+       <div class="posted-tag">
+        <i class="bi bi-bookmarks-fill"></i>
+          {{ range . }}
+          <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+       </div>
+       {{ end }}
+
+<!-- Navigator -->
+<div class="posted-nav">
+    {{ with .PrevInSection }}
+    <div>
+        <i class="bi bi-caret-left-fill"></i>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+    </div>
+    {{ end }}
+    {{ with .NextInSection }}
+    <div class="posted-nav-right">
+        <i class="bi bi-caret-right-fill"></i>
+        <a href="{{.Permalink}}">{{.Title}}</a>
+    </div>
+    {{ end }}
+</div>
+
+    <!-- 评论 -->
+    <script src="https://utteranc.es/client.js"
+    repo = "homecat805/hugo-utterances"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous" async>
+    </script>
+
+</div>

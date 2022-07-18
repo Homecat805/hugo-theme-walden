@@ -1,0 +1,49 @@
+html {
+   height: 100%;
+}
+
+body {
+   background-color: $white;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.gw-header {
+   background-color: $primary;
+}
+
+.gw-stage-top {
+   background-color: $gray-100;
+}
+
+.gw-stage-center {
+
+   flex: 1;
+}
+
+.gw-footer {
+
+}
+
+@media (min-width: $sm) {
+   .gw-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: $header-width;
+   }
+
+   .gw-stage-top {
+      margin-left: $header-width;
+   }
+
+   .gw-stage-center {
+      margin-left: $header-width;
+   }
+
+   .gw-footer {
+      margin-left: $header-width;
+   }
+}

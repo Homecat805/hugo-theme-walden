@@ -1,0 +1,28 @@
+// Genway v1.0.0
+// Copyright 2022 Homecat
+// Copyright 2022 Genway Digital Design
+// Licensed under MIT
+
+@import "variables/color";
+@import "variables/size";
+@import "variables/font";
+@import "variables/breakpoint";
+
+@import "basics/init";
+
+@import "layouts/baseof";
+@import "layouts/header";
+@import "layouts/stage";
+
+
+@import "components/burger";
+@import "components/copyright";
+@import "components/menu";
+@import "components/breadcrumb";
+@import "components/headline";
+@import "components/card";
+@import "components/item";
+@import "components/pagination";
+@import "components/content";
+@import "components/markdown";
+@import "components/to-toc";

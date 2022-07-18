@@ -1,0 +1,27 @@
+.pagination {
+    margin: 1rem auto;
+    display: flex;
+    .page-item {
+        display: block;
+        margin: .25rem;
+        text-decoration: none;
+
+        background-color: $white;
+        border: 1px solid $secondary-dark;
+        border-radius: .25rem;
+        font-size: .875rem;
+        text-align: center;
+        padding: .25rem .5rem;
+        color: $secondary-dark;
+        transition: all 1s;
+        &:hover {
+            background-color: $secondary-dark;
+            color: $white;
+        }
+
+    }
+    .active {
+        background-color: $secondary-dark;
+        color: $white;
+    }
+}

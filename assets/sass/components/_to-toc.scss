@@ -1,0 +1,22 @@
+#to-toc {
+   display: none;
+   position: fixed;
+   bottom: 1rem;
+   right: 1rem;
+   z-index: 10;
+   font-size: 1.75rem;
+   text-align: center;
+   width: 2.5rem;
+   height: 2.5rem;
+   background-color: $white;
+   border: .25rem solid $primary;
+   border-radius: .5rem;
+
+   a {
+      color: $primary;
+      transition: all 1s;
+      &:hover {
+         color: $primary-light;
+      }
+   }
+}

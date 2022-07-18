@@ -1,0 +1,42 @@
+.menu {
+   background-color: $primary-light;
+   padding: 1rem;
+   text-align: center;
+   .menu-item {
+      margin: 0 .5rem;
+      text-decoration: none;
+      color: $gray-100;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+   .active {
+      text-decoration: underline;
+   }
+}
+
+@media (min-width: $sm) {
+   .menu {
+      background-color: $primary;
+      padding: 0;
+      border-top: 1px solid $gray-400;
+      font-size: .875rem;
+      display: flex;
+      flex-direction: column;
+      .menu-item {
+         display: block;
+         margin: 0;
+         padding: .75rem;
+         border-bottom: 1px solid $gray-400;
+         color: $gray-100;
+         &:hover {
+            background-color: $primary-dark;
+            text-decoration: none;
+         }
+      }
+      .active {
+         background-color: $primary-light;
+         text-decoration: none;
+      }
+   }
+}

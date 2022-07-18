@@ -1,0 +1,18 @@
+{{ range first 1 (where .Site.RegularPages "Params.headline.enabled" true) }}
+<div id="headline">
+   <div class="headline">
+      <div class="headline-item-img">
+      {{ if (ne .Params.headline.imgurl "") }}
+         <img src="{{ .Params.headline.imgurl | relURL }}" alt="Headline">
+      {{ else }}
+         <img src="{{"images/headline/default.png" | relURL }}" alt="Headline">
+      {{ end }}
+      </div>
+      <div class="headline-item-txt">
+         <h2>{{.Title}}</h2>
+         <p>{{.Summary}}</p>
+         <a href="{{.Permalink}}">Reading</a>
+      </div>
+   </div>
+</div>
+{{end}}

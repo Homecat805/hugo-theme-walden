@@ -1,0 +1,21 @@
+{{ define "stage-top" }}
+    {{- partial "breadcrumb.html" . -}}
+{{ end }}
+
+
+{{ define "stage-center" }}
+<div class="stage-center-inner-container">
+    <main class="home-main">
+        {{- partial "content.html" . -}}
+    </main>
+    <aside class="single-side">
+        {{- partial "toc-related.html" . -}}
+    </aside>
+</div>
+
+<div id="to-toc">
+   <a href="#toc">
+      <i class="bi bi-capslock-fill"></i>
+   </a>
+</div>
+{{ end }}

@@ -1,0 +1,48 @@
+baseURL = 'https://genway.com.cn/'
+theme = 'hugo-theme-walden'
+title = "Genway"
+languageCode = "en-US"
+copyright = "©"
+
+paginate = 4
+
+[author]
+   name = "Homecat"
+   description = "Like a bridge over the troubled water, I will lay me down."
+   email = "13050082@qq.com"
+   avatar = "images/logo.png"
+
+[menus]
+   [[menus.main]]
+      identifier = "home"
+      name = "Home"
+      pre = "<i class='bi bi-house-fill'></i>"
+      url = "/"
+      weight = 10
+   [[menus.main]]
+      identifier = "blog"
+      name = "Blog"
+      pre = "<i class='bi bi-file-earmark-post'></i>"
+      url = "/blog/"
+      weight = 20
+
+# 自定义变量
+[params]
+## 配置 utteranc评论,教程参考 https://utteranc.es/
+   [params.utteranc]
+      enable = true
+      repo = "homecat805/hugo-utterances"
+      issueTerm = "pathname"
+      theme = "github-light"
+
+
+[markup]
+# 采用 goldmark 方式 作为 markdown 处理器
+   defaultMarkdownHandler = "goldmark"
+   [markup.goldmark]
+   # 在 Markdown 中渲染原始的 HTML 元素
+      [markup.goldmark.renderer]
+         unsafe = true
+      # 定义 Markdown 中高亮方式
+      [markup.highlight]
+         style = "monokailight"

@@ -1,1 +1,2 @@
-# hugo-theme-walden
+# Hugo-theme-walden
+

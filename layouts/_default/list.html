@@ -1,0 +1,16 @@
+{{ define "stage-top" }}
+    {{- partial "breadcrumb.html" . -}}
+{{ end }}
+
+
+{{ define "stage-center" }}
+<div class="stage-center-inner-container">
+    <main class="home-main">
+        {{- partial "taxonomy-list.html" . -}}
+        {{- partial "pagination.html" . -}}
+    </main>
+    <aside class="home-side">
+        {{- partial "taxonomy.html" . -}}
+    </aside>
+</div>
+{{ end }}

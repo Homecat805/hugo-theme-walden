@@ -1,0 +1,30 @@
+<div class="stage-center-list-container">
+    {{ range first 4 (where .Site.RegularPages "Params.headline.enabled" false) }}
+    <div class="item-container">
+        <section class="gw-item">
+            <div class="gw-item-thumbnail">
+            {{ if (ne .Params.thumbnail "") }}
+               <img src="{{ .Params.thumbnail | relURL }}" alt="Thumbnail">
+            {{ else }}
+               <img src="{{"images/thumbnail/default.jpg" | relURL}}" alt="Thumbnail">
+            {{ end }}
+            </div>
+            <div class="gw-item-body">
+                <a class="title" href="{{.Permalink}}">{{.Title}}</a>
+                <p>
+                    <span>Published on {{.Date.Format "2006-01-01"}}</span>
+                    <span>
+                    By {{ if ne .Params.author "" }}
+                    {{ .Params.author }}
+                    {{ else }}
+                    {{ .Site.Author.name }}
+                    {{ end }}
+                    </span>
+                </p>
+                <p>{{.Summary}}</p>
+                <a class="readmore" href="{{.Permalink}}">Read More</a>
+            </div>
+        </section>
+    </div>
+    {{ end }}
+</div>

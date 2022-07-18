@@ -1,0 +1,15 @@
+{{ define "stage-top" }}
+{{ end }}
+
+{{ define "stage-center" }}
+<div class="stage-center-inner-container">
+    <main class="home-main">
+        {{- partial "headline.html" . -}}
+        {{- partial "latest-list.html" . -}}
+    </main>
+    <aside class="home-side">
+        {{- partial "brief.html" . -}}
+        {{- partial "taxonomy.html" . -}}
+    </aside>
+</div>
+{{ end }}

@@ -1,0 +1,23 @@
+<header class="gw-header-top">
+   <img class="logo" src="{{ .Site.Author.avatar | relURL }}" alt="Logo">
+   <div id="burger">
+       <a class="burger">
+           <span></span>
+           <span></span>
+           <span></span>
+       </a>
+   </div>
+</header>
+
+<nav id="menu">
+   <div class="menu">
+   {{ $current := . }}
+   {{ range .Site.Menus.main }}
+      {{ $active := eq .Name $current.Title }}
+      {{ $active = or $active ( eq .Identifier $current.Section ) }}
+      <a class="menu-item {{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+   {{ end }}
+
+   </div>
+</nav>
+

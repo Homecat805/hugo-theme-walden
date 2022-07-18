@@ -1,0 +1,18 @@
+.burger {
+    display: block;
+    border-radius: 4px;
+    margin: .75rem;
+    padding: .25rem;
+    transition: all 1s;
+    span {
+        display: block;
+        background: $white;
+        margin: .375rem;
+        width: 1.875rem;
+        height: .125rem;
+        transition: all 1s;
+    }
+    &:hover {
+        background: $primary-dark;
+    }
+}

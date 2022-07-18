@@ -1,0 +1,32 @@
+.gw-header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   background-color: $primary-dark;
+   width: $logo-width;
+}
+
+#menu {
+   display: none;
+}
+
+@media (min-width: $sm) {
+   .gw-header-top {
+      display: block;
+   }
+
+   .logo {
+      width: auto;
+   }
+
+   #burger {
+      display: none;
+   }
+
+   #menu {
+      display: block;
+   }
+}

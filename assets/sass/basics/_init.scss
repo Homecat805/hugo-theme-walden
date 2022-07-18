@@ -1,0 +1,32 @@
+// Initialize
+html,body,
+div,section,header,footer,main,aside,
+h1,h2,h3,h4,h5,h6,p,
+figure,figcaption,img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // box-sizing 属性定义如何计算一个元素的总宽度和总高度，主要设置是否需要加上内边距(padding)和边框等。
+    // 有 content-box 和 border-box 两个属性，也可使用 inherit 表示继承父元素的属性。
+    // 默认值： content-box
+    background-origin: padding-box;
+    // background-origin 属性指定了背景图像的位置区域。
+    // 有 content-box, padding-box,和 border-box 三个属性，表示不同区域内背景图像。
+    // 默认值： padding-box
+}
+
+body {
+   font-family: $font-family-sans-serif;
+   font-size: $font-size-base;
+   color: $gray-700;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}

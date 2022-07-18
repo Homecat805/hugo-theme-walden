@@ -1,0 +1,99 @@
+.gw-card-container {
+    margin: 1rem 1.5rem ;
+}
+.gw-card {
+     .gw-card-title {
+        border-bottom: 1px solid $gray-300;
+        padding: .5rem;
+        color: $gray-600;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        p {
+            margin-left: .5rem;
+            font-size: 1rem;
+            font-weight: bold;
+
+        }
+     }
+     .gw-card-content {
+         font-size: .875rem;
+         a {
+            text-decoration: none;
+            color: $primary;
+            transition: all 1s;
+            &:hover {
+                text-decoration: underline;
+                color: $primary-dark;
+            }
+        }
+     }
+ }
+
+ .gw-dumbbell {
+     padding: .5rem;
+     .gw-dumbbell-item {
+        margin: .75rem;
+        color: $primary;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .gw-dashed-line {
+            flex: 1;
+            border-bottom: 1px dashed gray;
+            margin: 0 1.5rem;
+        }
+
+
+     }
+ }
+
+ .gw-follow {
+     padding: 8px;
+     .gw-follow-item {
+         margin: 8px 8px 0px 8px;
+         display: inline-block;
+     }
+ }
+
+ .gw-normal {
+     padding: 8px;
+     .gw-normal-item {
+         margin: .25rem;
+     }
+ }
+
+ .gw-toc {
+    ul {
+       padding: 0 16px 0 24px;
+       ul {
+          list-style: inherit;
+          padding: 0 0 0 16px;
+       }
+    }
+    li {
+       margin: 4px 0;
+    }
+ }
+
+ .gw-brief {
+    padding: 1rem;
+    color: $primary;
+    line-height: 1.5rem;
+    .brief-item {
+        display: flex;
+        align-items: center;
+        i {
+            margin: .5rem .5rem .5rem 0;
+            font-size: 1rem;
+        }
+    }
+ }
+
+ @media (min-width: $lg) {
+    .gw-card-container {
+        margin: 0 1rem 1rem;
+    }
+}
