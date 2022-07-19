@@ -1,4 +1,4 @@
-.stage-center-inner-container {
+.stage-center-container {
     .home-main{
         // margin: .5rem .5rem 1rem;
     }
@@ -10,7 +10,9 @@
     }
 }
 
-.stage-center-list-container {
+
+#latest-list-container,#taxonomy-list-container {
+   padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     .item-container {
@@ -20,7 +22,7 @@
 }
 
 @media (min-width: $md) {
-    .stage-center-inner-container {
+    .stage-center-container {
         padding: .625rem;
         .home-main{
             margin: .625rem .625rem 1.25rem;
@@ -35,7 +37,7 @@
 }
 
 @media (min-width: $lg) {
-    .stage-center-inner-container {
+    .stage-center-container {
         display: flex;
         .home-main{
             margin: .625rem;
@@ -53,15 +55,18 @@
 }
 
 @media (min-width: $xl) {
-
-    .stage-center-list-container {
-      margin-top: 2rem;
+    #latest-list-container {
+       padding-top: 2rem;
     }
+
+    #taxonomy-list-container {
+      padding: 0;
+   }
 }
 
 @media (min-width: $xxl) {
 
-    .stage-center-inner-container {
+    .stage-center-container {
         padding: .75rem;
         .home-main{
             margin: .75rem;

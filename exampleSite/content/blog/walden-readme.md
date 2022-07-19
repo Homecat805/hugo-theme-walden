@@ -7,7 +7,7 @@ tags: ["Walden","Hugo"]
 thumbnail: "blog/images/thumbnail/hugo.jpg"
 headline:
    enabled: true
-   imgurl: ""
+   imgurl: "blog/images/thumbnail/default.png"
 draft: false
 ---
 
