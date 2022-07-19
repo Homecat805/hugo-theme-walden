@@ -1,5 +1,5 @@
 baseURL = 'https://genway.com.cn/'
-theme = 'walden'
+theme = 'hugo-theme-walden'
 title = "Genway"
 languageCode = "en-US"
 copyright = "©"
