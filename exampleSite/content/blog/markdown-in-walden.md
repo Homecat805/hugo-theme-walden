@@ -3,7 +3,7 @@ title: "Walden 主题中 Markdown 格式示例"
 date: 2022-07-13T09:12:59+08:00
 author: "Homecat"
 categories: "数字笔记"
-tags: ["Markdown","Walden"]
+tags: ["Markdown","Walden","Hugo"]
 thumbnail: "blog/images/thumbnail/markdown.jpg"
 headline:
    enabled: false

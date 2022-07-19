@@ -1,15 +1,15 @@
 baseURL = 'https://genway.com.cn/'
-theme = 'hugo-theme-walden'
+theme = 'walden'
 title = "Genway"
 languageCode = "en-US"
 copyright = "©"
 
-paginate = 4
+paginate = 10
 
 [author]
-   name = "Homecat"
-   description = "Like a bridge over the troubled water, I will lay me down."
-   email = "13050082@qq.com"
+   name = "Your name"
+   description = "Your description"
+   email = "Your email"
    avatar = "images/logo.png"
 
 [menus]

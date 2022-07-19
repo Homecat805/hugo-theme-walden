@@ -42,7 +42,7 @@
             <div class="gw-follow">
             {{ range . }}
                 <span class="gw-follow-item">
-                <a href="{{.Page.Permalink}}">{{.Page.Title}}</a>
+                <a href="{{.Page.Permalink}}">{{.Page.Title}}({{.Count}})</a>
                 </span>
             {{ end }}
             </div>
@@ -50,4 +50,3 @@
     </section>
 {{ end }}
 </div>
-

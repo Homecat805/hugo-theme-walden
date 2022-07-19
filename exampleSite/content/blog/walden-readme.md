@@ -1,7 +1,19 @@
-# Hugo-theme-walden
-
+---
+title: "A Hugo theme - Walden"
+date: 2022-07-18T11:19:26+08:00
+author: "Homecat"
+categories: "数字笔记"
+tags: ["Walden","Hugo"]
+thumbnail: "blog/images/thumbnail/hugo.jpg"
+headline:
+   enabled: true
+   imgurl: ""
+draft: false
+---
 
 Hugo-theme-walden is a theme written specifically for Hugo and is primarily used for blog posts and image shows. The reason why I named the theme Walden is that I liked a collection of essays - *Walden*  by the American writer Henry David Thoreau.
+
+<!--more-->
 
 ## Demo
 
