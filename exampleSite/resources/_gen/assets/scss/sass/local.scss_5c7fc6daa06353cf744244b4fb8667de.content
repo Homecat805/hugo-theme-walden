@@ -74,55 +74,58 @@ body {
   #menu {
     display: block; } }
 
-.stage-center-inner-container .home-side {
+.stage-center-container .home-side {
   margin: .5rem; }
 
-.stage-center-inner-container .single-side {
+.stage-center-container .single-side {
   margin: .5rem; }
 
-.stage-center-list-container {
+#latest-list-container, #taxonomy-list-container {
+  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap; }
-  .stage-center-list-container .item-container {
+  #latest-list-container .item-container, #taxonomy-list-container .item-container {
     width: 100%;
     margin: 1rem; }
 
 @media (min-width: 768px) {
-  .stage-center-inner-container {
+  .stage-center-container {
     padding: .625rem; }
-    .stage-center-inner-container .home-main {
+    .stage-center-container .home-main {
       margin: .625rem .625rem 1.25rem; }
-    .stage-center-inner-container .home-side {
+    .stage-center-container .home-side {
       margin: .625rem; }
-    .stage-center-inner-container .single-side {
+    .stage-center-container .single-side {
       margin: .625rem; } }
 
 @media (min-width: 992px) {
-  .stage-center-inner-container {
+  .stage-center-container {
     display: flex; }
-    .stage-center-inner-container .home-main {
+    .stage-center-container .home-main {
       margin: .625rem;
       flex: 1; }
-    .stage-center-inner-container .home-side {
+    .stage-center-container .home-side {
       width: 30%;
       max-width: 350px; }
-    .stage-center-inner-container .single-side {
+    .stage-center-container .single-side {
       width: 30%;
       max-width: 300px; } }
 
 @media (min-width: 1200px) {
-  .stage-center-list-container {
-    margin-top: 2rem; } }
+  #latest-list-container {
+    padding-top: 2rem; }
+  #taxonomy-list-container {
+    padding: 0; } }
 
 @media (min-width: 1400px) {
-  .stage-center-inner-container {
+  .stage-center-container {
     padding: .75rem; }
-    .stage-center-inner-container .home-main {
+    .stage-center-container .home-main {
       margin: .75rem; }
-    .stage-center-inner-container .home-side {
+    .stage-center-container .home-side {
       margin: .75rem;
       max-width: 400px; }
-    .stage-center-inner-container .single-side {
+    .stage-center-container .single-side {
       margin: .75rem;
       max-width: 400px; }
   .stage-center-list-container .item-container {
