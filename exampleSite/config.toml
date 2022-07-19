@@ -46,3 +46,11 @@ paginate = 10
       # 定义 Markdown 中高亮方式
       [markup.highlight]
          style = "monokailight"
+
+
+
+[module]
+   [module.hugoVersion]
+      extended = true
+      min = "0.55.0"
+      max = "0.100.0"
