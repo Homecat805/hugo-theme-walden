@@ -14,7 +14,7 @@ demosite = "https://gohugo.io"
 
 tags = ["Blog","Responsive","Personal"]
 features = ["simple","functional","easy"]
-min_version = "0.91.0"
+min_version = "0.101.0"
 
 # If the theme has a single author
 [author]
