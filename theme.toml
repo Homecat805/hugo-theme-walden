@@ -5,11 +5,18 @@ name = "Walden"
 license = "MIT"
 licenselink = "https://github.com/homecat805/hugo-theme-walden/blob/master/LICENSE"
 description = "A theme written for Hugo static site genenrator."
+
+# The home page of the theme, where the source can be found.
 homepage = "https://github.com/homecat805/hugo-theme-walden"
+
+# If you have a running demo of the theme.
+demosite = "https://gohugo.io"
+
 tags = ["Blog","Responsive","Personal"]
 features = ["simple","functional","easy"]
-min_version = "0.41.0"
+min_version = "0.91.0"
 
+# If the theme has a single author
 [author]
-  name = "Homecat"
-  homepage = "https://genway.com.cn"
+   name = "Homecat"
+   homepage = "https://genway.com.cn"
