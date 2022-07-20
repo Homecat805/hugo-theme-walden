@@ -1,6 +1,6 @@
 baseURL = 'https://genway.com.cn/'
 theme = 'hugo-theme-walden'
-title = "Genway"
+title = "Your site title"
 languageCode = "en-US"
 copyright = "©"
 
@@ -31,7 +31,7 @@ paginate = 10
 ## 配置 utteranc评论,教程参考 https://utteranc.es/
    [params.utteranc]
       enable = true
-      repo = "homecat805/hugo-utterances"
+      repo = "Your-account/hugo-utterances"
       issueTerm = "pathname"
       theme = "github-light"
 
