@@ -10,7 +10,7 @@ description = "A theme written for Hugo static site genenrator."
 homepage = "https://github.com/homecat805/hugo-theme-walden"
 
 # If you have a running demo of the theme.
-demosite = "https://gohugo.io"
+demosite = "https://genway.com.cn"
 
 tags = ["Blog","Responsive","Personal"]
 features = ["simple","functional","easy"]
