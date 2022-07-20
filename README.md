@@ -55,7 +55,6 @@ hugo new blog/my-first-blog.md
 ```
 Edit the newly created content's <mark>front matter</mark> , <mark>summary</mark> and <mark>text</mark>.
 ```
----
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 author: ""
@@ -66,10 +65,6 @@ headline:
    enabled: false
    imgurl: ""
 draft: false
----
-Here is summary of content.
-<!--more-->
-here is text.
 ```
 
 ## Start Server
