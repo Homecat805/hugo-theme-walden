@@ -1,0 +1,48 @@
+baseURL = 'https://genway.com.cn/'
+theme = 'walden'
+title = "Genway"
+languageCode = "en-US"
+copyright = "©"
+
+paginate = 10
+
+[author]
+   name = "Homecat"
+   description = "吾，家猫是也。生于浙，学业于沪，喜读书出行，亦好前端代码，置博客于 Github，录趣事以享亲友。逾天命之年，行减法，去物质。域名 genway. com. cn 为猫所有久矣，君若有意，可受让，莫虑。"
+   email = "13050082@qq.com"
+   avatar = "images/logo.png"
+
+[menus]
+   [[menus.main]]
+      identifier = "home"
+      name = "Home"
+      pre = "<i class='bi bi-house-fill'></i>"
+      url = "/"
+      weight = 10
+   [[menus.main]]
+      identifier = "blog"
+      name = "Blog"
+      pre = "<i class='bi bi-file-earmark-post'></i>"
+      url = "/blog/"
+      weight = 20
+
+# 自定义变量
+[params]
+## 配置 utteranc评论,教程参考 https://utteranc.es/
+   [params.utteranc]
+      enable = true
+      repo = "homecat805/hugo-utterances"
+      issueTerm = "pathname"
+      theme = "github-light"
+
+
+[markup]
+# 采用 goldmark 方式 作为 markdown 处理器
+   defaultMarkdownHandler = "goldmark"
+   [markup.goldmark]
+   # 在 Markdown 中渲染原始的 HTML 元素
+      [markup.goldmark.renderer]
+         unsafe = true
+      # 定义 Markdown 中高亮方式
+      [markup.highlight]
+         style = "monokailight"
