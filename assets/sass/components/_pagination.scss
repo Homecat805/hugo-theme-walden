@@ -1,0 +1,37 @@
+.pagination {
+    background-color: $white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    .page-item {
+        display: block;
+        margin: .25rem;
+        text-decoration: none;
+
+        background-color: $white;
+        border: 1px solid $primary;
+        border-radius: .25rem;
+        font-size: .875rem;
+        text-align: center;
+        padding: .5rem .75rem;
+        color: $primary;
+        transition: all 1s;
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+
+    }
+    .active {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+@media (min-width: $md) {
+
+    .pagination {
+        background-color: $grey-100;
+    }
+
+}

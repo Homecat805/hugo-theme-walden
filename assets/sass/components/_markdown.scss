@@ -1,0 +1,185 @@
+.markdown {
+
+   // 标题和段落
+   h1,h2,h3,h4,h5,h6 {
+      color: $grey-700;
+      font-weight: bold;
+   }
+   h1 { 
+      margin-top: 1.75rem;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+   }
+   h2 { 
+      margin-top: 2.5rem;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+   }
+   h3 { 
+      margin-top: 1.75rem;
+      font-size: 1rem;
+      line-height: 1rem;
+   }
+   h4 { 
+      margin-top: 1rem;
+      font-size: .875rem;
+      line-height: 1rem;
+   }
+   h5,h6 { 
+      margin-top: 1rem;
+      font-size: .75rem;
+      line-height: 1rem;
+   }
+   p {
+      margin-top: .75rem;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      color: $grey-700;
+      text-align: justify;
+   }
+
+   // 链接
+   a {
+		color: $secondary-dark;
+        text-decoration: none;
+		transition: all 1s;
+		&:hover {
+            text-decoration: underline;
+		}
+	}
+
+   // 分割线
+   hr {
+      height: 0px;
+      border-top: none;
+   }
+
+    // 引用
+	blockquote {
+		border-left: .375rem solid $secondary-dark;
+      background-color: $grey-100;
+      font-size: .875rem;
+		line-height: 1.25rem;
+		margin-top: 1rem;
+      padding: 1rem 1.5rem;
+      p {
+         margin: 0;
+      }
+	}
+
+    // 图片
+	figure {
+		margin-top: 1rem;
+
+      img {
+         display: block;
+      }
+
+     
+		figcaption {
+
+         font-family: $font-family-serif;
+         margin-top: 1px;
+         padding: .5rem;
+         font-size: .875rem;
+         line-height: 1.5rem;
+         color: $grey-600;
+
+         border-left: .25rem solid $secondary-dark;
+         background-color: $grey-100;
+          
+
+		}
+	}
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    // 格式化文本和代码
+    pre,code {
+        font-family: $font-family-monospace;
+
+    }
+
+    code {
+        color: $pink;
+    }
+
+    pre {
+      font-size: .875rem;
+        padding: 1rem;
+        background-color: $grey-100;
+        border: 1px solid $grey-300;
+        line-height: 1.5rem;
+        overflow: auto;
+        code {
+            color: $grey-600;
+        }
+    }
+
+    // 脚注
+    .footnotes {
+		margin-top: 3rem;
+		border-top: 1px solid $grey-200;
+		ol {
+			font-size: .875rem;
+         padding-left: 2rem;
+         padding-right: 1rem;
+		}
+		hr {
+			display: none;
+		}
+	}
+
+   // 列表
+   ol,ul {
+      color: $grey-700;
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      ol,ul {
+         margin-top: 0;
+         padding-left: 1.5rem;
+      }
+      li {
+         margin-top: .5rem;
+      }
+   }
+   ul {
+      list-style: disc;
+   }
+
+   // 键盘按键
+   kbd {
+      background-color: $grey-700;
+      color: $white;
+      font-size: .75rem;
+      padding: .25rem .375rem;
+      margin: 0 .375rem;
+      border-radius: .25rem;
+   }
+
+   mark {
+      background-color:$secondary-dark;
+      color: $white;
+   }
+
+   // 表格
+   table {
+      margin-top: 1rem;
+      font-size: .875rem;
+      tr {}
+      th {
+         background-color: $secondary;
+         padding: .5rem .75rem;
+         text-align: center;
+      }
+      td {
+         background-color: $grey-200;
+         padding: .25rem .5rem;
+         text-align: center;
+      }
+   }
+}

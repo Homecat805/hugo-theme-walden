@@ -1,0 +1,27 @@
+{{ define "base-necker" }}
+<div id="necker">
+    {{- partial "home/breadcrumb.html" . -}}
+</div>
+{{ end }}
+
+
+{{ define "base-stager" }}
+<div id="stager">
+
+    <div class="container-fluid bg-grey-100">
+        <div class="container">
+            <div class="stager">
+                <main>
+                    {{- partial "list/list-main.html" . -}}
+                    {{- partial "list/list-pagination.html" . -}}
+                </main>
+                <div class="holder"></div>
+                <aside>
+                    {{- partial "list/list-aside.html" . -}}
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{{ end }}

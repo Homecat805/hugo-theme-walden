@@ -1,0 +1,31 @@
+.stager {
+    display: flex;
+    flex-direction: column;
+    main {
+        overflow: auto;
+    }
+    aside {}
+}
+
+@media (min-width: $md) {
+
+    .stager {
+        flex-direction: row;
+        main {
+            flex: 1;
+        }
+        aside {
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width: $xxl) {
+
+    .stager {
+        aside {
+            width: 320px;
+        }
+    }
+}
+

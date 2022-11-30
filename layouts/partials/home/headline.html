@@ -1,0 +1,11 @@
+
+<div class="headline">
+    {{ range first 1 (where .Site.RegularPages "Params.headline.enabled" true) }}
+    <div class="container-fluid" style="background: url({{ .Params.headline.image | relURL }}) center top no-repeat;">
+        <div class="container">
+            <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+            <p>{{ .Summary }}</p>
+        </div>
+    </div>
+    {{end}}
+</div>

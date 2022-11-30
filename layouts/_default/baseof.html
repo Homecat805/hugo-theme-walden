@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+
+    {{- partial "baseof/head.html" . -}}
+    
+    <body class="bg-grey-100">
+
+        {{- partial "baseof/header.html" . -}}
+
+        {{- block "base-necker" . }}{{- end }}
+
+        {{- block "base-stager" . }}{{- end }}
+
+        {{- partial "baseof/footer.html" . -}}
+
+        {{- partial "baseof/foot.html" . -}}
+
+    </body>
+    
+</html>

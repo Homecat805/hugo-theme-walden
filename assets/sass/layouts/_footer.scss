@@ -1,0 +1,30 @@
+.footnote {
+    padding: 1rem;
+    display: flex;
+    flex-flow: wrap;
+
+    .footnote-item-container {
+        width: 100%;
+        padding: 1rem;
+
+        .footnote-item {
+
+            font-size: .875rem;
+            color: $grey-800;
+            height: 2rem;
+        }
+    }
+}
+
+@media (min-width: $md) {
+
+    .footnote {
+    
+        .footnote-item-container {
+   
+            width: 50%;
+        }
+    
+    }
+
+}

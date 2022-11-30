@@ -1,0 +1,42 @@
+.headline {
+
+    .container-fluid {
+
+
+        height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+
+            background-color: rgba($black, .40);
+            margin: 2rem;
+            padding: 1rem 1.5rem 1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            a {
+                display: block;
+                font-size: 1.375rem;
+
+                color: $grey-100;
+                text-decoration: none;
+            }
+
+            p {
+                font-size: .875rem;
+                color: $grey-200;
+                margin-top: .25rem;
+                text-align: center;
+                line-height: 1.5rem;
+            }
+
+        }
+    }
+}

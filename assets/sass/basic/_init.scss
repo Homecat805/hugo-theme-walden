@@ -1,0 +1,24 @@
+// Initialize
+html,body,
+div,section,header,footer,main,aside,
+ul,ol,li,nav,figure,figcaption,
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // box-sizing 属性定义如何计算一个元素的总宽度和总高度，主要设置是否需要加上内边距(padding)和边框等。
+    // 有 content-box 和 border-box 两个属性，也可使用 inherit 表示继承父元素的属性。
+    // 默认值： content-box
+}
+
+a {
+    cursor: pointer;
+    // 链接显示指针
+    text-decoration: none;
+}
+
+@media (min-width: $sm) {}
+@media (min-width: $md) {}
+@media (min-width: $lg) {}
+@media (min-width: $xl) {}
+@media (min-width: $xxl) {}

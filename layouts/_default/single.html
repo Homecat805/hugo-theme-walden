@@ -1,0 +1,31 @@
+{{ define "base-necker" }}
+<div id="necker">
+    {{- partial "home/breadcrumb.html" . -}}
+</div>
+{{ end }}
+
+
+{{ define "base-stager" }}
+<div id="stager">
+
+    <div class="container-fluid bg-grey-100">
+        <div class="container">
+            <div class="stager">
+                <main>
+                    {{- partial "single/single-main.html" . -}}
+                </main>
+                <div class="holder"></div>
+                <aside>
+                    {{- partial "single/single-aside.html" . -}}
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div id="totoc">
+    <a href="#toc"><i class="bi bi-chevron-up"></i></a>
+</div>
+
+{{ end }}

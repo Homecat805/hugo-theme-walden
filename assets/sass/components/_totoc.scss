@@ -1,0 +1,20 @@
+#totoc {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+
+    a {
+        display: block;
+        padding: .5rem;
+        font-size: 1.5rem;
+        background-color: $primary;
+        color: $grey-300;
+        border-radius: .5rem;
+        transition: all 1s;
+        &:hover {
+            color: $white;
+        }
+    }
+
+
+}

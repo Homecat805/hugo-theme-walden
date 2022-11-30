@@ -1,0 +1,77 @@
+baseURL = "https://example.org"
+
+theme = "hugo-theme-walden"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+paginate = 12
+
+[params]
+    multilingual = true
+    favicon = "favicon.png"
+
+[language]
+
+    [languages.en]
+        title = "Walden"
+        languageName = "English"
+        languageCode = "en-US"
+        weight = 1
+
+        [languages.en.author]
+            name = "Author Name"
+            description = "Author Description"
+            email = "author@domain.com"
+            avatar = "images/avatar/default.jpg"
+
+        [languages.en.menus]
+
+            [[languages.en.menus.main]]
+                identifier = "home"
+                name = "Home"
+                url = "/en/"
+                weight = 10
+
+            [[languages.en.menus.main]]
+                identifier = "blog"
+                name = "Blog"
+                url = "/en/blog/"
+                weight = 20
+
+    [languages.zh]
+        title = "瓦尔登湖"
+        languageName = "中文"
+        languageCode = "zh-CN"
+        weight = 2
+
+        [languages.zh.author]
+            name = "作者名称"
+            description = "作者介绍"
+            email = "author@domain.com"
+            avatar = "images/avatar/default.jpg"
+
+        [languages.zh.menus]
+
+            [[languages.zh.menus.main]]
+                identifier = "home"
+                name = "首页"
+                url = "/zh/"
+                weight = 10
+            
+            [[languages.zh.menus.main]]
+                identifier = "blog"
+                name = "博客"
+                url = "/zh/blog/"
+                weight = 20
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+
+    [markup.goldmark]
+
+        [markup.goldmark.renderer]
+            unsafe = true
+
+    [markup.highlight]
+        style = "monokailight"

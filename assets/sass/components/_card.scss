@@ -1,0 +1,87 @@
+.card {
+
+    border: 1px solid $grey-400;
+    padding: 1rem;
+    position: relative;
+
+    .card-title {
+
+        position: absolute;
+        top: -0.75rem;
+        right: 1rem;
+
+        background-color: $grey-100;
+        padding: 0 .5rem;
+
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $grey-500;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: .875rem;
+        color: $primary;
+        transition: all 1s;
+        &:hover {
+            color: $primary-dark;
+        }
+    }
+}
+
+.dumbbell {
+
+    a {
+        margin-bottom: .5rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .dashed-line {
+            flex: 1;
+            border-bottom: 1px dashed grey;
+            margin: 0 1rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.follow {
+
+    a {
+        display: inline-block;
+        line-height: 1.5rem;
+        margin-right: .5rem;
+    }
+}
+
+.normal {
+    ul {
+        list-style: none;
+        margin: 0 1.25rem;
+        li {
+            line-height: 1.5rem;
+            &::before {
+                content: "\2022";
+                color: $primary;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1rem;
+                margin-left: -1rem;
+            }
+        }
+    }
+}
+
+
+  
+
+
+

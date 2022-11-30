@@ -1,0 +1,29 @@
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+
+<!-- For responsive website -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- For SEO -->
+<meta name="descriptison" content="Description for site">
+<meta name="keywords" content="Keywords for site">
+
+<!-- Title -->
+{{ $title := ( .Title ) }}
+{{ $siteTitle := ( .Site.Title ) }}
+<title>{{ $title }} ｜ {{ $siteTitle }}</title>
+
+<!-- Favicon & icons -->
+{{ with .Site.Params.favicon }}
+<link href="{{ . | relURL }}" rel="icon">
+{{ else }}
+<link href="{{ "favicon.png" | relURL }}" rel="icon">
+{{ end }}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+<!-- Local CSS from SASS-->
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS (dict "targetPath" "css/main.css" ) }}
+<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}">
