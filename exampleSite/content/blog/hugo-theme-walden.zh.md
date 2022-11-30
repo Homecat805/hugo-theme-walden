@@ -31,7 +31,7 @@ Walden 是一个结构简单、容易使用的 Hugo 主题，适用于个人网�
 
 通过两种方式演示这个主题的效果：
 
-- 访问演示网站: [https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/](https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/)
+- 访问演示网站: [https://genway.com.cn/hugo-theme-walden-demo/](https://genway.com.cn/hugo-theme-walden-demo/)
 - 克隆仓库到本地，主题仓库托管在 Github: [https://github.com/homecat805/hugo-theme-walden.git](https://github.com/homecat805/hugo-theme-walden.git)
 
     ```

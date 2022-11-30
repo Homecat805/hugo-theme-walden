@@ -17,7 +17,7 @@ Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 
 Two ways to see the demo：
 
-- Visit demo site: [https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/](https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/)
+- Visit demo site: [https://genway.com.cn/hugo-theme-walden-demo/](https://genway.com.cn/hugo-theme-walden-demo/)
 - View demo by clone repository from Github: [https://github.com/homecat805/hugo-theme-walden.git](https://github.com/homecat805/hugo-theme-walden.git)
 
     ```
