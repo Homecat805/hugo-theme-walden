@@ -1,8 +1,10 @@
-This hugo theme is my first theme I made , the reason why I name it as Walden is for a collection of essays written by american writer <i><b>Henry David Thoreau</b></i> whose deepest thinking about the meaning of life help us to realize that "the noblest mind is the most contented and complacent."
+After reading <i><b>Walden</b></i>, a collection of essays by American writer Henry David Thoreau, I was deeply influenced by his love of nature and simple living. So, I wrote this concise and clear theme for my personal website and named it Walden.
+
+<!--more-->
 
 ## Features
 
-Walden is a easy-to-use theme with simple structure and design, especially suitable for building personal websites.
+Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 
 - Multilingual support
 - Responsive design
@@ -15,156 +17,117 @@ Walden is a easy-to-use theme with simple structure and design, especially suita
 
 Two ways to see the demo：
 
-- Visit writer's homepage: [https://genway.com.cn](https://genway.com.cn)
+- Visit demo site: [https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/](https://genway.com.cn/hugo-theme-walden-demo/zh/blog/hugo-theme-walden/)
 - View demo by clone repository from Github: [https://github.com/homecat805/hugo-theme-walden.git](https://github.com/homecat805/hugo-theme-walden.git)
 
-```
-git clone https://github.com/homecat805/hugo-theme-walden.git
-cd hugo-theme-walden/exampleSite
-hugo server --themesDir ../..
-```
+    ```
+    git clone https://github.com/homecat805/hugo-theme-walden.git hugo-theme-walden
+    cd exampleSite
+    hugo server --themesDir ../..
+    ```
 
 ## Quick start
 
-Installing Hugo static website generator before your start, instructions for installation on different systems can be found in Hugo documents: [https://gohugo.io/installation/](https://gohugo.io/installation/), the system related with this post is Ubuntu 22.04 LTS.
+The Hugo documentation [https://gohugo.io/installation/](https://gohugo.io/installation/) describes in detail how to install on different operating systems, which will not be repeated here, the operating system related to this article is Ubuntu 22.04 LTS.
 
-Create a new site and add theme as submodule to "themes/walden" directory:
+- Create the website root directory `mysite` and perform git initialization:
+
+    ```
+    mkdir mysite
+    cd mysite
+    git init
+    git branch -m main
+    ```
+
+- Install the theme as a module to the `mysite/themes` directory of the website, and copy all the files in the `exampleSite` directory within the theme to the root directory of the website:
+
+    ```
+    mkdir themes
+    git submodule add git@github.com:Homecat805/hugo-theme-walden.git themes/hugo-theme-walden
+    cp -rf themes/hugo-theme-walden/exampleSite/* ./
+    ```
+
+In subsequent use, if you need to update the theme, use the following command:
 
 ```
-hugo new site siteroot
-cd siteroot
-git init
-git branch -m main
-git submodule add git@github.com:Homecat805/hugo-theme-walden.git themes/hugo-theme-walden
-cp -rf themes/hugo-theme-walden/exampleSite/* ./
-```
-
-If need, to update the added theme:
-
-```
-cd siteroot
 git submodule update --remote --merge
 ```
 
 ## Configuration 
 
-Modify the configuration file "config.toml" as required. The settings of default theme is "hugo-theme-walden". 
+The configuration file for the site is `config.toml`。
+
+- Configure baseURL: URL of user's website on the internet.
+
+    ```
+    baseURL = "https://github.com/homecat805/walden/"
+    ```
+
+- Configure theme
+
+    ```
+    theme = "hugo-theme-walden"
+    ```
+
+- Configure language mode: Multilingual mode is used by default, and single-language mode is configured as `false`.
+
+    ```
+    [params]
+        multilingual = true  
+    ```
+
+- Configuration language: English is used by default, and `"zh"` for using Chinese.
+
+    ```
+    defaultContentLanguage = "en"
+    ```
+
+- Configure site name: According to Hugo documentation, websites in different languages are side by side, use different name for dependent site.
+
+    ```
+    [language]
+        [languages.en]
+            title = "Walden"
+            ...
+        [languages.zh]
+            title = "瓦尔登湖"
+            ...
+    ```
+
+- Configure author information
+
+    ```
+    [language]
+        [languages.en]
+            [languages.en.author]
+                name = "Homecata"
+                description = "Author Description"
+                email = "13050082@qq.com"
+                avatar = "images/avatar/default.jpg"
+        [languages.zh]
+            [languages.zh.author]
+                name = "家猫"
+                description = "作者介绍"
+                email = "13050082@qq.com"
+                avatar = "images/avatar/default.jpg"
+ 
+
+## Preview
+
+Executing the command, visit `http://localhost:1313/` to preview website locally.
 
 ```
-theme = "hugo-theme-walden"
+hugo server
 ```
 
-### Multilingaul Mode
+## Create Site
 
-According ot Hugo Docs, the site in diffrent languages are side by side.
-
-In theme walden, multilingual mode is enabled as default, two languages - Chinese and English are available, English is the default language.
-
-- Change mulitlingual mode:
+Executing the command, the system will store all the files generated for the static website in the `mysite/public` directory, which can be accessed after uploading to the Internet.
 
 ```
-// true is enabled and false is unenabled  
-[params]
-    multilingual = true  
+hugo
 ```
-
-- Change default language:
-
-```
-// en is for Englsih and zh is for Chinese)
-defaultContentLanguage = "en"
-```
-
-Configure language-dependent parameters：
-```
-[language]
-    [languages.en]
-        title = "English Title"
-        languageName = "English"
-        languageCode = "en-US"
-        contentDir = "content.en"
-        weight = 1
-    [languages.zh]
-        title = "Chinese Title"
-        languageName = "中文"
-        languageCode = "zh-CN"
-        contentDir = "content.zh"
-        weight = 2
-```
-
-- Add a new language "Français" as default:
-
-```
-defaultContentLanguage = "fr"
-[language]
-    ...
-    [languages.fr]
-        title = "Français Titre"
-        languageName = "Français"
-        languageCode = "fr-FR"
-        contentDir = "content.fr"
-        weight = 3
-[params]
-    multilingual = true 
-```
-
-At sametimes, add a new directory "content.fr" under site root:
-
-```
-siteroot ──┬── ... 
-           ├── content.en
-           ├── content.zh
-           ├── content.fr
-           └── ...
-```
-
-### Menu
-
-In general, the configuration for menu does not need to be changed, except in special circumstances. For example: when adding a new language in multilingual mode, menu in the new language is required; or when items in the menu need to be added or deleted.
-
-```
-[language]
-    [languages.en]
-        [languages.en.menus]
-            [[languages.en.menus.main]]
-                identifier = "home"
-                name = "Home"
-                url = "/en/"
-                weight = 10
-            [[languages.en.menus.main]]
-                identifier = "blog"
-                name = "Blog"
-                url = "/en/blog/"
-                weight = 20
-    [languages.zh]
-        [languages.zh.menus]
-            [[languages.zh.menus.main]]
-                identifier = "home"
-                name = "首页"
-                url = "/zh/"
-                weight = 10
-            [[languages.zh.menus.main]]
-                identifier = "blog"
-                name = "博客"
-                url = "/zh/blog/"
-                weight = 20
-    [languages.fr]
-        [languages.fr.menus]
-            [[languages.fr.menus.main]]
-                identifier = "home"
-                name = "Domicile"
-                url = "/fr/"
-                weight = 10
-            [[languages.zh.menus.main]]
-                identifier = "blog"
-                name = "blog"
-                url = "/fr/blog/"
-                weight = 20
-```
-
-## Usage
 
 ## License
 
-
-
+Walden is licensed under the MIT，Check the  [LICENSE](https://github.com/homecat805/hugo-theme-walden/blob/master/LICENSE) file for details.
