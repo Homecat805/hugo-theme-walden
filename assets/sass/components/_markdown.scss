@@ -60,7 +60,7 @@
       background-color: $grey-100;
       font-size: .875rem;
 		line-height: 1.25rem;
-		margin-top: 1rem;
+		margin: 1rem 0 0 1rem;
       padding: 1rem 1.5rem;
       p {
          margin: 0;
@@ -85,7 +85,7 @@
          line-height: 1.5rem;
          color: $grey-600;
 
-         border-left: .25rem solid $secondary-dark;
+         border-left: .375rem solid $secondary-dark;
          background-color: $grey-100;
           
 
@@ -138,10 +138,10 @@
    ol,ul {
       color: $grey-700;
       margin-top: 1rem;
-      padding-left: 2.5rem;
+      padding-left: 1.5rem;
       ol,ul {
          margin-top: 0;
-         padding-left: 1.5rem;
+         padding-left: 1.25rem;
       }
       li {
          margin-top: .5rem;
@@ -183,3 +183,24 @@
       }
    }
 }
+
+@media (min-width: $sm) {}
+@media (min-width: $md) {
+   .markdown {
+          // 引用
+         blockquote {
+            margin: 1rem 0 0 2.5rem;
+         }
+
+      // 列表
+      ol,ul {
+         padding-left: 2.5rem;
+         ol,ul {
+            padding-left: 1.5rem;
+         }
+      }
+   }
+}
+@media (min-width: $lg) {}
+@media (min-width: $xl) {}
+@media (min-width: $xxl) {}
