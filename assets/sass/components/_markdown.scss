@@ -40,7 +40,7 @@
 
    // 链接
    a {
-		color: $secondary-dark;
+		color: $blue;
         text-decoration: none;
 		transition: all 1s;
 		&:hover {
@@ -180,6 +180,17 @@
          background-color: $grey-200;
          padding: .25rem .5rem;
          text-align: center;
+      }
+   }
+
+   cite {
+      color: $black;
+      font-style: normal;
+      a:before {
+         content: "[";
+      }
+      a:after {
+         content: "]";
       }
    }
 }
