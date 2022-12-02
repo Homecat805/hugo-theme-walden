@@ -60,7 +60,7 @@
       background-color: $grey-100;
       font-size: .875rem;
 		line-height: 1.25rem;
-		margin: 1rem 0 0 1rem;
+		margin: 1rem 0 0 0;
       padding: 1rem 1.5rem;
       p {
          margin: 0;
@@ -138,10 +138,10 @@
    ol,ul {
       color: $grey-700;
       margin-top: 1rem;
-      padding-left: 1.5rem;
+      padding-left: 1.25rem;
       ol,ul {
          margin-top: 0;
-         padding-left: 1.25rem;
+         padding-left: 1rem;
       }
       li {
          margin-top: .5rem;
@@ -186,21 +186,22 @@
 
 @media (min-width: $sm) {}
 @media (min-width: $md) {
+}
+@media (min-width: $lg) {
    .markdown {
-          // 引用
-         blockquote {
-            margin: 1rem 0 0 2.5rem;
-         }
+      // 引用
+      blockquote {
+         margin: 1rem 1.5rem 0;
+      }
 
       // 列表
       ol,ul {
-         padding-left: 2.5rem;
+         padding-left: 2rem;
          ol,ul {
             padding-left: 1.5rem;
          }
       }
    }
 }
-@media (min-width: $lg) {}
 @media (min-width: $xl) {}
 @media (min-width: $xxl) {}
