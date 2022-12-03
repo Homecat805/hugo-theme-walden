@@ -78,6 +78,21 @@
             }
         }
     }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    p {
+        text-align: center;
+        font-size: .875rem;
+        color: $grey-600;
+        margin-top: .5rem;
+        i {
+            font-size: 1rem;
+            margin-right: .5rem;
+        }
+    }
 }
 
 

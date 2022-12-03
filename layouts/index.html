@@ -8,7 +8,19 @@
 {{ define "base-stager" }}
 <div id="stager">
 
-
+    <div class="container-fluid bg-grey-100">
+        <div class="container">
+            <div class="stager pt-5">
+                <main>
+                    {{- partial "home/home-main.html" . -}}
+                </main>
+                <div class="holder"></div>
+                <aside>
+                    {{- partial "home/home-aside.html" . -}}
+                </aside>
+            </div>
+        </div>
+    </div>
     
 </div>
 {{ end }}

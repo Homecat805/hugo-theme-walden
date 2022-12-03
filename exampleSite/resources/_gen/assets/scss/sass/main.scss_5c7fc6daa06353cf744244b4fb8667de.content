@@ -24,14 +24,16 @@ a {
 
 .container-main {
   background-color: #fff;
-  padding: .5rem;
-  margin-bottom: 3rem; }
+  padding: .5rem; }
 
 .container-main-item {
   padding: .5rem; }
 
 .container-card {
   margin: 1rem 1rem 2rem; }
+
+.container-table {
+  overflow: auto; }
 
 @media (min-width: 768px) {
   .container-main {
@@ -78,6 +80,9 @@ a {
 
 .inactive {
   display: none; }
+
+.pt-5 {
+  padding-top: 3rem; }
 
 html {
   height: 100%; }
@@ -364,6 +369,19 @@ body {
       width: 1rem;
       margin-left: -1rem; }
 
+.normal img {
+  width: 100%;
+  max-width: 100%; }
+
+.normal p {
+  text-align: center;
+  font-size: .875rem;
+  color: #6c757d;
+  margin-top: .5rem; }
+  .normal p i {
+    font-size: 1rem;
+    margin-right: .5rem; }
+
 .content .content-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -413,7 +431,7 @@ body {
   font-weight: bold; }
 
 .markdown h1 {
-  margin-top: 1.75rem;
+  margin-top: 2.5rem;
   font-size: 1.5rem;
   line-height: 1.5rem; }
 
@@ -432,9 +450,14 @@ body {
   font-size: .875rem;
   line-height: 1rem; }
 
-.markdown h5, .markdown h6 {
+.markdown h5 {
   margin-top: 1rem;
   font-size: .75rem;
+  line-height: 1rem; }
+
+.markdown h6 {
+  margin-top: 1rem;
+  font-size: .625rem;
   line-height: 1rem; }
 
 .markdown p {
@@ -445,7 +468,7 @@ body {
   text-align: justify; }
 
 .markdown a {
-  color: #f4a802;
+  color: #0d6efd;
   text-decoration: none;
   transition: all 1s; }
   .markdown a:hover {
@@ -458,25 +481,26 @@ body {
 .markdown blockquote {
   border-left: 0.375rem solid #f4a802;
   background-color: #f8f9fa;
-  font-size: .875rem;
-  line-height: 1.25rem;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
   padding: 1rem 1.5rem; }
   .markdown blockquote p {
-    margin: 0; }
+    margin: 0;
+    font-size: 1 rem;
+    line-height: 1.75rem;
+    color: #6c757d; }
 
 .markdown figure {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border: 1px solid #e9ecef; }
   .markdown figure img {
-    display: block; }
+    display: block;
+    margin-top: 0; }
   .markdown figure figcaption {
     font-family: serif;
-    margin-top: 1px;
     padding: .5rem;
     font-size: .875rem;
     line-height: 1.5rem;
     color: #6c757d;
-    border-left: 0.25rem solid #f4a802;
     background-color: #f8f9fa; }
 
 .markdown img {
@@ -488,7 +512,8 @@ body {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 .markdown code {
-  color: #d63384; }
+  color: #343a40;
+  background-color: #e9ecef; }
 
 .markdown pre {
   font-size: .875rem;
@@ -498,7 +523,8 @@ body {
   line-height: 1.5rem;
   overflow: auto; }
   .markdown pre code {
-    color: #6c757d; }
+    color: #6c757d;
+    background-color: #f8f9fa; }
 
 .markdown .footnotes {
   margin-top: 3rem;
@@ -509,14 +535,17 @@ body {
     padding-right: 1rem; }
   .markdown .footnotes hr {
     display: none; }
+  .markdown .footnotes p {
+    font-size: .875rem;
+    line-height: 1.5rem; }
 
 .markdown ol, .markdown ul {
   color: #495057;
   margin-top: 1rem;
-  padding-left: 2.5rem; }
+  padding-left: 1.25rem; }
   .markdown ol ol, .markdown ol ul, .markdown ul ol, .markdown ul ul {
     margin-top: 0;
-    padding-left: 1.5rem; }
+    padding-left: 1rem; }
   .markdown ol li, .markdown ul li {
     margin-top: .5rem; }
 
@@ -532,20 +561,39 @@ body {
   border-radius: .25rem; }
 
 .markdown mark {
-  background-color: #f4a802;
-  color: #fff; }
+  background-color: #fff;
+  color: #d63384; }
 
 .markdown table {
+  overflow: auto;
   margin-top: 1rem;
-  font-size: .875rem; }
+  font-size: .875rem;
+  color: #495057; }
   .markdown table th {
     background-color: #fbb929;
     padding: .5rem .75rem;
-    text-align: center; }
+    text-align: center;
+    color: #343a40; }
   .markdown table td {
-    background-color: #e9ecef;
+    background-color: #f8f9fa;
     padding: .25rem .5rem;
     text-align: center; }
+
+.markdown cite {
+  color: #000;
+  font-style: normal; }
+  .markdown cite a:before {
+    content: "["; }
+  .markdown cite a:after {
+    content: "]"; }
+
+@media (min-width: 992px) {
+  .markdown blockquote {
+    margin: 1rem 1.5rem 0; }
+  .markdown ol, .markdown ul {
+    padding-left: 2rem; }
+    .markdown ol ol, .markdown ol ul, .markdown ul ol, .markdown ul ul {
+      padding-left: 1.5rem; } }
 
 .figure-modal-container {
   position: fixed;

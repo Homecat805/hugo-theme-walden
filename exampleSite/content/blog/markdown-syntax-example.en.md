@@ -7,8 +7,8 @@ categories: "Notes"
 tags: ["Hugo-theme","Markdown"]
 thumbnail: "images/thumbnail/markdown.jpg"
 headline: 
-  enabled: false
-  image: ""
+  enabled: true
+  image: "images/headline/hugo-theme-walden.jpg"
 ---
 
 The Walden theme uses standard markdown syntax to edit content, and this article demonstrates concrete examples of the elements that make up content, such as headings, paragraphs, images, tables, and so on.

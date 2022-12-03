@@ -11,7 +11,7 @@ other = "相关文章"
 other = "目录"
 
 [about]
-other = "博主"
+other = "关于"
 
 [prev]
 other = "上篇"
@@ -21,3 +21,4 @@ other = "下篇"
 
 [read]
 other = "阅读文章"
+

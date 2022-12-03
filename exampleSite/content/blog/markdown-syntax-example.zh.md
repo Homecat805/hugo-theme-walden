@@ -7,8 +7,8 @@ categories: "数字笔记"
 tags: ["Hugo-theme","Markdown"]
 thumbnail: "images/thumbnail/markdown.jpg"
 headline: 
-  enabled: false
-  image: ""
+  enabled: true
+  image: "images/headline/hugo-theme-walden.jpg"
 ---
 
 Walden 主题使用标准的 markdown 语法编辑内容，本文演示了构成内容的标题、段落、图片、表格等要素的具体例子。
