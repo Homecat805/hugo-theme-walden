@@ -43,6 +43,7 @@ The Walden theme uses standard markdown syntax to edit content, and this article
 {{< figure src="https://img.zcool.cn/community/01acdb5c6bb11fa801213f266dfb69.jpg@1280w_1l_2o_100sh.jpg" title="Description of Image">}}
 
 ## Table
+<div class="container-table">
 
 |No   |YEAR |PORULATION|URBAN|RURAL| URBAN/TOTAL|
 | --- |---  | ---      | --- | --- | ---        |
@@ -54,6 +55,8 @@ The Walden theme uses standard markdown syntax to edit content, and this article
 |6 	|2010	|134091	|66978	|67113	|49.9 |
 |7 	|2011	|134916	|69927	|64989	|51.8 |
 |8 	|2012	|135922	|72175	|63747	|53.1 |
+
+</div>
 
 ## Code Block
 

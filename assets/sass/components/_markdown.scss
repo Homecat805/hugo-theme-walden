@@ -183,6 +183,7 @@
 
    // 表格
    table {
+      overflow: auto; 
       margin-top: 1rem;
       font-size: .875rem;
       color: $grey-700;
