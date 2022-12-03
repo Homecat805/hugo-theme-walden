@@ -4,7 +4,7 @@ date: 2022-11-23T11:44:14+08:00
 draft: false
 author: "家猫"
 categories: "数字笔记"
-tags: ["Hugo"]
+tags: ["Hugo-theme"]
 thumbnail: "images/thumbnail/hugo-theme-walden.jpg"
 headline: 
   enabled: true
