@@ -60,7 +60,7 @@ The configuration file for the site is `config.toml`。
 - Configure baseURL: URL of user's website on the internet.
 
     ```
-    baseURL = "https://github.com/homecat805/walden/"
+    baseURL = "https://github.com/homecat805/hugo-theme-walden-demo/"
     ```
 
 - Configure theme
@@ -100,7 +100,7 @@ The configuration file for the site is `config.toml`。
     [language]
         [languages.en]
             [languages.en.author]
-                name = "Homecata"
+                name = "Homecat"
                 description = "Author Description"
                 email = "13050082@qq.com"
                 avatar = "images/avatar/default.jpg"
