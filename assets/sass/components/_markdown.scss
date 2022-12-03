@@ -6,7 +6,7 @@
       font-weight: bold;
    }
    h1 { 
-      margin-top: 1.75rem;
+      margin-top: 2.5rem;
       font-size: 1.5rem;
       line-height: 1.5rem;
    }
@@ -25,9 +25,14 @@
       font-size: .875rem;
       line-height: 1rem;
    }
-   h5,h6 { 
+   h5 { 
       margin-top: 1rem;
       font-size: .75rem;
+      line-height: 1rem;
+   }
+   h6 { 
+      margin-top: 1rem;
+      font-size: .625rem;
       line-height: 1rem;
    }
    p {
@@ -58,12 +63,14 @@
 	blockquote {
 		border-left: .375rem solid $secondary-dark;
       background-color: $grey-100;
-      font-size: .875rem;
-		line-height: 1.25rem;
+
 		margin: 1rem 0 0 0;
       padding: 1rem 1.5rem;
       p {
          margin: 0;
+         font-size: 1 rem;
+         line-height: 1.75rem;
+         color: $grey-600;
       }
 	}
 
@@ -71,32 +78,34 @@
 	figure {
 		margin-top: 1rem;
 
+      border: 1px solid $grey-200;
+
       img {
          display: block;
+         margin-top: 0;
       }
 
      
 		figcaption {
 
          font-family: $font-family-serif;
-         margin-top: 1px;
          padding: .5rem;
          font-size: .875rem;
          line-height: 1.5rem;
          color: $grey-600;
 
-         border-left: .375rem solid $secondary-dark;
+
          background-color: $grey-100;
           
 
 		}
 	}
 
-    img {
+   img {
         width: 100%;
         max-width: 100%;
         margin-top: 1rem;
-    }
+   }
 
     // 格式化文本和代码
     pre,code {
@@ -105,7 +114,8 @@
     }
 
     code {
-        color: $pink;
+        color: $grey-800;
+        background-color: $grey-200;
     }
 
     pre {
@@ -117,6 +127,7 @@
         overflow: auto;
         code {
             color: $grey-600;
+            background-color: $grey-100;
         }
     }
 
@@ -125,13 +136,17 @@
 		margin-top: 3rem;
 		border-top: 1px solid $grey-200;
 		ol {
-			font-size: .875rem;
+         font-size: .875rem;
          padding-left: 2rem;
          padding-right: 1rem;
 		}
 		hr {
 			display: none;
 		}
+      p {
+         font-size: .875rem;
+         line-height: 1.5rem;
+      }
 	}
 
    // 列表
@@ -162,22 +177,24 @@
    }
 
    mark {
-      background-color:$secondary-dark;
-      color: $white;
+      background-color: $white;
+      color: $pink;
    }
 
    // 表格
    table {
       margin-top: 1rem;
       font-size: .875rem;
+      color: $grey-700;
       tr {}
       th {
          background-color: $secondary;
          padding: .5rem .75rem;
          text-align: center;
+         color: $grey-800;
       }
       td {
-         background-color: $grey-200;
+         background-color: $grey-100;
          padding: .25rem .5rem;
          text-align: center;
       }
