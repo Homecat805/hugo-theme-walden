@@ -20,7 +20,7 @@ headline:
 
 Walden 是一个结构简单、容易使用的 Hugo 主题，适用于个人网站。
 
-- 多语言模式：主题默认使用英语和中文两种语言，也可以通过配置只使用一种但或两种以上的语言。
+- 多语言模式：主题默认使用英语和中文两种语言，也可以通过配置只使用一种或两种以上的语言。
 - 自适应设计：主题针对不同尺寸的屏幕，作了合理的布局和设计。
 - 主页头条：主题在首页增加了头条的功能，将最重要的发布以最直接的方法展示给访问者。
 - 略缩图：主题提供了略缩图功能，图文并茂，页面简洁不单调。
@@ -74,7 +74,7 @@ git submodule update --remote --merge
 - 配置基本网址：用户网站空间的地址。
 
     ```
-    baseURL = "https://github.com/homecat805/walden/"
+    baseURL = "https://github.com/homecat805/hugo-theme-walden-demo/"
     ```
 
 - 配置主题
@@ -114,7 +114,7 @@ git submodule update --remote --merge
     [language]
         [languages.en]
             [languages.en.author]
-                name = "Homecata"
+                name = "Homecat"
                 description = "Author Description"
                 email = "13050082@qq.com"
                 avatar = "images/avatar/default.jpg"
