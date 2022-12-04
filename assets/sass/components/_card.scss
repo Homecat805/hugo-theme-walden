@@ -84,13 +84,14 @@
         max-width: 100%;
     }
     p {
-        text-align: center;
+        text-align: left;
         font-size: .875rem;
+        line-height: 1.5rem;
         color: $grey-600;
         margin-top: .5rem;
         i {
             font-size: 1rem;
-            margin-right: .5rem;
+            margin: 0 .5rem 0 .25rem;
         }
     }
 }
