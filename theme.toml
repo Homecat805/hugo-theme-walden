@@ -7,7 +7,7 @@ description = "Walden is a simple-structured, easy-to-use Hugo theme for persona
 homepage = "https://github.com/homecat805/hugo-theme-walden"
 
 # If you have a running demo of the theme.
-demosite = "https://github.com/homecat805/hugo-theme-walden-demo/"
+demosite = "https://genway.com.cn/hugo-theme-walden-demo/"
 
 tags = ["blog", "personal"]
 features = ["responsive", "multilingual", "thumbnail","headline"]
@@ -21,7 +21,7 @@ features = ["responsive", "multilingual", "thumbnail","headline"]
 # If the theme has a single author
 [author]
     name = "Homecat"
-    homepage = "https://homecat805.github.io"
+    homepage = "https://genway.com.cn/"
 
 # If porting an existing theme
 # [original]
