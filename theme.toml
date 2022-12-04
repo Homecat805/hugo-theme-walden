@@ -1,18 +1,30 @@
-name = "hugo-theme-test"
+name = "Walden"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
-min_version = "0.41.0"
+licenselink = "https://github.com/homecat805/hugo-theme-walden/blob/main/LICENSE"
+description = "Walden is a simple-structured, easy-to-use Hugo theme for personal websites."
 
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/homecat805/hugo-theme-walden"
+
+# If you have a running demo of the theme.
+demosite = " https://genway.com.cn/hugo-theme-walden-demo/"
+
+tags = ["blog", "personal"]
+features = ["responsive", "multilingual", "thumbnail","headline"]
+
+# If the theme has multiple authors
+# authors = [
+#   {name = "Name of author", homepage = "Website of author"},
+#   {name = "Name of author", homepage = "Website of author"}
+# ]
+
+# If the theme has a single author
 [author]
-  name = ""
-  homepage = ""
+    name = "Homecat"
+    homepage = "https://genway.com.cn"
 
 # If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+# [original]
+#    author = "Name of original author"
+#    homepage = "His/Her website"
+#    repo = "Link to source code of original theme"

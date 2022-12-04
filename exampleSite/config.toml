@@ -75,3 +75,9 @@ paginate = 12
 
     [markup.highlight]
         style = "monokailight"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.107.0"
+    max = ""
