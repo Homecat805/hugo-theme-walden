@@ -416,15 +416,21 @@ body {
   font-size: .875rem;
   padding: .75rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
+  flex-direction: column; }
+  .content-nav div {
+    margin: .25rem 0; }
   .content-nav a {
     text-decoration: none;
     color: #8cb65f;
     transition: all 1s; }
     .content-nav a:hover {
       color: #779b51; }
+
+@media (min-width: 992px) {
+  .content-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; } }
 
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
   color: #495057;

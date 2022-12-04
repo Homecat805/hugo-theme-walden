@@ -41,9 +41,12 @@
     font-size: .875rem;
     padding: .75rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    div {
+        margin: .25rem 0;
+    };
+
 
     a {
         text-decoration: none;
@@ -54,4 +57,14 @@
         }
     }
     
+}
+
+@media (min-width: $lg) {
+
+    .content-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }
