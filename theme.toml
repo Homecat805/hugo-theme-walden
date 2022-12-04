@@ -21,7 +21,7 @@ features = ["responsive", "multilingual", "thumbnail","headline"]
 # If the theme has a single author
 [author]
     name = "Homecat"
-    homepage = "https://genway.com.cn"
+    homepage = "https://homecat805.github.io"
 
 # If porting an existing theme
 # [original]
