@@ -79,5 +79,4 @@ paginate = 12
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.107.0"
-    max = ""
+    min = "0.101.0"
