@@ -80,3 +80,4 @@ paginate = 12
   [module.hugoVersion]
     extended = true
     min = "0.101.0"
+    max = "0.107.0"
