@@ -16,7 +16,7 @@ paginate = 10
 # 站主信息
 [author]
     name = "Homecat"
-    avatar = "/images/avatar.jpg"
+    avatar = "images/avatar.jpg"
     description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
     email = "13050082@qq.com"
 
@@ -37,7 +37,7 @@ paginate = 10
 [params]
     discription = "Description"
     keywords = "Keywords"
-    headlineimage = "/images/headline/default.jpg"
+    headlineimage = "images/headline/default.jpg"
 
 # 用于渲染的参数
 [markup]
