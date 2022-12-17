@@ -1,26 +1,20 @@
-{{ define "base-necker" }}
-<div id="necker">
-    {{- partial "home/headline.html" . -}}
-</div>
-{{ end }}
+{{ define "stager" }}
 
+{{- partial "common/headline.html" . -}}
 
-{{ define "base-stager" }}
-<div id="stager">
+<div class="container-fluid flex-1">
+    <div class="container">
 
-    <div class="container-fluid bg-grey-100">
-        <div class="container">
-            <div class="stager py-5">
-                <main>
-                    {{- partial "home/home-main.html" . -}}
-                </main>
-                <div class="holder"></div>
-                <aside>
-                    {{- partial "home/home-aside.html" . -}}
-                </aside>
-            </div>
+        <div class="stager">
+            <main>
+                {{- partial "home/homelist.html" . -}}
+            </main>
+            <aside class="mt-2">
+                {{- partial "home/about.html" . -}}
+            </aside>
         </div>
+
     </div>
-    
 </div>
+
 {{ end }}

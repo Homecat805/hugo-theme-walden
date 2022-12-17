@@ -1,30 +1,31 @@
-@import "variables/color";
 @import "variables/breakpoint";
+@import "variables/color";
 @import "variables/font";
 @import "variables/size";
 
 @import "basic/init";
 
 @import "utilities/container";
+@import "utilities/flex";
 @import "utilities/background";
-@import "utilities/active";
-@import "utilities/padding";
+@import "utilities/border";
+@import "utilities/margin";
 
 @import "layouts/baseof";
-@import "layouts/header";
 @import "layouts/stager";
-@import "layouts/footer";
 
-@import "components/logo";
-@import "components/menu";
-@import "components/copyright";
-
-@import "components/headline";
 @import "components/breadcrumb";
+@import "components/headline";
 @import "components/item";
 @import "components/pagination";
-@import "components/card";
 @import "components/content";
 @import "components/markdown";
-@import "components/figure";
+@import "components/shortcode";
+@import "components/card";
 @import "components/totoc";
+@import "components/about";
+
+// @media (min-width: $sm) {}
+// @media (min-width: $md) {}
+// @media (min-width: $lg) {}
+// @media (min-width: $xl) {}

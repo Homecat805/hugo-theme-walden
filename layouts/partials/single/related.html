@@ -1,0 +1,15 @@
+<div class="container-aside">
+    {{ $related := .Site.RegularPages.Related . | first 15 }}
+    {{ with $related }}
+    <section class="card">
+        <div class="card-title">RELATED</div>
+        <div class="normal">
+            <ul>
+                {{ range . }}
+                <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </section>
+    {{ end }}
+</div>

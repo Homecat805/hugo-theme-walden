@@ -1,110 +1,85 @@
-.item {
+.list-container {
 
-    display: flex;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid $grey-200;
+    background-color: $white;
+    padding: .75rem .5rem;
 
-    .item-thumbnail {
+    .item-container {
+        padding: .75rem .5rem;
 
-        display: none;
+        .item {
 
-        width: 120px;
-        height: 120px;
-        margin-right: 1rem;
+            border-bottom: 1px solid $grey-200 ;
+            padding-bottom: 1.25rem;
 
-        img {
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-
-    .item-text {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-
-
-    
-        .title {
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-            font-weight: bold;
-            color: $grey-700;
-            margin-bottom: .5rem;
-        }
-
-        .brief {
-            flex: 1;
-
-            color: $grey-700;
-            font-size: .875rem;
-            line-height: 1.5rem;
-            text-align: justify;
-
-        }
-
-        .meta {
-            padding: .5rem 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-            justify-content: space-between;
-
-            .data {
-                color: $grey-500;
-                font-size: .875rem;
+            .item-thumbnail {
+                display: none;
             }
+            
+            .item-text {
+                width: 100%;
 
-            a {
-                font-size: .875rem;
-                color: $primary-dark;
-                text-decoration: none;
-                margin: 0 .5rem 0 0;
-                transition: all 1s;
-                &:hover {
-                    color: $primary;
+                .title {
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    color: $item-title-color;
+                }
+                .brief {
+                    font-size: .875rem;
+                    line-height: 1.5rem;
+                    color: $item-summary-color;
+                    margin: .5rem 0;
+                }
+                .meta {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    font-size: .875rem;
+                    color: $item-meta-color;
+                }
+
+                a {
+                    display: block;
+                    margin-right: .5rem;
+                    color: $item-read-color;
+                    transition: all 1s;
+                    &:hover {
+                        color: $item-read-hover-color;
+                    }
+                }
+        
+            }
+        }
+
+        &:last-child {
+            .item {
+                border-bottom: 0 solid $grey-200 ;
+                padding-bottom: 0;
+            }
+        }
+
+    }
+}
+
+@media (min-width: $sm) {
+    .list-container {
+        padding: .75rem .75rem;
+        .item-container {
+            padding: .75rem .75rem;
+            .item {
+                display: flex;
+                flex-direction: row;
+                .item-thumbnail {
+                    display: block;
+                    margin-right: 1.25rem;
+                    img {
+                        width: 180px;
+                    }
                 }
             }
         }
     }
 }
-.container-item {
-    padding: .5rem;
-    &:last-child {
-        .item {
-            padding-bottom: 0;
-            border-bottom: 0 solid $grey-200;
-        }
-    }
-}
 
-@media (min-width: $sm) {
-    .item {
-        .item-thumbnail {
-            display: block;
-        }
-    }
-}
 
-@media (min-width: $md) {
-    .item {
-        .item-thumbnail {
-            display: none;
-        }
-    }
-}
-
-@media (min-width: $lg) {
-    .item {
-        padding-bottom: 1.5rem;
-        .item-thumbnail {
-            display: block;
-        }
-    }
-}
-
-@media (min-width: $xl) {
-    .container-item {
-        padding: .75rem;
-    }
-}

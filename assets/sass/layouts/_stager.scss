@@ -3,29 +3,39 @@
     flex-direction: column;
     main {
         overflow: auto;
+
+
     }
-    aside {}
+    aside {
+
+    }
 }
 
-@media (min-width: $md) {
 
+@media (min-width: $md) {
     .stager {
         flex-direction: row;
+        align-items: stretch;
+
         main {
             flex: 1;
         }
+
         aside {
-            width: 300px;
+            width: 33.33%;
+            min-width: $stage-aside-min-width;
+            max-width: $stage-aside-max-width;
         }
+
     }
 }
 
-@media (min-width: $xxl) {
-
+@media (min-width: $xl) {
     .stager {
+
         aside {
-            width: 320px;
+            max-width: $stage-aside-max-width + 50px;
         }
+
     }
 }
-

@@ -1,23 +1,16 @@
-.bg-white {
-    background-color: $white;
-}
-
-.bg-grey-100 {
-    background-color: $grey-100;
-}
-
-.bg-grey-200 {
-    background-color: $grey-200;
-}
-
-.bg-primary-dark {
-    background-color: $primary-dark;
-}
-
-.bg-primary {
-    background-color: $primary;
+.bg-header {
+    background-color: $header-background-color;
 } 
 
-.bg-primary-light {
-    background-color: $primary-light;
+.bg-footer {
+    background-color: $footer-background-color;
+} 
+
+.bg-necker {
+    background-color: $necker-background-color;
 }
+
+.bg-stager {
+    background-color: $stager-background-color;
+}
+

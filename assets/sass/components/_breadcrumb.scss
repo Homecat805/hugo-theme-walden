@@ -1,28 +1,25 @@
 .breadcrumb {
-   list-style: none;
-   margin: 0;
-   padding: .5rem .75rem;
-   color: $grey-600;
-   font-size: .875rem;
-   line-height: 1.5rem;
-   .breadcrumb-item {
-      display: inline;
-      &+.breadcrumb-item:before {
-         content: "/";
-         margin: 0 .75rem;
-         font-size: .75rem;
-      }
-   }
-}
+    list-style: none;
+    margin: 0;
+    padding: .375rem .5rem;
+    color: $breadcrumb-text-color;
+    font-size: .875rem;
 
-@media (min-width: $lg) {
+    .breadcrumb-item {
+       display: inline;
+       &+.breadcrumb-item:before {
+          content: "/";
+          margin: 0 .75rem;
+          font-size: .75rem;
+       }
+    }
+ }
 
+ @media (min-width: $md) {
    .breadcrumb {
-
-      padding: .75rem .75rem;
-
+      padding: .5rem .5rem;
    }
-
 }
+ 
 
-
+ 

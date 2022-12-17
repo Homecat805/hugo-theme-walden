@@ -6,21 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- For SEO -->
-<meta name="descriptison" content="Description for site">
-<meta name="keywords" content="Keywords for site">
+<meta name="descriptison" content="{{.Site.Params.descriptison}}">
+<meta name="keywords" content="{{.Site.Params.keywords}}">
 
 <!-- Title -->
-{{ $title := ( .Title ) }}
-{{ $siteTitle := ( .Site.Title ) }}
-<title>{{ $title }} ｜ {{ $siteTitle }}</title>
+<title>{{ .Title }} ｜ {{ .Site.Title }}</title>
 
 <!-- Favicon & icons -->
-{{ with .Site.Params.favicon }}
-<link href="{{ . | relURL }}" rel="icon">
-{{ else }}
 <link href="{{ "favicon.png" | relURL }}" rel="icon">
-{{ end }}
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
 <!-- Local CSS from SASS-->

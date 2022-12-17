@@ -1,7 +1,7 @@
 // 主色调
-$primary-light: #f3f7f5 !default;
+$primary-light: #a5ebc8 !default;
 $primary:       #8cb65f !default;
-$primary-dark:  #779b51 !default;
+$primary-dark:  #59832c !default;
 
 // 副色调
 $secondary-light:  #f3c563 !default;
@@ -9,7 +9,7 @@ $secondary:        #fbb929 !default;
 $secondary-dark:   #f4a802 !default;
 
 // 灰度
-$white:    #fff !default;
+$white:    #ffffff !default;
 $grey-100: #f8f9fa !default;
 $grey-200: #e9ecef !default;
 $grey-300: #dee2e6 !default;
@@ -19,7 +19,7 @@ $grey-600: #6c757d !default;
 $grey-700: #495057 !default;
 $grey-800: #343a40 !default;
 $grey-900: #212529 !default;
-$black:    #000 !default;
+$black:    #000000 !default;
 
 // 辅助色
 $blue:    #0d6efd !default;
@@ -32,3 +32,41 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+
+
+$header-background-color: $white;
+$header-text-color: $grey-600;
+$header-text-hover-color: $grey-800;
+
+$title-text-color: $primary-dark;
+
+$necker-background-color: $grey-100;
+
+$headline-text-color: $grey-200;
+$headline-text-hover-color: $white;
+
+$stager-background-color: $grey-100;
+
+$breadcrumb-text-color: $grey-600;
+
+$footer-background-color: $grey-800;
+$footer-text-color: $grey-300;
+$footer-text-hover-color: $white;
+
+$pagination-background-color: $white;
+$pagination-background-hover-color: $primary;
+$pagination-text-color: $grey-600;
+$pagination-text-hover-color: $white;
+
+$item-title-color: $grey-700;
+$item-summary-color: $grey-600;
+$item-meta-color:$grey-500;
+$item-read-color: $primary-dark;
+$item-read-hover-color: $secondary-dark;
+
+$content-background-color: $white;
+$content-title-text-color: $grey-700;
+$content-meta-text-color: $grey-600;
+$content-link-text-color: $primary-dark;
+$content-link-text-hover-color: $secondary-dark;
+

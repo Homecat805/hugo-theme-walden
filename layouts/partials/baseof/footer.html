@@ -1,23 +1,7 @@
-<div class="footer">
-    <div class="container-fluid bg-primary-dark">
-        <div class="container">
-
-            <div class="copyright">
-                <div class="container-fluid">
-                    <div class="container">         
-                    {{ if (eq .Site.Language.LanguageName "English") }}
-                        <span>Copyright</span>
-                        <span>©{{ now.Format "2006" }}</span>
-                        <span>{{.Site.Author.name}}</span>
-                    {{ else }}
-                        <span>©{{ now.Format "2006" }}</span>
-                        <span>{{.Site.Author.name}}</span>
-                        <span>版权所有</span>
-                    {{ end }}
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<div class="container-fluid bg-footer">
+    <div class="container">
+        <footer id="footer">
+            <p>© {{ now.Format "2006" }} {{.Site.Author.name}} - All Rights Reserved</p>
+        </footer>
     </div>
 </div>

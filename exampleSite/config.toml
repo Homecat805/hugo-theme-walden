@@ -1,83 +1,56 @@
-baseURL = "https://genway.com.cn/hugo-theme-walden-demo/"
+# 生成网站根目录的地址
+baseURL = "http://example.org/"
 
+# 主题
 theme = "hugo-theme-walden"
 
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+# 网站使用中文简体
+languageCode = "zh-Hans"
 
-paginate = 12
+# 网站标题
+title = "Homecat"
 
+# 列表分页基数
+paginate = 10
+
+# 站主信息
+[author]
+    name = "Homecat"
+    avatar = "/images/avatar.jpg"
+    description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
+    email = "13050082@qq.com"
+
+# 主菜单
+[menus]
+    [[menus.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 10
+    [[menus.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog/"
+        weight = 20
+
+# 自定义参数
 [params]
-    multilingual = true
-    favicon = "favicon.png"
+    discription = "Description"
+    keywords = "Keywords"
+    headlineimage = "/images/headline/default.jpg"
 
-[language]
-
-    [languages.en]
-        title = "Walden"
-        languageName = "English"
-        languageCode = "en-US"
-        weight = 1
-
-        [languages.en.author]
-            name = "Author Name"
-            description = "Author Description"
-            email = "author@domain.com"
-            avatar = "images/avatar/default.jpg"
-
-        [languages.en.menus]
-
-            [[languages.en.menus.main]]
-                identifier = "home"
-                name = "Home"
-                url = "/en/"
-                weight = 10
-
-            [[languages.en.menus.main]]
-                identifier = "blog"
-                name = "Blog"
-                url = "/en/blog/"
-                weight = 20
-
-    [languages.zh]
-        title = "瓦尔登湖"
-        languageName = "中文"
-        languageCode = "zh-CN"
-        weight = 2
-
-        [languages.zh.author]
-            name = "作者名称"
-            description = "作者介绍"
-            email = "author@domain.com"
-            avatar = "images/avatar/default.jpg"
-
-        [languages.zh.menus]
-
-            [[languages.zh.menus.main]]
-                identifier = "home"
-                name = "首页"
-                url = "/zh/"
-                weight = 10
-            
-            [[languages.zh.menus.main]]
-                identifier = "blog"
-                name = "博客"
-                url = "/zh/blog/"
-                weight = 20
-
+# 用于渲染的参数
 [markup]
     defaultMarkdownHandler = "goldmark"
-
     [markup.goldmark]
-
         [markup.goldmark.renderer]
             unsafe = true
-
     [markup.highlight]
         style = "monokailight"
 
+
+# 用于 Hugo theme 发布的参数
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.101.0"
-    max = "0.107.0"

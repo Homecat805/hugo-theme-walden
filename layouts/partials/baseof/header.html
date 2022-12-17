@@ -1,30 +1,15 @@
-<div id="header">
-    <div class="container-fluid bg-white">
-        <div class="container">
-            <div class="header">
-
-                <div class="logo">{{.Site.Title}}</div>
-                
-                <nav class="menu">
-                    {{ $current := . }}
-                    {{ range .Site.Menus.main }}
-                        {{ $active := eq .Name $current.Title }}
-                        {{ $active = or $active ( eq .Identifier $current.Section ) }}
-                        <a class="menu-item {{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-                    {{ end }}
-            
-                    {{ if (eq .Site.Params.multilingual true) }}
-                    {{- $p := .Site.Language.LanguageName -}}
-                        {{ range $.Site.Home.AllTranslations }}
-                            {{- if ne .Language.LanguageName $p }}
-                            <a href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-        
-                </nav>
-
-            </div>
+<div class="container-fluid bg-header bb-1">
+    <div class="container">
+        <div id="header">
+            <p class="title">{{.Site.Title}}</p>
+            <nav class="menu">
+                {{ $current := . }}
+                {{ range .Site.Menus.main }}
+                    {{ $active := eq .Name $current.Title }}
+                    {{ $active = or $active ( eq .Identifier $current.Section ) }}
+                    <a class="menu-item {{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
         </div>
     </div>
 </div>

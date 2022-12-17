@@ -1,3 +1,5 @@
+# Hugo Theme Walden
+
 After reading <i><b>Walden</b></i>, a collection of essays by American writer Henry David Thoreau, I was deeply influenced by his love of nature and simple living. So, I wrote this concise and clear theme for my personal website and named it Walden.
 
 <!--more-->
@@ -6,7 +8,6 @@ After reading <i><b>Walden</b></i>, a collection of essays by American writer He
 
 Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 
-- Multilingual support
 - Responsive design
 - Headline on homepage
 - Thumbnail for post
@@ -60,7 +61,7 @@ The configuration file for the site is `config.toml`。
 - Configure baseURL: URL of user's website on the internet.
 
     ```
-    baseURL = "https://github.com/homecat805/hugo-theme-walden-demo/"
+    baseURL = "https://github.com/homecat805/walden/"
     ```
 
 - Configure theme
@@ -68,49 +69,6 @@ The configuration file for the site is `config.toml`。
     ```
     theme = "hugo-theme-walden"
     ```
-
-- Configure language mode: Multilingual mode is used by default, and single-language mode is configured as `false`.
-
-    ```
-    [params]
-        multilingual = true  
-    ```
-
-- Configuration language: English is used by default, and `"zh"` for using Chinese.
-
-    ```
-    defaultContentLanguage = "en"
-    ```
-
-- Configure site name: According to Hugo documentation, websites in different languages are side by side, use different name for dependent site.
-
-    ```
-    [language]
-        [languages.en]
-            title = "Walden"
-            ...
-        [languages.zh]
-            title = "瓦尔登湖"
-            ...
-    ```
-
-- Configure author information
-
-    ```
-    [language]
-        [languages.en]
-            [languages.en.author]
-                name = "Homecat"
-                description = "Author Description"
-                email = "13050082@qq.com"
-                avatar = "images/avatar/default.jpg"
-        [languages.zh]
-            [languages.zh.author]
-                name = "家猫"
-                description = "作者介绍"
-                email = "13050082@qq.com"
-                avatar = "images/avatar/default.jpg"
- 
 
 ## Preview
 
@@ -131,3 +89,4 @@ hugo
 ## License
 
 Walden is licensed under the MIT，Check the  [LICENSE](https://github.com/homecat805/hugo-theme-walden/blob/master/LICENSE) file for details.
+

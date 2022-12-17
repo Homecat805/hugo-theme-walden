@@ -5,10 +5,10 @@ draft: false
 author: ""
 categories: ""
 tags: [""]
-thumbnail: "images/thumbnail/{{ .Name }}.jpg"
+thumbnail: ""
 headline: 
-  enabled: false
-  image: "images/headline/{{ .Name }}.jpg"
+    enabled: true
+    background: ""
 ---
 
 Summary here.
@@ -16,3 +16,4 @@ Summary here.
 <!--more-->
 
 Content here.
+

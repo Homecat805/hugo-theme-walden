@@ -10,7 +10,7 @@ homepage = "https://github.com/homecat805/hugo-theme-walden"
 demosite = "https://genway.com.cn/hugo-theme-walden-demo/"
 
 tags = ["blog", "personal"]
-features = ["responsive", "multilingual", "thumbnail","headline"]
+features = ["responsive", "thumbnail","headline"]
 
 # If the theme has multiple authors
 # authors = [

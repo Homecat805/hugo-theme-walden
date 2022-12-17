@@ -1,0 +1,19 @@
+{{ range first 1 (where .Site.RegularPages "Params.headline.enabled" true) }}
+{{ with .Params.headline.background }}
+<div id="headline" class="container-fluid bg-necker" style="background: url({{ . | relURL}}) center center no-repeat;">
+{{ else }}
+<div id="headline" class="container-fluid bg-necker" style="background: url({{ .Site.Params.headlineimage | relURL}}) center center no-repeat;">
+{{ end }}
+    <div class="container">
+    
+        <div class="headline">
+
+            <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+            <p>{{ .Summary }}</p>
+
+        </div>
+
+    </div>
+</div>
+{{ end }}
+

@@ -1,0 +1,118 @@
+.myfigure {
+
+    .active {
+        display: block;
+    }
+    .inactive {
+        display: none;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+        figcaption {
+            padding: 0 .5rem;
+            text-align: right;
+            font-family: $serif;
+            font-size: .75rem;
+            line-height: 1.75rem;
+            color: $grey-600;
+
+        }
+    }
+
+
+
+    .figure-modal-container {
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: rgba($black, 1);
+
+        .figure-modal {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .btn-container {
+                width: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+
+                padding: .75rem;
+
+                a {
+                    margin-right: 1rem;
+                    font-size: 1.25rem;
+                    color: $white;
+                    &:last-child {
+                        margin-right: 2.5rem;
+                    }
+                }
+
+            }
+
+            .img-container {
+
+                img {
+                    width: auto;
+                    max-width: 100vw;
+                    height: auto;
+                    max-height: 100vh;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+
+}
+
+.info {
+    border-top: .375rem solid $blue;
+    background-color: rgba($blue,.15);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    color: $grey-800;
+    line-height: 1.5rem;
+}
+
+.warning {
+    border-top: .375rem solid $orange;
+    background-color: rgba($orange,.15);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    color: $grey-800;
+    line-height: 1.5rem;
+}
+
+.danger {
+    border-top: .375rem solid $red;
+    background-color: rgba($red,.15);
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    color: $grey-800;
+    line-height: 1.5rem;
+}
+
+
+

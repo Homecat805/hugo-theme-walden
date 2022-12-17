@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{.Site.LanguageCode}}">
 
-    {{- partial "baseof/head.html" . -}}
+    <header>
+        {{- partial "baseof/head.html" . -}}
+    </header>
     
-    <body class="bg-grey-100">
-
+    <body>
         {{- partial "baseof/header.html" . -}}
-
-        {{- block "base-necker" . }}{{- end }}
-
-        {{- block "base-stager" . }}{{- end }}
-
+        {{- block "stager" . }}{{- end }}
         {{- partial "baseof/footer.html" . -}}
-
+        <!-- Javascripts -->
         {{- partial "baseof/foot.html" . -}}
-
     </body>
     
 </html>
