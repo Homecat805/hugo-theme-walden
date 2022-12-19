@@ -13,25 +13,69 @@ title = "Homecat"
 # 列表分页基数
 paginate = 10
 
-# 站主信息
-[author]
-    name = "Homecat"
-    avatar = "images/avatar.jpg"
-    description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
-    email = "13050082@qq.com"
+# 多语言设置
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 
-# 主菜单
-[menus]
-    [[menus.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = 10
-    [[menus.main]]
-        identifier = "blog"
-        name = "Blog"
-        url = "/blog/"
-        weight = 20
+[language]
+
+    [languages.en]
+        title = "Walden"
+        languageName = "English"
+        languageCode = "en-US"
+        weight = 1
+
+        
+        # 站主信息
+        [languages.en.author]
+            name = "Homecat"
+            avatar = "images/avatar.jpg"
+            description = "I am Homecat living in Shanghai."
+            email = "13050082@qq.com"
+        
+        # 主菜单
+        [languages.en.menus]
+
+            [[languages.en.menus.main]]
+                identifier = "home"
+                name = "Home"
+                url = "/"
+                weight = 10
+
+            [[languages.en.menus.main]]
+                identifier = "blog"
+                name = "Blog"
+                url = "/blog/"
+                weight = 20
+            
+
+    [languages.zh]
+        title = "瓦尔登湖"
+        languageName = "中文"
+        languageCode = "zh-CN"
+        weight = 2
+
+        # 站主信息
+        [languages.zh.author]
+            name = "家猫"
+            avatar = "images/avatar.jpg"
+            description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
+            email = "13050082@qq.com"
+
+        # 主菜单
+        [languages.zh.menus]
+
+            [[languages.zh.menus.main]]
+                identifier = "home"
+                name = "首页"
+                url = "/zh/"
+                weight = 10
+            
+            [[languages.zh.menus.main]]
+                identifier = "blog"
+                name = "博客"
+                url = "/zh/blog/"
+                weight = 20
 
 # 自定义参数
 [params]

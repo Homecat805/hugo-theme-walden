@@ -1,0 +1,23 @@
+[categories]
+other = "CATEGORY"
+
+[tags]
+other = "TAG"
+
+[related]
+other = "RELATED POSTS"
+
+[toc]
+other = "TABLE OF CONTENT"
+
+[about]
+other = "ABOUT"
+
+[prev]
+other = "PREV"
+
+[next]
+other = "NEXT"
+
+[read]
+other = "Reading"

@@ -9,6 +9,15 @@
                     {{ $active = or $active ( eq .Identifier $current.Section ) }}
                     <a class="menu-item {{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
                 {{ end }}
+
+                {{ if .Site.IsMultiLingual }}
+                {{- $p := .Site.Language.LanguageName -}}
+                    {{ range $.Site.Home.AllTranslations }}
+                        {{- if ne .Language.LanguageName $p }}
+                        <a class="menu-item" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
             </nav>
         </div>
     </div>

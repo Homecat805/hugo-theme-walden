@@ -3,7 +3,7 @@ title: "Hugo Theme Walden"
 date: 2022-12-17T19:03:08+08:00
 draft: false
 author: "Homecat"
-categories: "数字笔记"
+categories: "IT Notes"
 tags: ["Hugo"]
 thumbnail: ""
 headline: 

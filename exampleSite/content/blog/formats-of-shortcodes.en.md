@@ -3,7 +3,7 @@ title: "Formats of Shortcodes"
 date: 2022-12-15T10:10:34+08:00
 draft: false
 author: "Homecat"
-categories: "数字笔记"
+categories: "IT Notes"
 tags: ["Hugo","Shortcode"]
 thumbnail: ""
 headline: 
