@@ -4,10 +4,10 @@
     {{ with $.Get "title" }}
     {{ $title := . }}
 
-    <div class="myfigure">
+    <div class="myfigure modal">
 
         <figure>
-            <a class="figure-toggle">
+            <a class="modal-toggle">
                 <img src='{{ $src | absURL }}' />
             </a>
             <figcaption>
@@ -16,16 +16,17 @@
         </figure>
 
 
-        <div class="figure-modal-container inactive">
+        <div class="modal-container inactive">
 
-            <div class="figure-modal">
-                <div class="btn-container">
+            <div class="modal-content">
+
+                <div class="modal-button">
                     <a class="btn-exitfullscreen inactive"><i class="bi bi-fullscreen-exit"></i></a>
                     <a class="btn-fullscreen"><i class="bi bi-fullscreen"></i></a>
                     <a class="btn-exit"><i class="bi bi-x-lg"></i></a>
                 </div>
 
-                <div class="img-container">
+                <div class="modal-stage">
                     <img src="{{ $src | absURL }}" alt="{{ $title }}">
                 </div>
                 

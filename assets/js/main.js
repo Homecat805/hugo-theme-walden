@@ -30,17 +30,17 @@ $(document).ready(function(){
 
   // Figure-toggle for enter Modal status
 
-  $(".figure-toggle").click(function () {
-    $(this).parents(".myfigure").children(".figure-modal-container").removeClass("inactive").addClass("active");
+  $(".modal-toggle").click(function () {
+    $(this).parents(".modal").children(".modal-container").removeClass("inactive").addClass("active");
   });
   
   // Modal button for Next and Prev
   
   $(".btn-exit").click(function () {
     exitFullscreen();
-    $(this).parents(".figure-modal-container").removeClass("active").addClass("inactive");
-    $(this).parents(".btn-container").children(".btn-fullscreen").show();
-    $(this).parents(".btn-container").children(".btn-exitfullscreen").hide();
+    $(this).parents(".modal-container").removeClass("active").addClass("inactive");
+    $(this).parents(".modal-button").children(".btn-fullscreen").show();
+    $(this).parents(".modal-button").children(".btn-exitfullscreen").hide();
   });
 
   // Modal button for launchFullscreen
@@ -48,7 +48,7 @@ $(document).ready(function(){
   $(".btn-fullscreen").click(function () {
     launchFullscreen(document.documentElement);
     $(this).hide();
-    $(this).parents(".btn-container").children(".btn-exitfullscreen").show();
+    $(this).parents(".modal-button").children(".btn-exitfullscreen").show();
   });
 
   // Modal button for exitFullscreen
@@ -56,7 +56,7 @@ $(document).ready(function(){
   $(".btn-exitfullscreen").click(function () {
     exitFullscreen();
     $(this).hide();
-    $(this).parents(".btn-container").children(".btn-fullscreen").show();
+    $(this).parents(".modal-button").children(".btn-fullscreen").show();
   });
   
 });
