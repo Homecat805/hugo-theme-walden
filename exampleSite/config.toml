@@ -44,36 +44,32 @@ defaultContentLanguageInSubdir = false
             
 
     [languages.zh]
-        title = "瓦尔登湖"# 网站使用中文简体
-        languageCode = "zh-Hans"
+        title = "瓦尔登湖"
+        languageName = "中文"
+        languageCode = "zh-Hans-CN"
+        weight = 2
 
-        # 网站标题
-        title = "Homecat"
-                languageName = "中文"
-                languageCode = "zh-Hans-CN"
-                weight = 2
+        # 站主信息
+        [languages.zh.author]
+            name = "家猫"
+            avatar = "images/avatar.jpg"
+            description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
+            email = "13050082@qq.com"
 
-                # 站主信息
-                [languages.zh.author]
-                    name = "家猫"
-                    avatar = "images/avatar.jpg"
-                    description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
-                    email = "13050082@qq.com"
+        # 主菜单
+        [languages.zh.menus]
 
-                # 主菜单
-                [languages.zh.menus]
-
-                    [[languages.zh.menus.main]]
-                        identifier = "home"
-                        name = "首页"
-                        url = "/zh/"
-                        weight = 10
-                    
-                    [[languages.zh.menus.main]]
-                        identifier = "blog"
-                        name = "博客"
-                        url = "/zh/blog/"
-                        weight = 20
+            [[languages.zh.menus.main]]
+                identifier = "home"
+                name = "首页"
+                url = "/zh/"
+                weight = 10
+            
+            [[languages.zh.menus.main]]
+                identifier = "blog"
+                name = "博客"
+                url = "/zh/blog/"
+                weight = 20
 
 # 自定义参数
 [params]
