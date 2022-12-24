@@ -4,12 +4,6 @@ baseURL = "http://example.org/"
 # 主题
 theme = "hugo-theme-walden"
 
-# 网站使用中文简体
-languageCode = "zh-Hans"
-
-# 网站标题
-title = "Homecat"
-
 # 列表分页基数
 paginate = 10
 
@@ -50,32 +44,36 @@ defaultContentLanguageInSubdir = false
             
 
     [languages.zh]
-        title = "瓦尔登湖"
-        languageName = "中文"
-        languageCode = "zh-CN"
-        weight = 2
+        title = "瓦尔登湖"# 网站使用中文简体
+        languageCode = "zh-Hans"
 
-        # 站主信息
-        [languages.zh.author]
-            name = "家猫"
-            avatar = "images/avatar.jpg"
-            description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
-            email = "13050082@qq.com"
+        # 网站标题
+        title = "Homecat"
+                languageName = "中文"
+                languageCode = "zh-Hans-CN"
+                weight = 2
 
-        # 主菜单
-        [languages.zh.menus]
+                # 站主信息
+                [languages.zh.author]
+                    name = "家猫"
+                    avatar = "images/avatar.jpg"
+                    description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
+                    email = "13050082@qq.com"
 
-            [[languages.zh.menus.main]]
-                identifier = "home"
-                name = "首页"
-                url = "/zh/"
-                weight = 10
-            
-            [[languages.zh.menus.main]]
-                identifier = "blog"
-                name = "博客"
-                url = "/zh/blog/"
-                weight = 20
+                # 主菜单
+                [languages.zh.menus]
+
+                    [[languages.zh.menus.main]]
+                        identifier = "home"
+                        name = "首页"
+                        url = "/zh/"
+                        weight = 10
+                    
+                    [[languages.zh.menus.main]]
+                        identifier = "blog"
+                        name = "博客"
+                        url = "/zh/blog/"
+                        weight = 20
 
 # 自定义参数
 [params]
@@ -98,3 +96,4 @@ defaultContentLanguageInSubdir = false
   [module.hugoVersion]
     extended = true
     min = "0.101.0"
+
