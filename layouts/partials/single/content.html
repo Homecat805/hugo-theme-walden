@@ -37,7 +37,7 @@
         {{ with .PrevInSection }}
         <div>
             <a href="{{.Permalink}}">
-                <span>PREV：</span>
+                <span>{{i18n "prev"}}：</span>
                 <span>{{.Title}}</span>
             </a>
         </div>
@@ -45,7 +45,7 @@
         {{ with .NextInSection }}
         <div>
             <a href="{{.Permalink}}">
-                <span>NEXT：</span>
+                <span>{{i18n "next"}}：</span>
                 <span>{{.Title}}</span>
             </a>
         </div>
