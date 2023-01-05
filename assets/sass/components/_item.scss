@@ -17,6 +17,9 @@
             
             .item-text {
                 width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
 
                 .title {
                     font-size: 1.25rem;
@@ -28,6 +31,7 @@
                     line-height: 1.5rem;
                     color: $item-summary-color;
                     margin: .5rem 0;
+                    flex: 1;
                 }
                 .meta {
                     display: flex;
