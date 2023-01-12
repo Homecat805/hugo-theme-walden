@@ -5,7 +5,7 @@ draft: false
 author: "Homecat"
 categories: "IT Notes"
 tags: ["Hugo","Shortcode"]
-thumbnail: ""
+thumbnail: "images/thumbnail/hugo.jpg"
 headline: 
     enabled: true
     background: ""
@@ -15,58 +15,77 @@ Shortcodes are simple snippets inside content files calling built-in or custom t
 
 <!--more-->
 
-## Myfigure
+## Hint
 
-```
-{{</* myfigure src="https://img.zcool.cn/community/01acdb5c6bb11fa801213f266dfb69.jpg@1280w_1l_2o_100sh.jpg" title="HUAWEI P50pro By Homecat" */>}}
-```
+### Info
 
-{{< myfigure src="https://img.zcool.cn/community/01acdb5c6bb11fa801213f266dfb69.jpg@1280w_1l_2o_100sh.jpg" title="HUAWEI P50pro By Homecat" >}}
-
-## Myhint
-
-```
-{{</* myhint info */>}}
+``` golang
+{{</* hint info */>}}
 **Info**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{</* /myhint */>}}
+{{</* /hint */>}}
 ```
 
-{{< myhint info >}}
+{{< hint info >}}
 **Info**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{< /myhint >}}
+{{< /hint >}}
 
+### Warning
 
-```
-{{</* myhint warning */>}}
+``` golang
+{{</* hint warning */>}}
 **Warning**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{</* /myhint */>}}
+{{</* /hint */>}}
 ```
 
-{{< myhint warning >}}
+{{< hint warning >}}
 **Warning**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{< /myhint >}}
+{{< /hint >}}
 
-```
-{{</* myhint danger */>}}
+### Danger
+
+``` golang
+{{</* hint danger */>}}
 **Danger**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{</* /myhint */>}}
+{{</* /hint */>}}
 ```
 
-{{< myhint danger >}}
+{{< hint danger >}}
 **Danger**  
 Nam, omnis sum am facea corem alique molestrunt et eos nus, sin conecerem erum fuga.<br>
 Temped molorro ratiae volorro te reribus dolorer sperchibus unda ici um faceata tiustia prat.
-{{< /myhint >}}
+{{< /hint >}}
 
+### Screen
 
+```
+{{</* hint screen */>}}
+~$ hugo version </br>
+hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=snap:0.109.0
+{{</* /hint */>}}
+```
 
+{{< hint screen >}}
+~$ hugo version </br>
+hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=snap:0.109.0
+{{< /hint >}}
+
+## Insert
+
+``` golang
+{{</* insert 
+    src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" 
+    title="©Homecat" 
+*/>}}
+```
+
+{{< insert src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" title="©Homecat" >}}

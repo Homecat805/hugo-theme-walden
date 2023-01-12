@@ -1,20 +1,16 @@
+{{ define "necker" }}
+    {{- partial "common/headline.html" . -}}
+{{ end }}
+
 {{ define "stager" }}
-
-{{- partial "common/headline.html" . -}}
-
-<div class="container-fluid flex-1">
+<div id="stager" class="home">
     <div class="container">
-
-        <div class="stager">
-            <main>
-                {{- partial "home/homelist.html" . -}}
-            </main>
-            <aside class="mt-2">
-                {{- partial "home/about.html" . -}}
-            </aside>
-        </div>
-
+        <main>
+            {{- partial "home/home-list.html" . -}}
+        </main>
+        <aside>
+            {{- partial "home/site-info.html" . -}}
+        </aside>
     </div>
 </div>
-
 {{ end }}

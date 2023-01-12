@@ -4,8 +4,8 @@ date: 2022-12-14T20:18:32+08:00
 draft: false
 author: "Homecat"
 categories: "IT Notes"
-tags: ["Hugo","Markdown"]
-thumbnail: ""
+tags: ["Hugo","Markdown","Walden"]
+thumbnail: "images/thumbnail/hugo.jpg"
 headline: 
     enabled: true
     background: ""

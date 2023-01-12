@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{.Site.LanguageCode}}">
-
-    <header>
-        {{- partial "baseof/head.html" . -}}
-    </header>
-    
+    {{- partial "baseof/head.html" . -}}
     <body>
         {{- partial "baseof/header.html" . -}}
+        {{- block "necker" . }}{{- end }}
         {{- block "stager" . }}{{- end }}
         {{- partial "baseof/footer.html" . -}}
         <!-- Javascripts -->
         {{- partial "baseof/foot.html" . -}}
     </body>
-    
 </html>

@@ -4,11 +4,12 @@
 
     // 链接
     a {
-        color: $blue;
+        color: $primary;
         text-decoration: none;
         transition: all 1s;
         &:hover {
             text-decoration: underline;
+            color: $primary;
         }
     }
 
@@ -28,7 +29,7 @@
 
     // 引用
     blockquote {
-        border-left: .375rem solid $secondary-dark;
+        border-left: .375rem solid $secondary;
         background-color: $grey-100;
         margin: 1rem 0 0;
         padding: 1rem 1.5rem;
@@ -38,6 +39,7 @@
         }
     }
 
+    // 图片
     img {
         display: block;
         width: 100%;
@@ -45,26 +47,49 @@
         margin-top: 1rem;
     }
 
+    figure {
+        margin: 0;
+        padding: 0;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+        figcaption {
+            padding: .5rem 0;
+            text-align: right;
+            font-family: $serif;
+            font-size: .875rem;
+            line-height: 1rem;
+            color: $grey-600;
+        }
+    }
+
     // 格式化文本和代码
     code {
         font-family: $monospace;
-        color: $grey-700;
-        background-color: $grey-200;
-        padding: 0 .5rem;
+        font-size: .875rem;
+        color: $grey-100;
+        background-color: $grey-800;
+        padding: .125rem .375rem;
     }
 
     pre {
-        * { 
-            padding: 0; 
+        * {
+            padding: 0;
         }
-
-        font-family: $monospace;
         font-size: .875rem;
         padding: 1rem;
-        background-color: $grey-200;
+        background-color: $grey-100;
         border: 1px solid $grey-400;
         line-height: 1.5rem;
         overflow: auto;
+
+        code {
+            color: inherit;
+            background-color: inherit;
+        }
+
     }
 
     // 脚注
@@ -125,8 +150,9 @@
 
     // 标记
     mark {
-        background-color: $white;
-        color: $secondary-dark;
+        background-color: rgba($secondary, $alpha: .75) ;
+        color: $grey-800;
+        padding: 0 .25rem;
     }
 
     // 表格
@@ -153,10 +179,6 @@
 
 @media (min-width: $lg) {
     .markdown {
-        // 引用
-        blockquote {
-            margin: 1rem 1.5rem 0;
-        }
 
         // 列表
         ol,ul {

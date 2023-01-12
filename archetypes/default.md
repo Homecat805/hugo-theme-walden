@@ -3,17 +3,17 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 author: ""
+data: ""
 categories: ""
 tags: [""]
 thumbnail: ""
 headline: 
-    enabled: true
+    enabled: false
     background: ""
 ---
 
-Summary here.
+Summary.
 
-<!--more-->
+<!--more--> 
 
-Content here.
-
+Content.

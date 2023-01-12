@@ -1,6 +1,4 @@
 #headline {
-    height: $headline-height;
-
     .container {
         height: $headline-height;
         display: flex;
@@ -16,24 +14,27 @@
     padding: 1rem 2rem;
     text-align: center;
     border-radius: 1rem;
-    color: $headline-text-color;
+    color: $grey-300;
 
 
     a {
         display: block;
         margin-top: 1rem;
         font-size: 1.5rem;
-        color: $headline-text-color;
-        transition: all 1s;
+        color: $grey-300;
+        transition: all .75s;
         &:hover {
-            color: $headline-text-hover-color;
+            color: $white;
         }
     }
 
     p {
-        text-align: left;
-
         margin-top: 1rem;
+
+        font-size: 1rem;
+        line-height: 1.5rem;
+        
+        text-align: left;
     }
 
 }

@@ -24,7 +24,7 @@ defaultContentLanguageInSubdir = false
         [languages.en.author]
             name = "Homecat"
             avatar = "images/avatar.jpg"
-            description = "I am Homecat living in Shanghai."
+            description = "Hi, I am Homecat, a Shaoxing native living in Shanghai. Reading, hiking, and coding are my hobbies. I have set my blog on Github to record interesting things and share with my friends."
             email = "13050082@qq.com"
         
         # 主菜单
@@ -53,7 +53,7 @@ defaultContentLanguageInSubdir = false
         [languages.zh.author]
             name = "家猫"
             avatar = "images/avatar.jpg"
-            description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于Github，录趣事以享亲友。"
+            description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于 Github，录趣事以享亲友。"
             email = "13050082@qq.com"
 
         # 主菜单
@@ -73,18 +73,46 @@ defaultContentLanguageInSubdir = false
 
 # 自定义参数
 [params]
-    discription = "Description"
+    description = "Description"
     keywords = "Keywords"
-    headlineimage = "images/headline/default.jpg"
+    # 默认图片
+    headline = "images/headline/default.jpg"
+    thumbnail = "images/thumbnail/default.jpg"
 
 # 用于渲染的参数
 [markup]
     defaultMarkdownHandler = "goldmark"
     [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.parser]
+            attribute = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
         [markup.goldmark.renderer]
+            hardWraps = false
             unsafe = true
+            xHTML = false
     [markup.highlight]
-        style = "monokailight"
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = true
+        lineNumbersInTable = false
+        noClasses = true
+        style = "monokai"
+        tabWidth = 4
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
 
 
 # 用于 Hugo theme 发布的参数
@@ -92,4 +120,6 @@ defaultContentLanguageInSubdir = false
   [module.hugoVersion]
     extended = true
     min = "0.101.0"
+
+
 

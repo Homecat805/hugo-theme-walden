@@ -1,51 +1,39 @@
 .about {
-    display: flex;
-    flex-flow: wrap;
+    margin: 0 auto;
+
+    max-width: 400px;
+
     .avatar {
-        width: 100%;
-        background-color: $grey-100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         img {
             width: 100px;
-            border-radius: 20px;
-            border: .25rem solid $white;
-            display: block;
-            margin: 25px auto;
+            border-radius: 50px;
         }
+    }
+    .name {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $grey-800;
     }
     .description {
-        width: 100%;
-        background-color: $grey-500;
-        color: $white;
-        h3 {
-            padding: 1.5rem 1.5rem 0;
-        }
-
-        p {
-            font-size: .875rem;
-            padding: .5rem 1.5rem 1rem;
-        }
-
+        margin: 1rem 1rem 0;
+        color: $grey-700;
+        text-align: justify;
+        font-size: .875rem;
+        line-height: 1.5rem;
     }
-}
 
-@media (min-width: $sm) {
-    .about {
-        .avatar {
-            width: 40%;
-        }
-        .description {
-            width: 60%;
-        }
+    .email {
+        margin: .5rem 1rem 0;
+        color: $grey-700;
+        text-align: center;
+        font-size: .875rem;
+        line-height: 1.5rem;
     }
-}
 
-@media (min-width: $md) {
-    .about {
-        .avatar {
-            width: 100%;
-        }
-        .description {
-            width: 100%;
-        }
-    }
 }

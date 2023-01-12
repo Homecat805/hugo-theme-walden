@@ -1,7 +1,7 @@
 .card {
 
     border: 1px solid $grey-400;
-    padding: 1rem;
+    padding: .75rem;
     position: relative;
 
     .card-title {
@@ -21,11 +21,14 @@
 
     a {
         text-decoration: none;
+        border-radius: .25rem;
         font-size: .875rem;
+        line-height: 1.25rem;
         color: $primary;
         transition: all 1s;
         &:hover {
-            color: $primary-dark;
+            background-color: $secondary;
+            color: $grey-700;
         }
     }
 }
@@ -33,7 +36,7 @@
 .dumbbell {
 
     a {
-        margin-bottom: .5rem;
+        padding: .25rem;
         
         display: flex;
         flex-direction: row;
@@ -59,6 +62,7 @@
         display: inline-block;
         line-height: 1.5rem;
         margin-right: .5rem;
+        padding: 0 .25rem;
     }
 }
 
@@ -98,5 +102,4 @@
 
 
   
-
 

@@ -6,25 +6,27 @@
 @import "basic/init";
 
 @import "utilities/container";
-@import "utilities/flex";
-@import "utilities/background";
-@import "utilities/border";
-@import "utilities/margin";
 
 @import "layouts/baseof";
-@import "layouts/stager";
 
-@import "components/breadcrumb";
+@import "components/logo";
+@import "components/menu";
+@import "components/copyright";
 @import "components/headline";
 @import "components/item";
-@import "components/pagination";
+@import "components/breadcrumb";
+@import "components/card";
+@import "components/about";
 @import "components/content";
 @import "components/markdown";
-@import "components/shortcode";
-@import "components/card";
 @import "components/totoc";
-@import "components/about";
-@import "components/modal";
+
+
+@import "components/shortcodes/hint";
+@import "components/shortcodes/insert";
+
+
+
 
 // @media (min-width: $sm) {}
 // @media (min-width: $md) {}

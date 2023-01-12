@@ -1,22 +1,20 @@
-{{ define "stager" }}
-
-<div class="container-fluid flex-1 bg-stager">
-    <div class="container">
-        <div class="breadcrumb">
-            {{- partial "common/breadcrumb.html" . -}}
-        </div>
-        <div class="stager">
-            <main>
-                {{- partial "list/listlist.html" . -}}
-                {{- partial "list/pagination.html" . -}}
-            </main>
-            <aside>
-                {{- partial "list/category.html" . -}}
-                {{- partial "list/tag.html" . -}}
-            </aside>
-        </div>
-
-    </div>
+{{ define "necker" }}
+<div class="container">
+    {{- partial "common/breadcrumb.html" . -}}
 </div>
 
+{{ end }}
+
+{{ define "stager" }}
+<div id="stager">
+    <div class="container">
+        <main>
+            {{- partial "blog/list-list.html" . -}}
+        </main>
+        <aside>
+            {{- partial "blog/list-category.html" . -}}
+            {{- partial "blog/list-tag.html" . -}}
+        </aside>
+    </div>
+</div>
 {{ end }}

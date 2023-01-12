@@ -1,18 +1,19 @@
-.content-container {
-    background-color: $content-background-color;
-    padding: 1rem;
-    margin-bottom: 2rem;
+.content {
+    padding: 0 0 1rem 0;
+    margin-bottom: 3rem;
+
+
 
     .content-header {
         text-align: center;
         margin-bottom: 2rem;
         border-bottom: 1px solid $grey-200;
         .title {
-            color: $content-title-text-color;
-            margin-top: 2rem;
+            color: $grey-700;
+            margin-top: 1rem;
         }
         .meta {
-            color: $content-meta-text-color;
+            color: $grey-600;
             margin: 1rem 0 2rem;
             font-size: .875rem;
         }
@@ -34,43 +35,41 @@
     .content-nav {
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         a {
             display: block;
-            margin: 0 .5rem;
+            margin: .25rem .5rem;
         }
     }
 
     a {
-        color: $content-link-text-color;
+        color: $primary;
         transition: all 1s;
         &:hover {
-            color: $content-link-text-hover-color;
+            color: $secondary;
         }
     }
-
 }
 
+
+
+
+
+
 @media (min-width: $sm) {
-    .content-container {
+    .content {
         .content-nav {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
         }
-
     }
 }
 
 @media (min-width: $lg) {
-    .content-container {
-        padding: 2rem;
-    }
-}
+    .content {
+        padding: 1rem;
 
-@media (min-width: $xl) {
-    .content-container {
-        padding: 2.5rem;
     }
 }

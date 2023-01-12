@@ -1,85 +1,87 @@
-.list-container {
+.item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $grey-200;
 
-    background-color: $white;
-    padding: .75rem .5rem;
+    display: flex;
+    flex-direction: row;
 
-    .item-container {
-        padding: .75rem .5rem;
+    .item-thumbnail {
+        display: none;
+        margin-right: 1rem;
+        img {
+            width: 180px;
+        }
+    }
+    
+    .item-text {
 
-        .item {
+        .title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            color: $grey-700;
+        }
+        .brief {
+            font-size: .875rem;
+            line-height: 1.5rem;
+            color: $grey-700;
+            margin: .5rem 0;
+        }
+        .meta {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
 
-            border-bottom: 1px solid $grey-200 ;
-            padding-bottom: 1.25rem;
-
-            .item-thumbnail {
-                display: none;
-            }
-            
-            .item-text {
-                width: 100%;
-
-                .title {
-                    font-size: 1.25rem;
-                    line-height: 1.5rem;
-                    color: $item-title-color;
-                }
-                .brief {
-                    font-size: .875rem;
-                    line-height: 1.5rem;
-                    color: $item-summary-color;
-                    margin: .5rem 0;
-                }
-                .meta {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-        
-                    font-size: .875rem;
-                    color: $item-meta-color;
-                }
-
-                a {
-                    display: block;
-                    margin-right: .5rem;
-                    color: $item-read-color;
-                    transition: all 1s;
-                    &:hover {
-                        color: $item-read-hover-color;
-                    }
-                }
-        
-            }
+            font-size: .875rem;
+            color: $grey-600;
         }
 
-        &:last-child {
-            .item {
-                border-bottom: 0 solid $grey-200 ;
-                padding-bottom: 0;
+        a {
+            display: block;
+            margin-right: .5rem;
+            padding: .375rem .5rem;
+            border-radius: .25rem;
+            background-color: $primary;
+            color: $white;
+            transition: all .75s;
+            &:hover {
+                background-color: $secondary;
+                color: $grey-700
             }
         }
 
     }
+    &:last-child {
+        border-bottom: 0;
+    }
+
 }
 
 @media (min-width: $sm) {
-    .list-container {
-        padding: .75rem .75rem;
-        .item-container {
-            padding: .75rem .75rem;
-            .item {
-                display: flex;
-                flex-direction: row;
-                .item-thumbnail {
-                    display: block;
-                    margin-right: 1.25rem;
-                    img {
-                        width: 180px;
-                    }
-                }
-            }
+    .item {
+        .item-thumbnail {
+            display: block;
         }
     }
 }
+
+@media (min-width: $md) {
+    .item {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: $lg) {
+    .item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+
 
 

@@ -1,8 +1,8 @@
 .breadcrumb {
     list-style: none;
     margin: 0;
-    padding: .375rem .5rem;
-    color: $breadcrumb-text-color;
+    padding: 1rem;
+    color: $grey-600;
     font-size: .875rem;
 
     .breadcrumb-item {
@@ -15,11 +15,9 @@
     }
  }
 
- @media (min-width: $md) {
+ @media (min-width: $lg) {
    .breadcrumb {
-      padding: .5rem .5rem;
+      padding: 1rem 0;
    }
 }
- 
-
  

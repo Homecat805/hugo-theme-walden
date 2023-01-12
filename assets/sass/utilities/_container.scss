@@ -9,20 +9,44 @@
     margin: 0 auto;
 }
 
-.container-aside {
-    padding: 0 1.5rem 2.5rem;
+.items-container {
+    background-color: $white;
+    padding: 1.5rem 1rem 0;
 }
 
-@media (min-width: $lg) {
-    .container-aside {
-        padding: 0 0 2.5rem 2rem;
+.card-container {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+@media (min-width: $sm) {
+    .items-container {
+        padding: 1.5rem 1.5rem 0;
     }
 }
 
+@media (min-width: $md) {
+    .items-container {
+        margin-left: 1rem;
+        padding: 1rem 1rem 0;
+    }
 
+    .card-container {
+        padding: 0 1.5rem 1.5rem;
 
-@media (min-width: $xl) {
-    .container {
-        max-width: $container-max-width + 200px;
+        
+    }
+}
+
+@media (min-width: $lg) {
+    .items-container {
+        margin-left: 0;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    .card-container {
+        padding: 0 0 1.5rem 1.5rem;
+        
     }
 }
