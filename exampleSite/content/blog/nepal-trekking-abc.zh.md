@@ -21,7 +21,7 @@ headline:
 
 尼泊尔是徒步者的天堂，有许多经典的徒步线路，著名的有 ACT（Annapurna Circle Trail）、EBC（Everest Base Camp）、ABC(Annapurna Base Camp) 和 Poon Hill 环线，其中 ACT 和 EBC 都是超过10天的长线，ABC 和 Poon Hill 环线相对比较短，ABC 要7天，Poon Hill 要5天。15天年休假，除去往返，还有10天的日子，考虑到 Poon Hill 和 ABC 的线路部分重合，于是制定了Poon Hill + ABC 共9天的计划。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6b4.jpg" title="回望来时的路。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6b4.jpg" title="回望来时的路。 ©Homecat" >}}
 
 2019年11月19日，从 Nayapul 出发，经过 Ulleri、Ghorepani、Chuile、Sinuwa 和 Deurali，第六天到达 ABC，累计上升6274米，累计下降3113米，总行程约65.3公里；后三天原路折返，到了 Chomrong，改道转向 Jhinu Danda，而 Jhinu Danda 就是出了名的温泉村。
 
@@ -34,11 +34,11 @@ headline:
 短短的六天，从春暖花开走到数九寒天。
 
 Ulleri，一个被鲜花装点的村庄，房前屋后，种满了花花草草。一种不知名的树，开着粉红色的花，远远望去，犹如春天桃花盛开，分外妖娆；Chomrong 那无以计数的层层叠叠的梯田，大如曲池，小似碎镜，依山势而弯曲，顺坡度而递进，收获的季节，美不胜收；Bamboo 成片的竹子围绕着村庄，这里的竹子并不粗壮，一丛一丛的，郁郁葱葱，微风吹来，沙沙作响，仿佛回到了梦中江南；过了 Deurali，就进入了高山流石滩了，多年旱生杂草，斑块状、簇状匍匐在地面，野火固然没有，春风也难以催生；过了雪线，寸草不生，冰雪覆盖着大地，茫茫一片。
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6dd.jpg" title="Bamboo：围绕着村子的成片竹子。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6dd.jpg" title="Bamboo：围绕着村子的成片竹子。 ©Homecat" >}}
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa69d.jpg" title="Chomrong：收获的季节。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa69d.jpg" title="Chomrong：收获的季节。 ©Homecat" >}}
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6eb.jpg" title="Deuralli：高山流石滩。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6eb.jpg" title="Deuralli：高山流石滩。 ©Homecat" >}}
 
 强烈的视觉冲击产生极大的震撼，然而眼睛的天堂却是躯体的地狱。
 
@@ -50,7 +50,7 @@ Poon Hill 环线海拔也不高，不算太辛苦；转到 ABC 后，连续不�
 
 路面早已消失，只得一边找路、辨别方向，一边摸索着向前，一步一步地向着终点靠近；雪太大了，回头望走过地地方，留下的足迹很快被雪覆盖，再也不见了。我绝没有想到最后两个小时的路程，尽然如此艰苦。天地不应，除了坚持别无选择，就在精疲力竭的时候，希望出现了，ABC 的营地标志突然出现眼前，压抑的情绪顷刻宣泄了出来，大声地呼喊：”到……啦……！”ABC 到了，太幸福了，幸福得想哭。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa62f.jpg" title="到达ABC，屈指已有六天没刮胡子了。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa62f.jpg" title="到达ABC，屈指已有六天没刮胡子了。 ©Homecat" >}}
 
 当我回到自己的城市，回想起安纳普尔娜九日，最刻骨铭心的就是这到达 ABC 前的三公里。
 
@@ -70,11 +70,11 @@ Poon Hill 环线海拔也不高，不算太辛苦；转到 ABC 后，连续不�
 
 这时，安纳普尔娜南峰的山脊线上有了一层浅红色的光晕，像薄薄的纱盖在山峰上；过了会儿，左侧出现了三角形的光亮处，特别地亮，山峰右侧的延伸段，也被照亮了；太阳渐渐升起，光亮的区域越来越大，红色的纱也渐渐被染成了金色；随后，整个山峰都被阳光普照，金色慢慢地淡去……
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa61e.jpg" title="安纳普尔娜南峰的日照金山。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa61e.jpg" title="安纳普尔娜南峰的日照金山。 ©Homecat" >}}
 
 或许是因为太近而真实，太阳照在同样的安纳普尔娜南峰，却不如布恩山看到的绚丽多彩，更有层次感，但毕竟都遇见了。幸运之神的眷顾，给ABC之行画上了一个圆满的句号，无论多么辛苦和劳累，在这一刻都得到了回报，一切都值。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa67e.jpg" title="从布恩山遥望安纳普尔娜南峰的日出。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa67e.jpg" title="从布恩山遥望安纳普尔娜南峰的日出。 ©Homecat" >}}
 
 ## Machhapuchhre
 
@@ -82,15 +82,15 @@ Poon Hill 环线海拔也不高，不算太辛苦；转到 ABC 后，连续不�
 
 Machhapuchhre 就是著名的鱼尾峰，因其形似鱼尾而得名。位于安纳普尔娜群峰的东面，有南北两峰尖，海拔分别为6993米和6997米。鱼尾峰是尼泊尔的象征，从博卡拉看鱼尾峰，峰体高大挺拔、鹤立鸡群，在现代测量技术诞生之前，一直被当作安纳布尔纳峰群的最高峰来崇拜，而且和云南的卡瓦格博、西藏普兰的冈仁波齐一样，是禁止攀登的神山。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa63f.jpg" title="蜷缩着的鱼尾峰大本营。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa654.jpg" title="近在咫尺的鱼尾峰。 ©Homecat" >}}
+
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa63f.jpg" title="蜷缩着的鱼尾峰大本营。 ©Homecat" >}}
 
 鱼尾峰的形成无疑源于大自然的鬼斧神工，它那极其独特的形状，在6000米以上的山峰中独一无二；就其独特性而言，能够与之可以媲美的，也只有瑞士采尔马特的马特洪峰（Matterhorn）了，然而，马特洪峰的海拔仅有4478米，其山体的规模、壮观的气势，远远低于鱼尾峰。
 
 刚到尼泊尔的时候，对鱼尾峰的印象并没这么深刻，只是一种若有若无隐隐约约的感觉；然而，从踏上路程的第一天起，每天都能仰望它、欣赏它、感受它，从陌生到熟悉，渐渐地喜欢上它。它就在那里，就像一个朋友知道我要去看它，每天到家门口，看看我走到了哪里，是不是快到了；而我，全是为它而去。
 
 有时犹如远处的少女披着半透的纱背对着你，慢慢地侧过肩，回过头来羞涩地看着你；有时又像天上的花船在云海里荡漾，时而上下起伏，时而左右摇曳，云不动，山在行；或者像披着长袍的公主，骑着马儿渐行渐远，不时地回望，依依不舍； 又如顽皮的孩子在捉迷藏，不时地从树丛里探出头来，生怕不被找到，显得机灵古怪；到了它的跟前抬头仰望，却如猛士高大威武、气势昂扬，不可侵犯。
-
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa654.jpg" title="近在咫尺的鱼尾峰。 ©Homecat" >}}
 
 总之，人在哪里，鱼尾峰就在哪里，因人而异，因时空而异。在尼泊尔，鱼尾峰就是一个神奇的存在。
 
@@ -100,7 +100,7 @@ Machhapuchhre 就是著名的鱼尾峰，因其形似鱼尾而得名。位于安
 
 在山区，沿途客栈的住宿条件都不是太好。房间小而拥挤，所谓单间，5平方左右，两个小床，中间一条窄窄的过道，放了背包，就没有再多的空间；或者一个大房间，多张床紧紧挨着，像大通铺，而且男女混住，好在都是和衣而睡，并不尴尬。我住过单间，也住过多人间，没房的时候就睡在餐厅，运气还算好，至少没有住过室外的帐篷。然而，客栈的伙食却是独具特色的。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6ca.jpg" title="挂在客栈屋檐的多肉植物。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6ca.jpg" title="挂在客栈屋檐的多肉植物。 ©Homecat" >}}
 
 餐厅不大，厨房更小。我觉得厨师很厉害，在小小的厨房里，可以做出各种食品，以满足不同的口味，而且像模像样的。有亚洲人喜欢的炒面和炒饭，通常也是我的选择；也有西式的披萨、汉堡和通心粉；当然，尼泊尔当地风格的食物必不可少，虽然山区食材单一，但做法和式样却丰富，Dal Bhat就是其中之一。
 
@@ -108,7 +108,7 @@ Machhapuchhre 就是著名的鱼尾峰，因其形似鱼尾而得名。位于安
 
 肉是稀罕的。起初，客栈里还可以吃到炒饭或者炒面里的鸡丝，尽管稀稀拉拉的，还算有鸡味道，过了 Sinuwa 就完全没有肉了。在安纳普尔娜的核心区域里是禁止食用肉类食品的。在 Bamboo，竖着一块牌子，上面的字迹依稀可辨，意思是如果吃肉的话，就会有灾难和事故发生；我不迷信，但还是在这块牌子下面，老老实实地把剩下的4根留着吃的肉肠吃完了。
 
-{{< insert src="https://pic.imgdb.cn/item/63bf6760be43e0d30e2e8d4a.jpg" title="禁止食肉告示牌。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63bf6760be43e0d30e2e8d4a.jpg" title="禁止食肉告示牌。 ©Homecat" >}}
 
 食宿的价格随着海拔的升高而升高，因为燃料和食物都是靠人力背上去的。向导或者背夫的食宿是免费的，客人在哪，他们也在哪；倘若客人不吃饭，那他们也就没得吃，想吃饭就只能自己掏钱，不过隐约觉得，他们付的钱，要比客人少。当然不花钱的，也就是简单的Dal Bhat，向导的会比背夫的少许好一些，配菜会多一些。
 
@@ -120,7 +120,7 @@ Machhapuchhre 就是著名的鱼尾峰，因其形似鱼尾而得名。位于安
 
 温泉还在下面，大概1公里多些的路程，200米的落差。穿行在森林里，郁郁葱葱的，半路上就听到了流水的声音，而且越来越响，越来越清晰，半个小时过后就到了池子。一个面目慈祥的尼泊尔老人验了票，微笑着对我说了些话，可是没有听明白。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa684.jpg" title="面目慈祥的尼泊尔老人。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa684.jpg" title="面目慈祥的尼泊尔老人。 ©Homecat" >}}
 
 山谷里，有一条河流过，水声就来自这里。安纳普尔娜山脉融化的雪水，汇集到这里的流量已经很大了，奔腾着、激荡着……河边，有一块狭小的空地，空地和河流之间砌起了一堵半身高的墙，既是安全防范，又可摆放物件；墙的里面有两个差不多大小的长方形的池子，池子的旁边有几间屋子，是更衣室；靠近河下游的最远处，有冲淋区，没有笼头和水阀，两根管子直接从泥土里穿出来，一刻不停地泻着热水，取之不尽，很豪。
 
@@ -136,7 +136,7 @@ Machhapuchhre 就是著名的鱼尾峰，因其形似鱼尾而得名。位于安
 
 Sandip Pathak 是我的向导，一个的典型尼泊尔男孩，今年18岁。1米7几的个子，看上去块头不大，但也不瘦弱的；皮肤黝黑、高高鼻梁下深凹着一双炯炯有神眼睛，透着青春的气息。
 
-{{< insert src="https://pic.imgdb.cn/item/63bf6763be43e0d30e2e929f.jpg" title="Sandip Pathak。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63bf6763be43e0d30e2e929f.jpg" title="Sandip Pathak。 ©Homecat" >}}
 
 他出生于一个普通的家庭。全家里五口人，父亲是驾驶员，为当地法务部门开公车；母亲无业在家，照顾全家的日常生活；还有两个弟弟，具体的年龄记不清了，一个大概比他小2岁，另一个10岁左右。本来住在乡村，2015年4月25日尼泊尔地震，他们家的房子倒了，于是全家迁移到加德满都租房子住。家庭的主要收入是父亲的工资，每月约25000卢比，折合人民币1500稍多些，仅够全家过日子的。
 
@@ -154,11 +154,11 @@ Sandip Pathak 是我的向导，一个的典型尼泊尔男孩，今年18岁。1
 
 在山野，没有人头攒动，却被形形色色的美景包围：铺满白雪的山峰、平静湛蓝的湖水、飞流直下的瀑布、清澈奔腾的溪流。人们往往在兴奋之余，渐渐地麻木，无暇顾及。这时候，抬头看见远处几个小点，慢慢地移动着，渐渐地靠近，一声声亲切的Namaste顿时感动内心，让人温暖。
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa660.jpg" title="人与峡谷。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa660.jpg" title="人与峡谷。 ©Homecat" >}}
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6e5.jpg" title="向前向后都有同路人。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa6e5.jpg" title="Deurali 欢迎你。 ©Homecat" >}}
 
-{{< insert src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa671.jpg" title="安纳普尔娜南峰下徒步的人们。 ©Homecat" >}}
+{{< figure src="https://pic.imgdb.cn/item/63beb6b5be43e0d30e3aa671.jpg" title="安纳普尔娜南峰下徒步的人们。 ©Homecat" >}}
 
 徒步，碰到不同的人，不同年龄、不同肤色、不同文化；但又是相同的人，同样的行程、同样的话题、同样的心情。一个美国老人，第二次走ABC了，只是喜欢这里；两个退役多年的法国军人，本来到博卡拉骑行的，临时决定就上山了，保暖的衣服都没带足，喝酒取暖；一个奥地利女孩，说来就来了，每晚都做次日功课；有很多华人，有来自新加坡和马来西亚，也有来自大陆和台湾的，每每看到黄色的脸，亲切感油然而生；印象最深的是日本人和韩国人，常常是大队人马，一二十个的，排着一字长队，缓缓地行进；队伍中有年龄很大的老人，真心被他们的勇气和毅力折服。
 

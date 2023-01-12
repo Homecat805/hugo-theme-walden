@@ -79,13 +79,16 @@ hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended linux/amd64 Buil
 hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=snap:0.109.0
 {{< /hint >}}
 
-## Insert
 
-``` golang
-{{</* insert 
+## Figure
+
+```golang
+{{</* figure 
     src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" 
-    title="©Homecat" 
+    title="Description of image. ©Author" 
 */>}}
 ```
 
-{{< insert src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" title="©Homecat" >}}
+{{< figure src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" title="Description of image. ©Author" >}}
+
+
