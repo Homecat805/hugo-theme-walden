@@ -56,12 +56,16 @@
             max-width: 100%;
         }
         figcaption {
-            padding: .5rem 0;
-            text-align: right;
-            font-family: $serif;
-            font-size: .875rem;
-            line-height: 1rem;
-            color: $grey-600;
+            h4 {
+                margin: 0;
+                padding: .5rem 0;
+                text-align: right;
+                font-family: $serif;
+                font-size: .875rem;
+                font-weight: normal;
+                line-height: 1rem;
+                color: $grey-600;
+            }
         }
     }
 
