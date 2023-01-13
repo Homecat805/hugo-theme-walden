@@ -29,7 +29,7 @@ Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 
 Two ways to see the demo：
 
-- Visit [demo site](https://genway.com.cn/hugo-theme-walden-demo/).
+- Visit [author's site](https://genway.com.cn/).
 - View demo by clone repository from Github.
 
     ```
