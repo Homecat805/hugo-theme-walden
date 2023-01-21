@@ -26,40 +26,60 @@ function exitFullscreen() {
   }
 }
 
+// *************************************************************************************************
+// gallery buttons
+// *************************************************************************************************
+
+
 $(document).ready(function(){
 
-  // Figure-toggle for enter Modal status
 
-  $(".modal-toggle").click(function () {
-    $(this).parents(".modal").children(".modal-container").removeClass("inactive").addClass("active");
-  });
-  
-  // Modal button for Next and Prev
-  
-  $(".btn-exit").click(function () {
-    exitFullscreen();
-    $(this).parents(".modal-container").removeClass("active").addClass("inactive");
-    $(this).parents(".modal-button").children(".btn-fullscreen").show();
-    $(this).parents(".modal-button").children(".btn-exitfullscreen").hide();
-  });
-
-  // Modal button for launchFullscreen
-  
+  // button for launchFullscreen
   $(".btn-fullscreen").click(function () {
     launchFullscreen(document.documentElement);
     $(this).hide();
-    $(this).parents(".modal-button").children(".btn-exitfullscreen").show();
+    $(this).parents(".gallery-button").children(".btn-exitfullscreen").show();
   });
 
-  // Modal button for exitFullscreen
-
+  // button for exitFullscreen
   $(".btn-exitfullscreen").click(function () {
     exitFullscreen();
     $(this).hide();
-    $(this).parents(".modal-button").children(".btn-fullscreen").show();
+    $(this).parents(".gallery-button").children(".btn-fullscreen").show();
   });
-  
+
+  // button for right
+  $(".btn-right").click(function () {
+    $(".gallery-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
+    if ($(".gallery-stage").children(".temp").next().length >0){
+      $(".gallery-stage").children(".temp").next().fadeIn(500).addClass("active").removeClass("inactive");
+    } else {
+      $(".gallery-stage").children(".gallery-item").first().fadeIn(500).addClass("active").removeClass("inactive");
+    }
+    $(".gallery-stage").children(".temp").removeClass("temp");
+  });
+
+    // button for left
+    $(".btn-left").click(function () {
+      $(".gallery-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
+      if ($(".gallery-stage").children(".temp").prev().length >0){
+        $(".gallery-stage").children(".temp").prev().fadeIn(500).addClass("active").removeClass("inactive");
+      } else {
+        $(".gallery-stage").children(".gallery-item").last().fadeIn(500).addClass("active").removeClass("inactive");
+      }
+      $(".gallery-stage").children(".temp").removeClass("temp");
+    });
+
+    // button for item-infomation
+    $(".btn-text").click(function () {
+      $(".gallery-item").children(".inactive").fadeToggle(1000);
+    });
+
 });
+
+// *************************************************************************************************
+// button for go to table of content
+// *************************************************************************************************
 
 $(window).scroll(function(){
 

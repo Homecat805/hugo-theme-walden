@@ -9,12 +9,14 @@
     .item-thumbnail {
         display: none;
         margin-right: 1rem;
+        width: 180px;
         img {
-            width: 180px;
+            width: 100%;
         }
     }
     
     .item-text {
+        flex: 1;
 
         .title {
             font-weight: bold;

@@ -6,6 +6,7 @@
 @import "basic/init";
 
 @import "utilities/container";
+@import "utilities/border";
 
 @import "layouts/baseof";
 
@@ -20,6 +21,7 @@
 @import "components/content";
 @import "components/markdown";
 @import "components/totoc";
+@import "components/gallery";
 
 
 @import "components/shortcodes/hint";

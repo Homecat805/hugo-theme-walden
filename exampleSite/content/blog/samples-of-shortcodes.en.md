@@ -1,5 +1,5 @@
 ---
-title: "Formats of Shortcodes"
+title: "Samples of Shortcodes"
 date: 2022-12-15T10:10:34+08:00
 draft: false
 author: "Homecat"
@@ -81,6 +81,8 @@ hugo v0.109.0-47b12b83e636224e5e601813ff3e6790c191e371+extended linux/amd64 Buil
 
 
 ## Figure
+
+Figure is one of built-in Shortcodes of Hugo and an extension of the image syntax in Markdown, which does not provide a shorthand for the more semantic HTML5 figure element.
 
 ```golang
 {{</* figure 

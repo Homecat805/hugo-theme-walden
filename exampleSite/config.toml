@@ -1,5 +1,5 @@
 # 生成网站根目录的地址
-baseURL = "http://example.org/"
+baseURL = "https://genway.com.cn/"
 
 # 主题
 theme = "hugo-theme-walden"
@@ -41,6 +41,12 @@ defaultContentLanguageInSubdir = false
                 name = "Blog"
                 url = "/blog/"
                 weight = 20
+
+            [[languages.en.menus.main]]
+                identifier = "gallery"
+                name = "Gallery"
+                url = "/gallery/"
+                weight = 30
             
 
     [languages.zh]
@@ -70,6 +76,12 @@ defaultContentLanguageInSubdir = false
                 name = "博客"
                 url = "/zh/blog/"
                 weight = 20
+
+            [[languages.zh.menus.main]]
+                identifier = "gallery"
+                name = "图片"
+                url = "/zh/gallery/"
+                weight = 30
 
 # 自定义参数
 [params]

@@ -1,5 +1,5 @@
 ---
-title: "Formats of Markdown Elements"
+title: "Samples of Markdown Elements"
 date: 2022-12-14T20:18:32+08:00
 draft: false
 author: "Homecat"
