@@ -10,7 +10,7 @@
 
 .headline {
     background-color: rgba($black, .50);
-    width: 75%;
+    margin: 0 1rem;
     padding: 1rem 2rem;
     text-align: center;
     border-radius: 1rem;
@@ -35,6 +35,17 @@
         line-height: 1.5rem;
         
         text-align: left;
+    }
+
+}
+
+@media (min-width: $sm) {
+
+    .headline {
+        width: 80%; 
+        margin: 0;
+
+    
     }
 
 }
