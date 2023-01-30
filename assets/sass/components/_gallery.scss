@@ -46,7 +46,7 @@
 
         border-top: 1px solid $grey-600;
 
-        background-color: rgba($grey-800, 0.9);
+        background-color: rgba($grey-800, 0.5);
     }
     
     .button-top {
@@ -59,7 +59,7 @@
 
         border-bottom: 1px solid $grey-600;
 
-        background-color: rgba($grey-800, 0.9);
+        background-color: rgba($grey-800, 0.5);
     }
 
 
@@ -81,9 +81,9 @@
         .gallery-item {
 
             max-width: 100vw;
-            max-height: 85vh;
+            max-height: 100vh;
 
-            padding: 0 .5rem;
+            padding: .5rem;
 
             img {
                 display: block;
