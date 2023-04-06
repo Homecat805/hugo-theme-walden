@@ -10,6 +10,12 @@ a {
   cursor: pointer;
   text-decoration: none; }
 
+.active {
+  display: block; }
+
+.inactive {
+  display: none; }
+
 .container-fluid {
   width: 100%;
   overflow: auto; }
@@ -141,7 +147,7 @@ body {
 
 .headline {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 75%;
+  margin: 0 1rem;
   padding: 1rem 2rem;
   text-align: center;
   border-radius: 1rem;
@@ -159,6 +165,11 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: left; }
+
+@media (min-width: 600px) {
+  .headline {
+    width: 80%;
+    margin: 0; } }
 
 .item {
   margin-bottom: 1.5rem;
@@ -390,8 +401,6 @@ body {
     .markdown a:hover {
       text-decoration: underline;
       color: #59832c; }
-  .markdown h1 {
-    margin-top: 2rem; }
   .markdown h2 {
     margin-top: 2rem; }
   .markdown h3 {
@@ -528,95 +537,6 @@ body {
     #totoc a:hover {
       color: #fbb929; }
 
-.gallery {
-  background-color: #343a40; }
-  .gallery .active {
-    display: block; }
-  .gallery .inactive {
-    display: none; }
-  .gallery a {
-    padding: .75rem;
-    border-left: 1px solid #6c757d;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: #adb5bd;
-    transition: all 1s; }
-    .gallery a:hover {
-      color: #ffffff;
-      background-color: #212529; }
-  .gallery .gallery-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end; }
-  .gallery .button-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    border-top: 1px solid #6c757d;
-    background-color: rgba(52, 58, 64, 0.9); }
-  .gallery .button-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    border-bottom: 1px solid #6c757d;
-    background-color: rgba(52, 58, 64, 0.9); }
-  .gallery .gallery-stage {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .gallery .gallery-stage .gallery-item {
-      max-width: 100vw;
-      max-height: 85vh;
-      padding: 0 .5rem; }
-      .gallery .gallery-stage .gallery-item img {
-        display: block;
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        margin: 0 auto; }
-      .gallery .gallery-stage .gallery-item .item-info {
-        position: fixed;
-        bottom: 4rem;
-        right: 1rem;
-        width: 400px;
-        background-color: rgba(33, 37, 41, 0.9);
-        border-radius: .5rem;
-        padding: .875rem; }
-        .gallery .gallery-stage .gallery-item .item-info .title {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: .5rem;
-          color: #adb5bd; }
-          .gallery .gallery-stage .gallery-item .item-info .title span {
-            font-size: .875rem;
-            margin: .125rem; }
-        .gallery .gallery-stage .gallery-item .item-info p {
-          font-size: .875rem;
-          line-height: 1.5rem;
-          color: #adb5bd;
-          text-align: justify;
-          border-top: 1px solid #6c757d;
-          padding: .25rem 0; }
-          .gallery .gallery-stage .gallery-item .item-info p span {
-            font-size: .75rem;
-            margin: .25rem; }
-
 .info {
   border-left: .375rem solid blue;
   background-color: rgba(0, 0, 255, 0.15);
@@ -653,3 +573,99 @@ body {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: .875rem;
   line-height: 1.5rem; }
+
+figure figcaption {
+  text-align: right;
+  font-size: .875rem;
+  padding: .5rem 0; }
+
+.carousel .carousel-target {
+  background-color: #343a40;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh; }
+  .carousel .carousel-target a {
+    padding: .75rem;
+    border-left: 1px solid #6c757d;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #adb5bd;
+    transition: all 1s; }
+    .carousel .carousel-target a:hover {
+      color: #ffffff;
+      background-color: #212529; }
+  .carousel .carousel-target .btn-container-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #6c757d;
+    background-color: rgba(52, 58, 64, 0.5); }
+    .carousel .carousel-target .btn-container-top .btn-fullscreen-exit {
+      display: none; }
+  .carousel .carousel-target .btn-container-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #6c757d;
+    background-color: rgba(52, 58, 64, 0.5); }
+  .carousel .carousel-target .carousel-item .img-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .carousel .carousel-target .carousel-item .img-container img {
+      margin-top: 0;
+      width: 100%;
+      max-width: 100%;
+      display: block; }
+  .carousel .carousel-target .carousel-item .txt-container {
+    position: fixed;
+    bottom: 4rem;
+    left: 1rem;
+    right: 1rem; }
+    .carousel .carousel-target .carousel-item .txt-container .carousel-item-info {
+      background-color: rgba(33, 37, 41, 0.9);
+      border-radius: .5rem;
+      margin: 0 auto;
+      padding: .875rem;
+      width: 100%;
+      max-width: 600px; }
+      .carousel .carousel-target .carousel-item .txt-container .carousel-item-info .title-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+        color: #adb5bd; }
+        .carousel .carousel-target .carousel-item .txt-container .carousel-item-info .title-container .title {
+          font-size: 1.25rem; }
+        .carousel .carousel-target .carousel-item .txt-container .carousel-item-info .title-container span {
+          font-size: .875rem;
+          margin: .125rem; }
+      .carousel .carousel-target .carousel-item .txt-container .carousel-item-info p {
+        font-size: .875rem;
+        line-height: 1.5rem;
+        color: #adb5bd;
+        text-align: justify;
+        border-top: 1px solid #6c757d;
+        padding: .25rem 0; }
+        .carousel .carousel-target .carousel-item .txt-container .carousel-item-info p span {
+          font-size: .75rem;
+          margin: .25rem; }

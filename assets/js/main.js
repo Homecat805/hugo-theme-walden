@@ -27,7 +27,7 @@ function exitFullscreen() {
 }
 
 // *************************************************************************************************
-// gallery buttons
+// carousel buttons
 // *************************************************************************************************
 
 
@@ -38,42 +38,64 @@ $(document).ready(function(){
   $(".btn-fullscreen").click(function () {
     launchFullscreen(document.documentElement);
     $(this).hide();
-    $(this).parents(".gallery-button").children(".btn-exitfullscreen").show();
+    $(this).parents(".btn-container-top").children(".btn-fullscreen-exit").show();
   });
 
   // button for exitFullscreen
-  $(".btn-exitfullscreen").click(function () {
+  $(".btn-fullscreen-exit").click(function () {
     exitFullscreen();
     $(this).hide();
-    $(this).parents(".gallery-button").children(".btn-fullscreen").show();
+    $(this).parents(".btn-container-top").children(".btn-fullscreen").show();
   });
 
   // button for right
   $(".btn-right").click(function () {
-    $(".gallery-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
-    if ($(".gallery-stage").children(".temp").next().length >0){
-      $(".gallery-stage").children(".temp").next().fadeIn(500).addClass("active").removeClass("inactive");
+    $(".carousel-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
+    if ($(".carousel-stage").children(".temp").next().length >0){
+      $(".carousel-stage").children(".temp").next().fadeIn(500).addClass("active").removeClass("inactive");
     } else {
-      $(".gallery-stage").children(".gallery-item").first().fadeIn(500).addClass("active").removeClass("inactive");
+      $(".carousel-stage").children(".carousel-item").first().fadeIn(500).addClass("active").removeClass("inactive");
     }
-    $(".gallery-stage").children(".temp").removeClass("temp");
+    $(".carousel-stage").children(".temp").removeClass("temp");
   });
 
     // button for left
     $(".btn-left").click(function () {
-      $(".gallery-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
-      if ($(".gallery-stage").children(".temp").prev().length >0){
-        $(".gallery-stage").children(".temp").prev().fadeIn(500).addClass("active").removeClass("inactive");
+      $(".carousel-stage").children(".active").fadeOut(0).addClass("inactive temp").removeClass("active");
+      if ($(".carousel-stage").children(".temp").prev().length >0){
+        $(".carousel-stage").children(".temp").prev().fadeIn(500).addClass("active").removeClass("inactive");
       } else {
-        $(".gallery-stage").children(".gallery-item").last().fadeIn(500).addClass("active").removeClass("inactive");
+        $(".carousel-stage").children(".carousel-item").last().fadeIn(500).addClass("active").removeClass("inactive");
       }
-      $(".gallery-stage").children(".temp").removeClass("temp");
+      $(".carousel-stage").children(".temp").removeClass("temp");
     });
 
     // button for item-infomation
-    $(".btn-text").click(function () {
-      $(".gallery-item").children(".inactive").fadeToggle(1000);
+    $(".btn-info").click(function () {
+      $(this).parents(".carousel-target").children(".carousel-stage").children(".active").children(".txt-container").fadeToggle(1000);
+
+      // $(this).parents(".carousel-target").children(".active").children(".txt-container").fadeToggle(1000);
     });
+
+
+
+    // carousel
+    $(".carousel-toggle").click(function () {
+      $(this).parent().children(".carousel-target").fadeToggle(1000);
+    });
+
+    $(".btn-carousel-exit").click(function () {
+      if (document.fullscreenElement){
+        exitFullscreen();
+        $(this).parents(".btn-container-top").children(".btn-fullscreen-exit").hide();
+        $(this).parents(".btn-container-top").children(".btn-fullscreen").show();
+      }
+      $(this).parents(".carousel-target").fadeToggle(1000);
+    });
+
+
+
+    
 
 });
 

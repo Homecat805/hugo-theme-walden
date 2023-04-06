@@ -5,7 +5,7 @@ baseURL = "https://genway.com.cn/"
 theme = "hugo-theme-walden"
 
 # 列表分页基数
-paginate = 10
+paginate = 12
 
 # 多语言设置
 defaultContentLanguage = "en"
@@ -40,14 +40,7 @@ defaultContentLanguageInSubdir = false
                 identifier = "blog"
                 name = "Blog"
                 url = "/blog/"
-                weight = 20
-
-            [[languages.en.menus.main]]
-                identifier = "gallery"
-                name = "Gallery"
-                url = "/gallery/"
-                weight = 30
-            
+                weight = 20      
 
     [languages.zh]
         title = "瓦尔登湖"
@@ -78,9 +71,9 @@ defaultContentLanguageInSubdir = false
                 weight = 20
 
             [[languages.zh.menus.main]]
-                identifier = "gallery"
-                name = "图片"
-                url = "/zh/gallery/"
+                identifier = "notes"
+                name = "笔记"
+                url = "/zh/notes/"
                 weight = 30
 
 # 自定义参数

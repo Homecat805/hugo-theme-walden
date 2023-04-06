@@ -1,0 +1,154 @@
+.carousel {
+
+    .carousel-toggle {}
+    
+    .carousel-target {
+
+        background-color: $grey-800;
+        
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        width: 100%;
+        height: 100vh;
+
+        a {
+
+            padding: .75rem;
+    
+            border-left: 1px solid $grey-600;
+    
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: $grey-500;
+            transition: all 1s;
+            &:hover {
+                color: $white;
+                background-color: $grey-900;
+            }
+        }
+
+        .btn-container-top {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            border-bottom: 1px solid $grey-600;
+            background-color: rgba($grey-800, 0.5);
+
+            .btn-fullscreen-exit {
+                display: none;
+            }
+
+
+        }
+
+        .btn-container-bottom {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            border-top: 1px solid $grey-600;
+            background-color: rgba($grey-800, 0.5);
+
+        }
+
+        .carousel-item {
+
+            .img-container {
+
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin-top: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    display: block;
+                }
+            }
+
+            .txt-container {
+                
+                position: fixed;
+                bottom: 4rem;
+                left: 1rem;
+                right: 1rem;
+
+                .carousel-item-info {
+                    background-color: rgba($grey-900,0.9);
+                    border-radius: .5rem;
+                    margin: 0 auto;
+                    padding: .875rem;
+
+                    width: 100%;
+                    max-width: 600px;
+
+                    .title-container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: .5rem;
+                        color: $grey-500;
+
+                        .title {
+                            font-size: 1.25rem;
+                        }
+    
+    
+                        span {
+                            font-size: .875rem;
+                            margin: .125rem;
+                        }
+                    }
+    
+    
+    
+                    p {
+                        font-size: .875rem;
+                        line-height: 1.5rem;
+                        color: $grey-500;
+                        text-align: justify;
+    
+                        border-top: 1px solid $grey-600;
+                        padding: .25rem 0;
+    
+                        span {
+                            font-size: .75rem;
+                            margin: .25rem;
+                        }
+    
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

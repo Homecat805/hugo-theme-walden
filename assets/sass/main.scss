@@ -1,32 +1,31 @@
-@import "variables/breakpoint";
-@import "variables/color";
-@import "variables/font";
-@import "variables/size";
+@import "local/variables/breakpoint";
+@import "local/variables/color";
+@import "local/variables/font";
+@import "local/variables/size";
 
-@import "basic/init";
+@import "local/basic/init";
 
-@import "utilities/container";
-@import "utilities/border";
+@import "local/utilities/container";
+@import "local/utilities/border";
 
-@import "layouts/baseof";
+@import "local/layouts/baseof";
 
-@import "components/logo";
-@import "components/menu";
-@import "components/copyright";
-@import "components/headline";
-@import "components/item";
-@import "components/breadcrumb";
-@import "components/card";
-@import "components/about";
-@import "components/content";
-@import "components/markdown";
-@import "components/totoc";
-@import "components/gallery";
+@import "local/components/logo";
+@import "local/components/menu";
+@import "local/components/copyright";
+@import "local/components/headline";
+@import "local/components/item";
+@import "local/components/breadcrumb";
+@import "local/components/card";
+@import "local/components/about";
+@import "local/components/content";
+@import "local/components/markdown";
+@import "local/components/totoc";
 
 
-@import "components/shortcodes/hint";
-@import "components/shortcodes/figure";
-
+@import "local/shortcodes/hint";
+@import "local/shortcodes/figure";
+@import "local/shortcodes/carousel";
 
 // @media (min-width: $sm) {}
 // @media (min-width: $md) {}
