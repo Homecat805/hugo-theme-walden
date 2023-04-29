@@ -1,0 +1,16 @@
+{{ range first 1 (where .Site.RegularPages "Params.headline.enabled" true) }}
+{{ with .Params.headline.background }}
+<div class="headline" style="background: url({{ . | relURL}}) center center no-repeat;">
+{{ else }}
+<div class="headline" style="background: url({{ .Site.Params.headline | relURL}}) center center no-repeat;">
+{{ end }}
+    
+    <div class="headline-text">
+
+        <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+        <p>{{ .Summary }}</p>
+
+    </div>
+
+</div>
+{{ end }}

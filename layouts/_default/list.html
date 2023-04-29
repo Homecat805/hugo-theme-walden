@@ -1,20 +1,36 @@
 {{ define "necker" }}
-<div class="container">
-    {{- partial "common/breadcrumb.html" . -}}
+<div id="necker">
+    <div class="container">
+        {{- partial "breadcrumb.html" . -}} 
+    </div>
 </div>
-
 {{ end }}
 
 {{ define "stager" }}
 <div id="stager">
     <div class="container">
+        
         <main>
-            {{- partial "common/list-list.html" . -}}
+            <div class="container-white">
+                {{- partial "list-list.html" . -}} 
+            </div>
         </main>
+
         <aside>
-            {{- partial "common/list-category.html" . -}}
-            {{- partial "common/list-tag.html" . -}}
+
+            <div class="container-sticky">
+                
+                <div class="container-card">
+                    {{- partial "list-category.html" . -}} 
+                </div>
+                <div class="container-card">
+                    {{- partial "list-tag.html" . -}} 
+                </div>
+            </div>
+
         </aside>
+
     </div>
 </div>
+  
 {{ end }}

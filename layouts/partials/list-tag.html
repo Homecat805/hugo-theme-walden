@@ -1,0 +1,10 @@
+{{ with .Site.Taxonomies.tags }}
+<section class="card">
+    <div class="card-title">{{i18n "tags"}}</div>
+    <div class="follow">
+        {{ range . }}
+        <a href="{{.Page.Permalink}}">{{.Page.Title}}({{.Count}})</a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

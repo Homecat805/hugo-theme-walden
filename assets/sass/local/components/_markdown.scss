@@ -2,126 +2,31 @@
 
     color: $grey-700;
 
-    // 链接
-    a {
-        color: $primary;
-        text-decoration: none;
-        transition: all 1s;
-        &:hover {
-            text-decoration: underline;
-            color: $primary;
-        }
-    }
-
     // 标题和段落
-    h2 { margin-top: 2rem; }
-    h3 { margin-top: 1.5rem; }
-    h4 { margin-top: 1rem; }
-    h5 { margin-top: 1rem; }
-    h6 { margin-top: 1rem; }
-
+    h2 { 
+        margin-top: 2rem; 
+        font-size: 1.25rem;
+    }
+    h3 { 
+        margin-top: 1.5rem; 
+        font-size: 1rem;
+    }
+    h4 { 
+        margin-top: 1rem; 
+        font-size: .875rem;
+    }
+    h5 { 
+        margin-top: 1rem; 
+        font-size: .75rem;
+    }
+    h6 { 
+        margin-top: 1rem; 
+        font-size: .75rem;
+    }
     p {
         margin-top: 1rem;
         line-height: 1.75rem;
         text-align: justify;
-    }
-
-    // 引用
-    blockquote {
-        border-left: .375rem solid $secondary;
-        background-color: $grey-100;
-        margin: 1rem 0 0;
-        padding: 1rem 1.5rem;
-        p {
-            margin: 0;
-            color: $grey-600;
-        }
-    }
-
-    // 图片
-    img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin-top: 1rem;
-    }
-
-    figure {
-        margin: 0;
-        padding: 0;
-        img {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-        }
-        figcaption {
-            h4 {
-                margin: 0;
-                padding: .5rem 0;
-                text-align: right;
-                font-family: $serif;
-                font-size: .875rem;
-                font-weight: normal;
-                line-height: 1rem;
-                color: $grey-600;
-            }
-        }
-    }
-
-    // 格式化文本和代码
-    code {
-        font-family: $monospace;
-        font-size: .875rem;
-        color: $grey-100;
-        background-color: $grey-800;
-        padding: .125rem .375rem;
-    }
-
-    pre {
-        * {
-            padding: 0;
-        }
-        font-size: .875rem;
-        padding: 1rem;
-        background-color: $grey-100;
-        border: 1px solid $grey-400;
-        line-height: 1.5rem;
-        overflow: auto;
-
-        code {
-            color: inherit;
-            background-color: inherit;
-        }
-
-    }
-
-    // 脚注
-    .footnotes {
-        margin-top: 3rem;
-        border-top: 1px solid $grey-200;
-        ol {
-            font-size: .875rem;
-            padding-left: 2rem;
-            padding-right: 1rem;
-        }
-        hr {
-            display: none;
-        }
-        p {
-            font-size: .875rem;
-            line-height: 1.5rem;
-        }
-    }
-
-    cite {
-        color: $black;
-        font-style: normal;
-        a:before {
-            content: "[";
-        }
-        a:after {
-            content: "]";
-        }
     }
 
     // 列表
@@ -141,21 +46,39 @@
         list-style: disc;
     }
 
-    // 键盘按键
-    kbd {
-        background-color: $grey-700;
-        color: $white;
-        font-size: .75rem;
-        padding: .25rem .375rem;
-        margin: 0 .375rem;
-        border-radius: .25rem;
+    // 图片
+    img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 1rem 0 0;
     }
 
-    // 标记
-    mark {
-        background-color: rgba($secondary, $alpha: .75) ;
-        color: $grey-800;
-        padding: 0 .25rem;
+    // 格式化文本和代码
+    code {
+        font-family: $monospace;
+        font-size: .875rem;
+        color: $grey-100;
+        background-color: $grey-700;
+        padding: .125rem .375rem;
+    }
+
+    pre {
+        * {
+            padding: 0;
+        }
+        font-size: .875rem;
+        padding: 1rem;
+        background-color: $grey-100;
+        border: 1px solid $grey-400;
+        line-height: 1.5rem;
+        overflow: auto;
+
+        code {
+            color: $grey-100;
+            background-color: $grey-700;
+        }
+
     }
 
     // 表格
@@ -176,6 +99,88 @@
             padding: .25rem .5rem;
             text-align: center;
         }
+    }
+
+    // 引用
+    blockquote {
+        border-left: .375rem solid $secondary;
+        background-color: $grey-100;
+        font-size: .875rem;
+        margin: 1rem 0 0 1rem;
+        padding: 1rem 1.5rem;
+        p {
+            margin: 0;
+            color: $grey-600;
+        }
+    }
+
+    // 脚注
+    .footnotes {
+        margin-top: 3rem;
+        border-top: 1px solid $grey-200;
+        ol {
+            font-size: .875rem;
+            padding-left: 2rem;
+            padding-right: 1rem;
+        }
+        hr {
+            display: none;
+        }
+        p {
+            font-size: .875rem;
+            line-height: 1.5rem;
+        }
+
+        .footnote-backref {
+            color: rgb(204, 26, 79);
+            border: 0;
+        }
+    }
+
+    cite {
+        font-style: normal;
+        a:before {
+            content: "[";
+        }
+        a:after {
+            content: "]";
+        }
+
+    }
+
+
+
+
+
+
+
+    // 链接
+    a {
+        color: $pink;
+        text-decoration: none;
+        transition: all 1s;
+        &:hover {
+            text-decoration: underline;
+            color: $pink;
+        }
+    }
+
+
+    // 键盘按键
+    kbd {
+        background-color: $grey-700;
+        color: $white;
+        font-size: .75rem;
+        padding: .25rem .375rem;
+        margin: 0 .375rem;
+        border-radius: .25rem;
+    }
+
+    // 标记
+    mark {
+        background-color: rgba($secondary, $alpha: .75) ;
+        color: $grey-800;
+        padding: 0 .25rem;
     }
 
 }

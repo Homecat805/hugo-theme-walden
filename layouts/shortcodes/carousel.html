@@ -1,28 +1,36 @@
+
 <div class="carousel">
 
     {{ $src := .Get "src" }}
     {{ $data := index .Page.Site.Data $src }}
 
-    <a class="carousel-toggle">
+    <div class="carousel-toggle">
         <img src="{{$data.cover}}">
-    </a>
+        <div class="carousel-clicker-container">
+            <a class="carousel-clicker">Click to display</a>
+        </div>
+    </div>
+
+
 
     <div class="carousel-target">  
 
-        <div class="btn-container-top">
+        <div class="carousel-btn-top">
             <a class="btn-fullscreen-exit"><i class="bi bi-fullscreen-exit"></i></a>
             <a class="btn-fullscreen"><i class="bi bi-fullscreen"></i></a>
             <a class="btn-carousel-exit"><i class="bi bi-x-lg"></i></a>
         </div>
 
+
         <div class="carousel-stage">
             {{ range $id, $value := $data.item }}
             <div class="carousel-item {{ if eq $id 0 }} active {{ else }} inactive {{ end }}">
-                <div class="img-container">
+                
+                <div class="carousel-img-container">
                     <img src="{{.url}}" alt="{{.title}}">
                 </div>
 
-                <div class="txt-container">
+                <div class="carousel-txt-container">
                     <div class="carousel-item-info">
                         <div class="title-container">
                             <span class="title">{{.title}}</span>
@@ -33,25 +41,20 @@
                     </div>
                 </div>
     
- 
-            </div>
+             </div>
             {{end}}
         </div>
 
-        <div class="btn-container-bottom">
+
+        <div class="carousel-btn-bottom">
             <a class="btn-info"><i class="bi bi-info-lg"></i></a>
             <a class="btn-left"><i class="bi bi-chevron-left"></i></a>
             <a class="btn-right"><i class="bi bi-chevron-right"></i></a>
         </div>
 
+        
     </div>
 
 </div>
-
-
-
-
-
-
 
 

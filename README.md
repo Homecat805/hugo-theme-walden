@@ -1,7 +1,5 @@
 # Hugo Theme Walden
 
-
-
 After reading <i><b>Walden</b></i>, a collection of essays by American writer Henry David Thoreau, I was deeply influenced by his love of nature and simple living. So, I wrote this concise and clear theme for my personal website and named it Walden.
 
 <!--more-->
@@ -14,13 +12,14 @@ Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 - Headline on homepage
 - Thumbnail for post
 - Personalized shortcodes
+- Multilingual mode
 - ...
 
 ## Demo
 
 Two ways to see the demo：
 
-- Visit [demo site](https://genway.com.cn/).
+- Visit [demo site](https://walden.genway.com.cn/).
 - View demo by clone repository from Github.
 
     ```

@@ -1,5 +1,5 @@
 # 生成网站根目录的地址
-baseURL = "https://genway.com.cn/"
+baseURL = "https://walden.genway.com.cn/"
 
 # 主题
 theme = "hugo-theme-walden"
@@ -9,38 +9,20 @@ paginate = 12
 
 # 多语言设置
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
 
 [language]
-
     [languages.en]
         title = "Walden"
         languageName = "English"
         languageCode = "en-US"
         weight = 1
 
-        
-        # 站主信息
+        # 用户参数
         [languages.en.author]
             name = "Homecat"
-            avatar = "images/avatar.jpg"
+            avatar = "images/default/avatar.jpg"
             description = "Hi, I am Homecat, a Shaoxing native living in Shanghai. Reading, hiking, and coding are my hobbies. I have set my blog on Github to record interesting things and share with my friends."
             email = "13050082@qq.com"
-        
-        # 主菜单
-        [languages.en.menus]
-
-            [[languages.en.menus.main]]
-                identifier = "home"
-                name = "Home"
-                url = "/"
-                weight = 10
-
-            [[languages.en.menus.main]]
-                identifier = "blog"
-                name = "Blog"
-                url = "/blog/"
-                weight = 20      
 
     [languages.zh]
         title = "瓦尔登湖"
@@ -48,42 +30,41 @@ defaultContentLanguageInSubdir = false
         languageCode = "zh-Hans-CN"
         weight = 2
 
-        # 站主信息
         [languages.zh.author]
             name = "家猫"
-            avatar = "images/avatar.jpg"
+            avatar = "images/default/avatar.jpg"
             description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置网站于 Github，录趣事以享亲友。"
             email = "13050082@qq.com"
 
-        # 主菜单
-        [languages.zh.menus]
+# 主菜单
+[languages.en.menus]
+    [[languages.en.menus.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 10
+    [[languages.en.menus.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog/"
+        weight = 20
 
-            [[languages.zh.menus.main]]
-                identifier = "home"
-                name = "首页"
-                url = "/zh/"
-                weight = 10
-            
-            [[languages.zh.menus.main]]
-                identifier = "blog"
-                name = "博客"
-                url = "/zh/blog/"
-                weight = 20
+[languages.zh.menus]
+    [[languages.zh.menus.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/zh/"
+        weight = 10
+    [[languages.zh.menus.main]]
+        identifier = "blog"
+        name = "博客"
+        url = "/zh/blog/"
+        weight = 20
 
-            [[languages.zh.menus.main]]
-                identifier = "notes"
-                name = "笔记"
-                url = "/zh/notes/"
-                weight = 30
-
-# 自定义参数
 [params]
-    description = "Description"
-    keywords = "Keywords"
-    # 默认图片
-    headline = "images/headline/default.jpg"
-    thumbnail = "images/thumbnail/default.jpg"
-
+    headline = "/images/default/headline.jpg"
+    thumbnail = "/images/default/thumbnail.jpg"
+    
 # 用于渲染的参数
 [markup]
     defaultMarkdownHandler = "goldmark"
@@ -125,6 +106,7 @@ defaultContentLanguageInSubdir = false
   [module.hugoVersion]
     extended = true
     min = "0.101.0"
+
 
 
 

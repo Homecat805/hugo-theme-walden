@@ -1,0 +1,35 @@
+
+    {{ range .Paginator.Pages }}
+
+    <section class="item">
+
+        <div class="item-thumbnail">
+        {{ with .Params.thumbnail }}
+            <img src="{{ . | relURL }}" alt="Thumbnail">
+        {{ else }}
+            <img src="{{.Site.Params.thumbnail | relURL}}" alt="Thumbnail">
+        {{ end }}
+        </div>
+
+        <div class="item-text">
+            <p class="title">{{ .Title }}</p>
+            <div class="brief">{{ .Summary }}</div>
+            <div class="meta">
+                <p>
+                    <span>{{.Date.Format "Jan 2, 2006"}}</span>
+                    <span>
+                    By {{ if ne .Params.author "" }}
+                    {{ .Params.author }}
+                    {{ else }}
+                    {{ .Site.Author.name }}
+                    {{ end }}
+                    </span>
+                </p>
+                <a href="{{.Permalink}}">{{i18n "read"}}</a>
+            </div>
+        </div>
+
+    </section>
+        
+
+    {{ end }}

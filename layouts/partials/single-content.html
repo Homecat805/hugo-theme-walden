@@ -1,0 +1,60 @@
+
+    <div class="content">
+
+        <!-- 正文 -->
+        <article>
+            <div class="content-header">
+                <h1 class="title">{{ .Title }}</h1>
+                <p class="meta">
+                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                    <span>By</span>
+                    <span>
+                    {{ if ne .Params.author "" }}
+                    {{ .Params.author }}
+                    {{ else }}
+                    {{ .Site.Author.name }}
+                    {{ end }}
+                    </span>
+                </p>
+            </div>
+            <div class="markdown">{{ .Content }}</div>
+        </article>
+
+
+
+        <!-- 标签 -->
+        {{ with .Params.tags }}
+        <div class="content-tag">
+            {{ range . }}
+            <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </div> 
+        {{ end }}
+
+
+
+        <!-- Navigator -->
+        <div class="content-nav">
+            <div>
+                {{ with .PrevInSection }}
+                <div>
+                    <a href="{{.Permalink}}">
+                        <span><i class="bi bi-chevron-left"></i></span>
+                        <span>{{.Title}}</span>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+            <div>
+            {{ with .NextInSection }}
+                <div>
+                    <a href="{{.Permalink}}">
+                        <span>{{.Title}}</span>
+                        <span><i class="bi bi-chevron-right"></i></span>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        
+    </div>

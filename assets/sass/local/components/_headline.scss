@@ -1,51 +1,58 @@
-#headline {
-    .container {
-        height: $headline-height;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 .headline {
-    background-color: rgba($black, .50);
-    margin: 0 1rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    color: $grey-300;
 
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    a {
-        display: block;
-        margin-top: 1rem;
-        font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+    .headline-text {
+        background-color: rgba($black, .50);
+        margin: 0 1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-radius: 1rem;
         color: $grey-300;
-        transition: all .75s;
-        &:hover {
-            color: $white;
+    
+    
+        a {
+            display: block;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: $grey-300;
+            transition: all .75s;
+            &:hover {
+                color: $white;
+            }
         }
-    }
-
-    p {
-        margin-top: 1rem;
-
-        font-size: 1rem;
-        line-height: 1.5rem;
-        
-        text-align: left;
+    
+        p {
+            margin-top: 1rem;
+    
+            font-size: 1rem;
+            line-height: 1.5rem;
+            
+            text-align: left;
+        }
+    
     }
 
 }
+
+
 
 @media (min-width: $sm) {
 
     .headline {
-        width: 80%; 
-        margin: 0;
 
-    
+        .headline-text {
+            width: 80%; 
+            max-width: 1000px;
+            margin: 0;
+     
+        }
     }
 
 }

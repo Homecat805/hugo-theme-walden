@@ -1,6 +1,7 @@
 .item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid $grey-200;
 
     display: flex;
@@ -12,6 +13,7 @@
         width: 180px;
         img {
             width: 100%;
+            border-radius: .5rem;
         }
     }
     
@@ -37,13 +39,13 @@
             justify-content: space-between;
 
             font-size: .875rem;
-            color: $grey-600;
+            color: $primary;
         }
 
         a {
             display: block;
             margin-right: .5rem;
-            padding: .375rem .5rem;
+            padding: .25rem .5rem;
             border-radius: .25rem;
             background-color: $primary;
             color: $white;
@@ -57,6 +59,8 @@
     }
     &:last-child {
         border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 }
@@ -69,19 +73,14 @@
     }
 }
 
-@media (min-width: $md) {
-    .item {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
 @media (min-width: $lg) {
     .item {
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;
     }
 }
+
+
 
 
 
