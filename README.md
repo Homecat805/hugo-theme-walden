@@ -11,7 +11,7 @@ Walden is a simple-structured, easy-to-use Hugo theme for personal websites.
 - Responsive design
 - Headline on homepage
 - Thumbnail for post
-- Personalized shortcodes
+- Shortcodes
 - Multilingual mode
 - ...
 
@@ -42,44 +42,7 @@ git branch -m main
 mkdir themes
 git submodule add git@github.com:Homecat805/hugo-theme-walden.git themes/hugo-theme-walden
 cp -rf themes/hugo-theme-walden/exampleSite/* ./
-```
-
-In subsequent use, if you need to update the theme, use the following command.
-
-```
-git submodule update --remote --merge
-```
-
-## Configuration 
-
-The configuration file for the site is <mark>config.toml</mark>。
-
-- Configure baseURL: URL of user's website on the internet.
-
-    ```
-    baseURL = "Your domain"
-    ```
-
-- Configure theme
-
-    ```
-    theme = "hugo-theme-walden"
-    ```
-
-## Preview
-
-Excuting the command, visit <mark>http://localhost:1313/</mark> to preview website locally.
-
-```
 hugo server
-```
-
-## Create Site
-
-Executing the command, the system will store all the files generated for the static website in the <mark>mysite/public</mark> directory, which can be accessed after uploading to the Internet.
-
-```
-hugo
 ```
 
 ## License
