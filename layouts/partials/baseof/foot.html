@@ -1,0 +1,5 @@
+<!-- Scripts -->
+<script src="{{ "./vendor/jquery/jquery-3.7.0.js" | relURL }}"></script>
+
+{{ $js := resources.Get "js/main.js" | js.Build (dict "targetPath" "js/main.js" ) }}
+<script src="{{ $js.RelPermalink }}"></script>

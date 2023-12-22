@@ -1,0 +1,21 @@
+<div class="pagination">
+
+    <div class="pagination-item">
+        {{ with .PrevInSection }}
+        <a class="left item-link" href="{{.Permalink}}">
+            <i class="bi bi-chevron-left"></i>
+            <span>{{.Title}}</span>
+        </a>
+        {{ end }}
+    </div>
+
+    <div class="pagination-item">
+        {{ with .NextInSection }}
+        <a class="right item-link" href="{{.Permalink}}">
+            <i class="bi bi-chevron-right"></i>
+            <span>{{.Title}}</span>
+        </a>
+        {{ end }}
+    </div>
+
+</div>

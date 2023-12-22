@@ -1,0 +1,34 @@
+<div class="content">
+
+    <!-- 正文 -->
+    <article>
+        <div class="content-header">
+            <h1 class="title">{{ .Title }}</h1>
+            <p class="meta">
+                <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                <span>
+                    {{ if ne .Params.author "" }}
+                        {{ .Params.author }}
+                    {{ else }}
+                        {{ .Site.Author.name }}
+                    {{ end }}
+                </span>
+            </p>
+        </div>
+        <div class="markdown">{{ .Content }}</div>
+    </article>
+
+    <!-- 标签 -->
+    {{ with .Params.tags }}
+    <div class="content-tag">
+        <span><i class="bi bi-bookmarks-fill"></i></span>
+        {{ range . }}
+        <span>
+            <a class="item-link" href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        </span>
+        {{ end }}
+    </div> 
+    {{ end }}
+
+</div>
+

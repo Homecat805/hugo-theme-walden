@@ -1,0 +1,14 @@
+{{ with .Site.Taxonomies.categories }}
+<section class="card">
+    <div class="card-title">{{ i18n "categories"}}</div>
+    <div class="category">
+        {{ range . }}
+        <a class="item-link" href="{{.Page.Permalink}}">
+            <span>{{.Page.Title}}</span>
+            <span class="dashed-line"></span>
+            <span>{{.Count}}</span>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

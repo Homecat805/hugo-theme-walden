@@ -1,38 +1,23 @@
 {{ define "necker" }}
-<div id="necker">
-    <div class="container-fliud">
-        {{- partial "home-headline.html" . -}}
-    </div>
+<div class="container-fluid">
+    {{- partial "headline.html" . -}}
 </div>
 {{ end }}
 
 {{ define "stager" }}
-<div id="stager">
-    <div class="container">
-
+<div class="container">
+    <div class="stager">
         <main>
-
-            <div class="container-white">
-                {{- partial "home-list.html" . -}} 
+            <div class="list-container">
+                {{- partial "headline-list.html" . -}}
             </div>
-
-
         </main>
-
+        <div class="gutter"></div>
         <aside>
-
-            <div class="container-sticky">
-                
-                <div class="container-card">
-                    {{- partial "home-author.html" . -}} 
-                </div>
-
+            <div class="card-container">
+                {{- partial "about.html" . -}}
             </div>
-
-
-
         </aside>
-
     </div>
 </div>
 {{ end }}

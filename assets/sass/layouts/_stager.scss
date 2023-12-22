@@ -1,0 +1,57 @@
+.stager {
+
+    display: flex;
+    flex-direction: column;
+
+    main {
+        overflow: auto;
+    }
+
+    aside {}
+
+
+    .gutter {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    a {
+        color: var(--stager-ft);
+        background-color: var(--stager-bg);
+        transition: all .5s;
+        &:hover {
+            color: var(--stager-bg);
+            background-color: var(--secondary);
+        }
+    }
+}
+
+@media (min-width: $md) {
+    .stager {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        main {
+            flex: 1;
+        }
+        aside {
+            width: 280px;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .stager {
+        aside {
+            width: 320px;
+        }
+    }
+}
+
+@media (min-width: $xl) {
+    .stager {
+        aside {
+            width: 360px;
+        }
+    }
+}

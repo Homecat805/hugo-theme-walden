@@ -1,0 +1,24 @@
+.markdown {
+
+    figure {
+        border: 1px solid var(--grey-300);
+        background-color: var(--grey-100);
+        margin: 1rem 0 0;
+        padding: .5rem;
+        img {
+            margin-top: 0;
+            width: 100%;
+            max-width: 100%;
+    
+        }
+    
+        figcaption {
+    
+            text-align: right;
+            font-size: .875rem;
+            padding: .5rem .25rem 0;
+    
+        }
+    }
+
+}

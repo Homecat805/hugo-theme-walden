@@ -1,0 +1,24 @@
+.menu {
+    list-style: none;
+    padding: 1rem;
+    border-top: 1px solid var(--baseof-bd);
+    text-align: center;
+    .menu-item {
+        margin: .5rem 0;
+        padding: .25rem 0;
+    }
+    .active {
+        color: var(--secondary);
+    }
+}
+
+@media (min-width: $sm) {
+    .menu {
+        border-top: none;
+        padding: 0 1rem;
+        .menu-item {
+            margin-left: 1rem;
+            display: inline;
+        }
+    }
+}

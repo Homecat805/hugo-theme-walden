@@ -1,0 +1,38 @@
+<header class="container base-header">
+
+    <div id="title">
+        <a href="{{ "/" | relLangURL}}" >{{.Site.Title}}</a>
+    </div>
+    
+    <div id="menuToggle">
+        <a><i class="bi bi-list"></i></a>
+    </div>
+    
+    <div id="menu">
+        <ul class="menu">
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+            {{ $active := eq .Name $current.Title }}
+            {{ $active = or $active ( eq .Identifier $current.Section ) }}
+            <li class="menu-item">
+                <a class="{{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+        <!-- 语言选择 开始 -->
+        {{ if .Site.IsMultiLingual }}
+        {{- $p := .Site.Language.LanguageName -}}
+            {{ range $.Site.Home.AllTranslations }}
+                {{- if ne .Language.LanguageName $p }}
+                <li class="menu-item">
+                    <a class="lang-toggle" href="{{ .Permalink }}">{{.Site.Language.LanguageName}}</a>
+                </li>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        <!-- 语言选择 结束 -->
+        </ul>
+    </div>
+
+</header>
+
+

@@ -1,0 +1,22 @@
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+
+<!-- For responsive website -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Title -->
+<title>{{ .Title }} ｜ {{ .Site.Title }}</title>
+
+<!-- Favicon & icons -->
+<link href="{{ "./favicon.png" | relURL }}" rel="icon">
+<link href="{{ "./vendor/bootstrap-icons/1.10.5/bootstrap-icons.min.css" | relURL }}" rel="stylesheet" type="text/css"> 
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cutive Mono" rel="stylesheet" type="text/css">
+
+<!-- SASS -->
+{{ $css := resources.Get "sass/main.scss" | resources.ToCSS (dict "targetPath" "css/main.css" ) }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" type="text/css">

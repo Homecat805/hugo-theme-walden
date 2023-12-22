@@ -1,0 +1,10 @@
+{{ with .TableOfContents }}
+
+<section class="card">
+    <div class="card-title">{{i18n "toc"}}</div>
+    <div class="toc">
+        {{ . }}
+    </div>
+
+</section>
+{{ end }}

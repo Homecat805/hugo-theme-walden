@@ -1,0 +1,31 @@
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-container {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.single-container {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.nav-container {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.card-container {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}

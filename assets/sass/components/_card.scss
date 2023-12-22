@@ -1,0 +1,131 @@
+.card {
+
+    border: 1px solid var(--stager-bd);
+    padding: .75rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    font-size: .875rem;
+
+
+    .card-title {
+
+        position: absolute;
+        top: -0.75rem;
+        right: 1rem;
+
+        background-color: var(--stager-bg);
+        padding: 0 .5rem;
+
+        font-size: 1rem;
+        line-height: 1rem;
+        color: var(--stager-bd);
+
+    }
+
+
+
+
+
+
+    .category {
+
+        a {
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .dashed-line {
+                flex: 1;
+                border-bottom: 1px dashed var(--stager-ft);
+                margin: 0 1rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .dashed-line {
+                    border-bottom: 1px dashed var(--white);
+                }
+            }
+        }
+    }
+
+    .tag {
+
+        a {
+            display: inline-block;
+            line-height: 1.25rem;
+            margin-right: .5rem;
+            padding: .125rem .375rem;
+            border-radius: .25rem;
+        }
+
+        span {
+            margin-left: .5rem;
+        }
+    }
+
+    .related {
+
+        .related-item {
+            display: flex;
+            flex-direction: row;
+        }
+
+        i {
+            font-size: 1rem;
+            color: var(--stager-ft);
+            padding: .25rem 0 .25rem .25rem;
+
+        }
+        a {
+            padding: .25rem .25rem .25rem .5rem;
+            border-radius: .25rem;
+        }
+
+    }
+
+    .toc {
+
+        ul {
+            list-style: none;
+            padding: .25rem .5rem;
+
+            li {
+                line-height: 1.5rem;
+                &::before {
+                    content: "\2022";
+                    color: var(--stager-ft);
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: .5rem;
+                }
+
+                ul {
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        a {
+            border-radius: .25rem;
+            padding: .125rem .5rem;
+
+
+
+        }
+
+    }
+}
+
+
+

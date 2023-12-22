@@ -1,0 +1,40 @@
+// 页面的基本框架 开始 
+html { 
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 1fr auto;
+
+    font-size: 16px;
+    font-family: $sans-serif;
+    background-color: var(--baseof-bg);
+    color: var(--baseof-ft);
+}
+
+#header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#necker {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--stager-bg);
+    color: var(--stage-ft);
+}
+#stager {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: var(--stager-bg);
+    color: var(--stage-ft);
+}
+#footer {
+    grid-column: 1;
+    grid-row: 4;
+}
+// 页面的基本框架 结束 

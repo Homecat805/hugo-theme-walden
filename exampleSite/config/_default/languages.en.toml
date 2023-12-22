@@ -1,0 +1,12 @@
+contentDir = 'content/en'
+languageCode = 'en-US'
+languageName = 'EN'
+weight = 1
+
+title = 'Walden'
+copyright = 'All Rights Reserved'
+
+[author]
+    name = "Homecat"
+    description = "Amateur programmer ~ Hiker ~ Half-marathon runner ~ Classical music lover ..."
+    email = "13050082@qq.com"

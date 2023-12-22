@@ -5,14 +5,7 @@ draft: false
 author: ""
 categories: ""
 tags: [""]
-thumbnail: ""
-headline: 
-    enabled: false
-    background: ""
+headline: true
 ---
 
-Summary.
-
-<!--more--> 
-
-Content.
+<!--more-->
