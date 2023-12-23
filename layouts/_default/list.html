@@ -17,11 +17,13 @@
         </main>
         <div class="gutter"></div>
         <aside>
-            <div class="card-container">
-                {{- partial "category.html" . -}}
-            </div>
-            <div class="card-container">
-                {{- partial "tag.html" . -}}
+            <div class="cards-container">
+                <div class="card-container">
+                    {{- partial "category.html" . -}}
+                </div>
+                <div class="card-container">
+                    {{- partial "tag.html" . -}}
+                </div>
             </div>
         </aside>
     </div>
