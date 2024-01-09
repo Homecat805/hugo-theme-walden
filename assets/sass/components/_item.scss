@@ -54,8 +54,8 @@
             background-color: var(--white);
             transition: all .5s;
             &:hover {
-                color: var(--stager-bg);
-                background-color: var(--primary);
+                color: var(--gray-900);
+                background-color: var(--primary-light);
             }
         }
 
