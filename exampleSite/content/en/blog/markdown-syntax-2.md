@@ -1,5 +1,5 @@
 ---
-title: "Markdown Syntax - Table, Footnotes, Links and lists"
+title: "Markdown Syntax - Table, Footnotes, Links and Lists"
 date: 2023-07-20T05:16:53Z
 draft: false
 author: "Homecat"
@@ -33,7 +33,7 @@ This post showcases the manifestations of the markdown grammar related to table,
 
 
 
-## Link
+## Links
 
 
 Link: [Hugo](https://gohugo.io)
