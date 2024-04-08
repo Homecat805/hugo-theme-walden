@@ -1,7 +1,5 @@
 baseURL = 'https://example.org/'
 
-theme = 'hugo-theme-walden'
-
 paginate = 12
 
 defaultContentLanguage = 'en'
