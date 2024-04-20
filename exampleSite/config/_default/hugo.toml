@@ -1,0 +1,30 @@
+baseURL = 'https://example.org/'
+
+theme = 'hugo-theme-walden'
+
+paginate = 12
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# 用于渲染的参数
+[markup]
+    defaultMarkdownHandler = 'goldmark'
+    [markup.goldmark.renderer]
+        unsafe = true
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        lineNumbersInTable = false
+        noClasses=false
+
+# 用于 Hugo theme 发布的参数
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.117.0"

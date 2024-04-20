@@ -25,7 +25,7 @@
                     By {{ if ne .Params.author "" }}
                     {{ .Params.author }}
                     {{ else }}
-                    {{ .Site.Params.author }}
+                    {{ .Site.Author.name }}
                     {{ end }}
                     </span>
                 </p>

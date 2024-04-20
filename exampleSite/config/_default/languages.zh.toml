@@ -1,0 +1,12 @@
+contentDir = 'content/zh'
+languageCode = 'zh-Hans-CN'
+languageName = '中文'
+weight = 2
+
+title = '瓦尔登湖'
+copyright = '版权所有'
+
+[author]
+    name = "家猫"
+    description = "吾，家猫是也。生于越，学业于沪。喜读书闲游，好文字代码，置博客于互联网，录趣事以享亲友。"
+    email = "13050082@qq.com"
