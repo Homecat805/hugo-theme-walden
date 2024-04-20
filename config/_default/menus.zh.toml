@@ -1,10 +1,13 @@
 [[main]]
+    name = '首页'
     identifier = "home"
-    name = "首页"
-    url = "/zh/"
+    pre = "bi bi-house-fill"
+    pageRef = '/'
     weight = 10
+
 [[main]]
+    name = '博客'
     identifier = "blog"
-    name = "博客"
-    url = "/zh/blog/"
+    pre = "bi bi-file-post"
+    pageRef = '/blog'
     weight = 20

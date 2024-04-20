@@ -1,10 +1,13 @@
 [[main]]
+    name = 'Home'
     identifier = "home"
-    name = "Home"
-    url = "/"
+    pre = "bi bi-house-fill"
+    pageRef = '/'
     weight = 10
+
 [[main]]
+    name = 'Blog'
     identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
+    pre = "bi bi-file-post"
+    pageRef = '/blog'
     weight = 20

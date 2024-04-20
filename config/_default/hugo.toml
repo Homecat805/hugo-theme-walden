@@ -1,12 +1,15 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://genway.com.cn/'
 
-paginate = 12
+theme = 'walden'
 
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 
+paginate = 12
+
 [taxonomies]
   category = 'categories'
+  series = 'series'
   tag = 'tags'
 
 # 用于渲染的参数
@@ -21,8 +24,7 @@ defaultContentLanguageInSubdir = false
         lineNumbersInTable = false
         noClasses=false
 
-# 用于 Hugo theme 发布的参数
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.117.0"
+    [module.hugoVersion]
+        extended = true
+        min = "0.123.3"

@@ -10,7 +10,7 @@
                     {{ if ne .Params.author "" }}
                         {{ .Params.author }}
                     {{ else }}
-                        {{ .Site.Author.name }}
+                        {{ .Site.Params.author }}
                     {{ end }}
                 </span>
             </p>
