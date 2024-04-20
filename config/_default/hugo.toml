@@ -1,6 +1,4 @@
-baseURL = 'https://example.org/'
-
-theme = 'hugo-theme-walden'
+baseURL = 'https://genway.com.cn/hugo-theme-walden'
 
 paginate = 12
 

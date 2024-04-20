@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Walden</title>
+    <link>http://localhost:1313/hugo-theme-walden/</link>
+    <description>Recent content in Home on Walden</description>
+    <generator>Hugo 0.125.1</generator>
+    <language>en-US</language>
+    <managingEditor>13050082@qq.com (Homecat)</managingEditor>
+    <webMaster>13050082@qq.com (Homecat)</webMaster>
+    <copyright>All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 25 Aug 2023 09:03:08 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/hugo-theme-walden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Theme Walden</title>
+      <link>http://localhost:1313/hugo-theme-walden/blog/hugo-theme-walden/</link>
+      <pubDate>Fri, 25 Aug 2023 09:03:08 +0800</pubDate><author>13050082@qq.com (Homecat)</author>
+      <guid>http://localhost:1313/hugo-theme-walden/blog/hugo-theme-walden/</guid>
+      <description>&lt;p&gt;After reading &lt;i&gt;&lt;b&gt;Walden&lt;/b&gt;&lt;/i&gt;, a collection of essays by American writer Henry David Thoreau, I was deeply influenced by his love of nature and simple living. So, I wrote this concise and clear theme for my personal website and named it Walden.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Syntax - Code, Code Blocks and Image</title>
+      <link>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-3/</link>
+      <pubDate>Thu, 20 Jul 2023 05:16:58 +0000</pubDate><author>13050082@qq.com (Homecat)</author>
+      <guid>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-3/</guid>
+      <description>&lt;p&gt;This post showcases the manifestations of the markdown grammar related to code, code blocks and image in this hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Syntax - Table, Footnotes, Links and Lists</title>
+      <link>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-2/</link>
+      <pubDate>Thu, 20 Jul 2023 05:16:53 +0000</pubDate><author>13050082@qq.com (Homecat)</author>
+      <guid>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-2/</guid>
+      <description>&lt;p&gt;This post showcases the manifestations of the markdown grammar related to table, footnotes, links and lists in this hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Syntax - Text</title>
+      <link>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-1/</link>
+      <pubDate>Wed, 19 Jul 2023 08:36:33 +0000</pubDate><author>13050082@qq.com (Homecat)</author>
+      <guid>http://localhost:1313/hugo-theme-walden/blog/markdown-syntax-1/</guid>
+      <description>&lt;p&gt;Markdown is a lightweight markup language used to add formatting elements to plain text documents. This post showcases the manifestations of the markdown grammar related to text in this hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shortcode Syntax - Figure</title>
+      <link>http://localhost:1313/hugo-theme-walden/blog/shortcode-syntax/</link>
+      <pubDate>Tue, 10 Jan 2023 18:54:33 +0800</pubDate><author>13050082@qq.com (Homecat)</author>
+      <guid>http://localhost:1313/hugo-theme-walden/blog/shortcode-syntax/</guid>
+      <description>&lt;p&gt;In hugo theme Walden, the application of shortcodes enrich the presentation of content and is constantly maintained and updated.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
