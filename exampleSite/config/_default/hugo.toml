@@ -1,4 +1,6 @@
-baseURL = 'https://genway.com.cn/hugo-theme-walden'
+baseURL = 'https://genway.com.cn/'
+
+theme = 'hugo-theme-walden'
 
 paginate = 12
 

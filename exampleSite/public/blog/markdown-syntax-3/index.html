@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8" />
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<title>Markdown Syntax - Code, Code Blocks and Image ｜ Walden</title>
+
+
+<link href="/favicon.png" rel="icon">
+<link href="/vendor/bootstrap-icons/1.10.5/bootstrap-icons.min.css" rel="stylesheet" type="text/css"> 
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cutive Mono" rel="stylesheet" type="text/css">
+
+
+
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+        <header id="header"><header class="container base-header">
+
+    <div id="title">
+        <a href="/" >Walden</a>
+    </div>
+    
+    <div id="menuToggle">
+        <a><i class="bi bi-list"></i></a>
+    </div>
+    
+    <div id="menu">
+        <ul class="menu">
+        
+        
+            
+            
+            <li class="menu-item">
+                <a class="" href="/">Home</a>
+            </li>
+        
+            
+            
+            <li class="menu-item">
+                <a class=" active " href="/blog/">Blog</a>
+            </li>
+        
+        
+        
+            
+                <li class="menu-item">
+                    <a class="lang-toggle" href="http://localhost:1313/zh/">中文</a>
+                </li>
+                
+            
+        
+        
+        </ul>
+    </div>
+
+</header>
+
+
+</header>
+        <div id="necker">
+<div class="container"><ol class="breadcrumb">
+    
+    
+        
+    
+        
+    
+    <li class="breadcrumb-item">Home</li>
+
+    
+    <li class="breadcrumb-item">Blog</li>
+
+    
+    <li class="breadcrumb-item">Markdown Syntax - Code, Code Blocks and Image</li>
+
+</ol>
+</div>
+
+        </div>
+        <div id="stager">
+<div class="container">
+    <div class="stager">
+        <main>
+            <div class="single-container"><div class="content">
+
+    
+    <article>
+        <div class="content-header">
+            <h1 class="title">Markdown Syntax - Code, Code Blocks and Image</h1>
+            <p class="meta">
+                <span>Jul 20, 2023</span>
+                <span>
+                    
+                        Homecat
+                    
+                </span>
+            </p>
+        </div>
+        <div class="markdown"><p>This post showcases the manifestations of the markdown grammar related to code, code blocks and image in this hugo theme.</p>
+<h2 id="code">Code</h2>
+<p>Shortcodes have access to parameters delimited in the shortcode declaration via <code>.Get</code>, page- and site-level variables, and also the following shortcode-specific fields.</p>
+<h2 id="code-blocks">Code Blocks</h2>
+<h3 id="normal">Normal</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln"> 1</span><span class="cl">&lt;!doctype html&gt; 
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">&lt;html lang=&#34;en&#34;&gt;
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    &lt;head&gt;
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        &lt;meta charset=&#34;utf-8&#34;&gt;
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        &lt;title&gt;Example HTML5 Document Example&lt;/title&gt;
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    &lt;/head&gt;
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    &lt;body&gt;
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        &lt;p&gt;Test&lt;/p&gt;
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    &lt;/body&gt;
+</span></span><span class="line"><span class="ln">10</span><span class="cl">&lt;/html&gt;
+</span></span></code></pre></div><h3 id="html">HTML</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span> 
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document Example<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="javascript">JAVASCRIPT</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scroll</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">300</span><span class="p">){</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#totoc&#39;</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#totoc&#39;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">250</span><span class="p">);</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h2 id="image">Image</h2>
+<p><img alt="Image" src="https://cn.bing.com/th?id=OHR.Borovets_ZH-CN5914681811_1920x1200.jpg&rf=LaDigue_1920x1200.jpg" title="Description of Image"></p></div>
+    </article>
+
+    
+    
+    <div class="content-tag">
+        <span><i class="bi bi-bookmarks-fill"></i></span>
+        
+        <span>
+            <a class="item-link" href="/tags/hugo">Hugo</a>
+        </span>
+        
+        <span>
+            <a class="item-link" href="/tags/walden">Walden</a>
+        </span>
+        
+    </div> 
+    
+
+</div>
+
+</div>
+            <div class="nav-container"><div class="pagination">
+
+    <div class="pagination-item">
+        
+        <a class="left item-link" href="http://localhost:1313/blog/markdown-syntax-2/">
+            <i class="bi bi-chevron-left"></i>
+            <span>Markdown Syntax - Table, Footnotes, Links and Lists</span>
+        </a>
+        
+    </div>
+
+    <div class="pagination-item">
+        
+        <a class="right item-link" href="http://localhost:1313/blog/hugo-theme-walden/">
+            <i class="bi bi-chevron-right"></i>
+            <span>Hugo Theme Walden</span>
+        </a>
+        
+    </div>
+
+</div></div>
+        </main>
+        <div class="gutter"></div>
+        <aside>
+            <div class="cards-container">
+                <div class="card-container">
+
+<section class="card">
+    <div class="card-title">TABLE OF CONTENT</div>
+    <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#code-blocks">Code Blocks</a>
+      <ul>
+        <li><a href="#normal">Normal</a></li>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#javascript">JAVASCRIPT</a></li>
+      </ul>
+    </li>
+    <li><a href="#image">Image</a></li>
+  </ul>
+</nav>
+    </div>
+
+</section>
+</div>
+                <div class="card-container">
+
+
+<section class="card">
+    <div class="card-title">RELATED POSTS</div>
+    <div class="related">
+        
+        <p class="related-item">
+            <i class="bi bi-link-45deg"></i>
+            <a class="item-link" href="http://localhost:1313/blog/markdown-syntax-2/">Markdown Syntax - Table, Footnotes, Links and Lists</a>
+        </p>
+        
+        <p class="related-item">
+            <i class="bi bi-link-45deg"></i>
+            <a class="item-link" href="http://localhost:1313/blog/markdown-syntax-1/">Markdown Syntax - Text</a>
+        </p>
+        
+        <p class="related-item">
+            <i class="bi bi-link-45deg"></i>
+            <a class="item-link" href="http://localhost:1313/blog/shortcode-syntax/">Shortcode Syntax - Figure</a>
+        </p>
+        
+    </div>
+</section>
+
+
+</div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+        </div>
+        <footer id="footer"><div class="container">
+    <div class="copyright">
+        <i class="bi bi-c-circle"></i>
+        <span>2024</span>
+        <span>Homecat</span>
+        <span>All Rights Reserved</span>
+    </div>
+</div>
+</footer>
+<script src="/vendor/jquery/jquery-3.7.0.js"></script>
+
+
+<script src="/js/main.js"></script></body>
+</html>
+
