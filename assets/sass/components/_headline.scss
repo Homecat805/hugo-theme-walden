@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
     
     .headline-text {
         background-color: rgba(0,0,0,.50);
@@ -16,7 +15,7 @@
             display: block;
             margin-top: 1rem;
             font-size: 1.5rem;
-            color: var(--grey-300);
+            color: var(--slate-300);
             transition: all .75s;
             &:hover {
                 color: var(--white);
@@ -24,15 +23,13 @@
         }
         p {
             margin-top: 1rem;
-            color: var(--grey-300);
+            color: var(--slate-300);
             font-size: 1rem;
             line-height: 1.5rem;
             text-align: left;
         }
     }
 }
-
-
 
 @media (min-width: $sm) {
     .headline {
@@ -43,3 +40,4 @@
         }
     }
 }
+

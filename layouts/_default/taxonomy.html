@@ -1,0 +1,27 @@
+{{ define "stager" }}
+<main>
+    <div id="breadcrumb">
+        {{ partial "blog/breadcrumb.html" . }}
+    </div>
+    <div id="bloglist">
+        {{ partial "blog/bloglist.html" . }}
+    </div>
+    <div id="paginator">
+        {{ partial "blog/paginator.html" . }}
+    </div>
+</main>
+<aside>
+    <div class="sider-inner-container">
+        <div class="card-container">
+            {{ partial "blog/category.html" . }}
+        </div>
+        <div class="card-container">
+            {{ partial "blog/tag.html" . }}
+        </div>
+    </div>
+</aside>
+<div class="toggles">
+    <a class="sider-open"><i class="bi bi-layout-sidebar"></i></a>
+    <a class="sider-close"><i class="bi bi-x"></i></a>
+</div>
+{{ end }}

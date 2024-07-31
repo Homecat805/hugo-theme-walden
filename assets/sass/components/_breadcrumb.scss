@@ -1,18 +1,13 @@
 .breadcrumb {
-    padding: .75rem 1rem;
     font-size: .875rem;
+    list-style: none;
+    color: var(--slate-700);
     .breadcrumb-item {
-       display: inline;
-       &+.breadcrumb-item:before {
-          content: "|";
-          margin: 0 .75rem;
-          font-size: .75rem;
-       }
+        display: inline-block;
+        &+.breadcrumb-item:before {
+            content: "|";
+            margin: 0 .5rem;
+            font-size: .75rem;
+         }
     }
- }
-
- @media (min-width: $lg) {
-   .breadcrumb {
-      padding: 1rem 1rem;
-   }
 }

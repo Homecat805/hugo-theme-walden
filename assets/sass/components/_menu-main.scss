@@ -1,0 +1,25 @@
+.menu {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    .menu-item {
+        margin: 0 .5rem;
+
+        a {
+            color: var(--primary-900);
+            &:hover {
+                color: var(--white);
+            }
+        }
+        .active {
+            color: var(--white);
+        }
+    }
+}

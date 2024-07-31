@@ -1,0 +1,25 @@
+.pagination {
+
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    .page-item {
+        margin: 0 .25rem;
+    }
+    .page-link {
+        display: block;
+        padding: .25rem .5rem;
+        border-radius: .25rem;
+        color: var(--primary-500);
+        background-color: var(--slate-050);
+        transition: .5s;
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary-500);
+        }
+    }
+}

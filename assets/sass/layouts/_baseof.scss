@@ -1,40 +1,36 @@
-// 页面的基本框架 开始 
-html { 
+html {
     height: 100%;
 }
 
 body {
+    background: url("/images/bg.jpg") top center repeat;
+    background-attachment: fixed;
+    
     height: 100%;
 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto 1fr auto;
+    padding-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 
     font-size: 16px;
-    font-family: $sans-serif;
-    background-color: var(--baseof-bg);
-    color: var(--baseof-ft);
+    font-family: $sans;
 }
 
 #header {
-    grid-column: 1;
-    grid-row: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    width: 100%;
+
+    background: url("/images/bg.jpg") top center repeat;
 }
 
-#necker {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: var(--stager-bg);
-    color: var(--stage-ft);
-}
 #stager {
-    grid-column: 1;
-    grid-row: 3;
-    background-color: var(--stager-bg);
-    color: var(--stage-ft);
+    flex: 1;
+    background: rgba(255,255,255,0.2)
 }
-#footer {
-    grid-column: 1;
-    grid-row: 4;
-}
-// 页面的基本框架 结束 

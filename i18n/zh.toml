@@ -8,7 +8,7 @@ other = "标签"
 other = "相关文章"
 
 [toc]
-other = "目录"
+other = "标题索引"
 
 [about]
 other = "关于"
@@ -21,3 +21,6 @@ other = "下篇"
 
 [read]
 other = "阅读文章"
+
+[docs]
+other = "文档"

@@ -1,68 +1,69 @@
-.base-header {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-}
+#header {
+  .header {
+    height: 60px;
 
-#title {
-    grid-column: 1;
-    grid-row: 1;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-self: start;
-    padding: .75rem 1rem;
-    font-size: 1.375rem;
-
-    a {
-        text-decoration: none;
-        color: var(--primary);
-        transition: all .5s;
-        &:hover {
-            color: var(--secondary);
-        }
+    justify-content: space-between;
+    .title {
+      padding: 0 1rem;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--white);
     }
-}
-
-#menuToggle {
-    grid-column: 2;
-    grid-row: 1;
-    align-items: center;
-    justify-self: end;
-    padding: .5rem 1rem;
-    font-size: 1.375rem;
-}
-
-#menu {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
-    align-items: start;
-    justify-self: center;
-    display: none;
-    width: 100%;
-}
-
-a {
-    color: var(--baseof-ft);
-    transition: all .5s;
-    &:hover {
-        color: var(--secondary);
+    .other {
+      flex: 1;
     }
-}
-
-@media (min-width: $sm) {
-
-    .base-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    #menuToggle {
-        display: none;
-    }
-    
-    #menu {
+    .menu-main-toggle {
+      font-size: 1.5rem;
+      a {
         display: block;
-        width: auto;
+        margin: .5rem;
+        padding: .5rem;
+        color: var(--primary-900);
+          &:hover {
+            color: var(--white);
+          }
+      }
+      .close {
+        display: none;
+      }
     }
+  }
+  .menu-main {
+    display: none;
+    padding: .5rem;
+    .menu-container {
+      padding: .5rem;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  #header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .header {
+      .menu-main-toggle {
+        .open {
+          display: none;
+        }
+      }
+    }
+    .menu-main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  #header {
+    padding: 0 1rem;
+  }
 }

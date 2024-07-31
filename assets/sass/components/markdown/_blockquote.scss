@@ -1,0 +1,10 @@
+    // 引用
+    blockquote {
+        border-left: .375rem solid var(--slate-300);
+        background-color: var(--slate-100);
+        margin-top: 1rem;
+        padding: 1rem 1.5rem;
+        p {
+            margin: 0;
+        }
+    }

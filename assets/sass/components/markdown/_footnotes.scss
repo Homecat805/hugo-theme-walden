@@ -1,0 +1,43 @@
+    // 脚注
+    .footnotes {
+        margin-top: 3rem;
+        border-top: 1px solid var(--slate-300);
+
+        hr {
+            display: none;
+        }
+
+        ol {
+            font-size: .875rem;
+            padding-left: 1rem;
+            li {
+                padding-left: .5rem;
+                p {
+                    line-height: 1.5rem;
+                    .footnote-backref {
+                        padding: 0 .25rem;
+
+                    }
+                }
+            }
+        }
+    }
+
+    cite {
+        font-size: .75rem;
+        .footnote-ref {
+
+            font-style: normal;
+            padding: .125rem .125rem;
+
+            &::before {
+                content: "【";
+
+            }
+
+            &::after {
+                content: "】";
+
+            }
+        }
+    }

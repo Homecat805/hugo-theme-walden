@@ -13,11 +13,20 @@ other = "TABLE OF CONTENT"
 [about]
 other = "ABOUT"
 
+[first]
+other = "FIRST"
+
 [prev]
 other = "PREV"
 
 [next]
 other = "NEXT"
 
+[last]
+other = "LAST"
+
 [read]
 other = "Reading"
+
+[docs]
+other = "Ducument"

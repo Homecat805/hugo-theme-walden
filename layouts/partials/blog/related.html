@@ -1,0 +1,11 @@
+{{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 15 }}
+{{ with $related }}
+<section class="card-sider">
+    <div class="card-sider-title">{{ i18n "related"}}</div>
+    <div class="card-sider-content">
+    {{ range . }}
+        <a class="related" href="{{.Permalink}}"><i class="bi bi-link-45deg"></i><span>{{.Title}}</span></a>
+    {{ end }}
+    </div>
+</section>
+{{ end }}

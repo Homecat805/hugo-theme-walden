@@ -1,9 +1,14 @@
-.copyright {
-    padding: .75rem 1rem;
-    text-align: center;
+#footer {
     font-size: .875rem;
-    line-height: 1.5rem;
-    span {
-        margin-right: .5rem;
+    .copyright {
+        padding: .875rem 1rem;
+        text-align: center;
+        color: var(--slate-700);
+        span {
+            margin-right: 1rem;
+            i {
+                margin-right: .25rem;
+            }
+        }
     }
 }

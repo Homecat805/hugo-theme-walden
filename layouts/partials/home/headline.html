@@ -1,0 +1,10 @@
+{{ range first 1 (where .Site.RegularPages "Params.series" "headline")  }}
+    {{ with .Resources.Get "headline.jpg" }}
+    <div class="headline" style="background: url({{ .RelPermalink }}) center center no-repeat;">
+    {{ end }}
+        <div class="headline-text">
+            <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+            <p>{{ .Summary }}</p>
+        </div>
+    </div>
+{{ end }}

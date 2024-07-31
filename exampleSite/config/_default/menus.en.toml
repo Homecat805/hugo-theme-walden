@@ -1,10 +1,15 @@
 [[main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
+  name = 'Home'
+  identifier = "home"
+  pageRef = '/'
+  weight = 10
+
 [[main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 20
+  name = 'Blog'
+  identifier = "blog"
+  pageRef = '/blog'
+  weight = 20
+
+
+
+

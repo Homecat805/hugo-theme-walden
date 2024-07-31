@@ -1,0 +1,14 @@
+<div class="card-sider">
+    <div class="card-sider-title">{{i18n "categories"}}</div>
+    <div class="card-sider-content">
+    {{ with .Site.Taxonomies.categories }}
+        {{ range . }}
+        <a class="dumbbell" href="{{.Page.Permalink}}">
+            <span>{{.Page.Title}}</span>
+            <span class="dashed-line"></span>
+            <span>{{.Count}}</span>
+        </a>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

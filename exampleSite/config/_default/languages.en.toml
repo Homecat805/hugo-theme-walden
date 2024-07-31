@@ -1,12 +1,13 @@
+title = 'Walden'
+
 contentDir = 'content/en'
+languageName = 'English'
 languageCode = 'en-US'
-languageName = 'EN'
+
+copyright = 'All rights reserved'
+
 weight = 1
 
-title = 'Walden'
-copyright = 'All Rights Reserved'
-
-[author]
-    name = "Homecat"
-    description = "Amateur programmer ~ Hiker ~ Half-marathon runner ~ Classical music lover ..."
-    email = "13050082@qq.com"
+[params]
+    author = 'Homecat'
+    description = 'Like a bridge over the troubled water, I will lay me down.'

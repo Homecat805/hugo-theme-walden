@@ -1,0 +1,23 @@
+// 短代码
+code {
+    font-family: $mono;
+    font-size: .875rem;
+    background-color: var(--slate-100);
+    padding: .125rem .375rem;
+}
+
+// 格式化文本 或 长代码
+pre {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+
+    border: 1px solid var(--slate-200);
+
+
+    overflow-x: auto;
+
+    code {
+        padding: 0;
+
+    }
+}

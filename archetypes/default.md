@@ -1,11 +1,10 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: false
-author: ""
-categories: ""
-tags: [""]
-headline: true
----
++++
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+date = {{ .Date }}
+draft = false
+weight = 1
+[params]
+  author = 'Undefined'
++++
 
 <!--more-->

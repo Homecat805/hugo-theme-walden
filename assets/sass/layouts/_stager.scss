@@ -1,57 +1,83 @@
-.stager {
+#stager {
+  main {}
+  aside {
+    position: fixed;
+    top: 60px;
+    left: -100vw;
+    bottom: 0;
+    z-index: 40;
 
-    display: flex;
-    flex-direction: column;
-
-    main {
-        overflow: auto;
+    width: 100vw;
+    background: url("/images/bg-sider.jpg") top center repeat;
+    
+    .sider-inner-container {
+      height: 100%;
+      padding: 2rem;
+      overflow: auto; /* 保持可滚动 */
+      scrollbar-width: none; /* 对于 Firefox 隐藏滚动条 */
+      &::-webkit-scrollbar {
+          display: none; /* 对于 Chrome, Safari 和 Opera 隐藏滚动条 */
+      }
+      .card-container {
+        margin-bottom: 2rem;
+      }
     }
+  }
+  .toggles {
+    position: fixed;
+    right: .5rem;
+    bottom: .5rem;
+    z-index: 100;
 
-    aside {}
-
-
-    .gutter {
-        height: 1rem;
-        width: 1rem;
-    }
-
-    a {
-        color: var(--stager-ft);
-        background-color: var(--stager-bg);
-        transition: all .5s;
+      a {
+        display: block;
+        margin: .5rem;
+        padding: .5rem;
+        font-size: 1.25rem;
+        border-radius: .25rem;
+        color: var(--white);
+        background-color: var(--primary-700);
         &:hover {
-            color: var(--stager-bg);
-            background-color: var(--secondary);
+          background-color: var(--primary-900);
         }
-    }
+      }
+     .sider-close {
+        display: none;
+      }
+  }
 }
 
 @media (min-width: $md) {
-    .stager {
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        main {
-            flex: 1;
-        }
-        aside {
-            width: 280px;
-        }
+  #stager {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    main {
+      flex: 1;
     }
+    aside {
+      position: static;
+      width: 250px;
+      background: rgba(255,255,255,.2);
+      .sider-inner-container {
+        height: auto;
+        position: sticky;
+        top: 60px;
+      }
+    }
+    .toggles {
+      .sider-open{
+        display: none;
+      }
+    }
+  }
 }
 
 @media (min-width: $lg) {
-    .stager {
-        aside {
-            width: 320px;
-        }
+  #stager {
+    aside {
+      width: 300px;
     }
-}
-
-@media (min-width: $xl) {
-    .stager {
-        aside {
-            width: 340px;
-        }
-    }
+  }
 }

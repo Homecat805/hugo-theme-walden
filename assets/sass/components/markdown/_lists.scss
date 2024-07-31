@@ -1,0 +1,21 @@
+// 列表
+ol,ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+
+    ol,ul {
+        margin-top: 0;
+        padding-left: 1rem;
+    }
+    
+    li {
+        margin-top: .25rem;
+    }
+}
+
+ul {
+    li {
+        list-style: disc;
+    }
+
+}

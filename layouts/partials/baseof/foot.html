@@ -1,5 +1,7 @@
-<!-- Scripts -->
-<script src="{{ "./vendor/jquery/jquery-3.7.0.js" | relURL }}"></script>
+<!-- Jquery -->
+<script src="{{ "vendor/jquery-3.7.1/jquery.min.js" | relURL }}"></script>
 
-{{ $js := resources.Get "js/main.js" | js.Build (dict "targetPath" "js/main.js" ) }}
-<script src="{{ $js.RelPermalink }}"></script>
+<!-- Local JS -->
+{{- with resources.Get "js/main.js" | js.Build }}
+<script src="{{ .RelPermalink }}"></script>
+{{- end }}

@@ -1,0 +1,83 @@
+.card-sider {
+    font-size: .875rem;
+
+    .card-sider-title {
+        color: var(--primary-900);
+
+    }
+    .card-sider-content {
+        padding: .5rem 0;
+    }
+}
+
+.dumbbell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: .375rem 0;
+    color: var(--slate-700);
+    .dashed-line {
+        transition: .5s;
+        flex: 1;
+        margin: 0 1rem;
+        border-top: 1px dashed var(--slate-700);
+    }
+    &:hover {
+        color: var(--white);
+        .dashed-line {
+            border-top: 1px dashed var(--white);
+        }
+    }
+}
+
+.follow {
+    display: inline-block;
+    padding: .375rem 1rem .375rem 0;
+    color: var(--slate-700);
+    .count {
+        padding: 1px .25rem;
+        border-radius: .5rem;
+        font-size: .625rem;
+        color: var(--white);
+        background-color: var(--primary-500);
+    }
+    &:hover {
+        color: var(--white);
+    }
+}
+
+.related {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: .25rem 0;
+    color: var(--slate-700);
+    &:hover {
+        color: var(--white);
+    }
+
+    i {
+        margin-right: .5rem;
+    }
+}
+
+#TableOfContents {
+    ul {
+        list-style: disc;
+        margin-left: 1rem;
+
+        li {
+            a {
+                display: block;
+                padding: .25rem 0;
+                color: var(--slate-700);
+                &:hover {
+                    color: var(--white);
+
+                }
+            }
+        }
+    }
+}

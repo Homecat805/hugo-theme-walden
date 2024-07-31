@@ -1,8 +1,5 @@
-<div class="container">
-    <div class="copyright">
-        <i class="bi bi-c-circle"></i>
-        <span>{{ now.Format "2006" }}</span>
-        <span>{{.Site.Author.name}}</span>
-        <span>{{.Site.Copyright}}</span>
-    </div>
+<div class="copyright">
+    <span><i class="bi bi-c-circle"></i>{{ now.Year }}</span>
+    <span>{{ .Site.Params.author }}</span>
+    <span>{{ .Site.Copyright }}</span>
 </div>

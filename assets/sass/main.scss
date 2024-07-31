@@ -1,24 +1,25 @@
-@import "basis/variables";
-@import "basis/init";
+@import "./themes/root";
+@import "./themes/light";
 
-@import "themes/root";
-@import "themes/light";
-@import "themes/style/highlight";
+@import "./basis/fonts";
+@import "./basis/variables";
+@import "./basis/init";
 
-@import "layouts/baseof";
-@import "layouts/containers";
-@import "layouts/header";
-@import "layouts/stager";
-@import "layouts/footer";
+@import "./layouts/baseof";
+@import "./layouts/header";
+@import "./layouts/stager";
+@import "./layouts/footer";
+@import "./layouts/middlewares/home";
+@import "./layouts/middlewares/blog";
 
-@import "components/menu";
-@import "components/headline";
-@import "components/breadcrumb";
-@import "components/about";
-@import "components/item";
-@import "components/card";
-@import "components/pagination";
-@import "components/content";
-@import "components/markdown";
-
-@import "shortcodes/figure";
+@import "./components/screen-width";
+@import "./components/menu-main";
+@import "./components/breadcrumb";
+@import "./components/paginator";
+@import "./components/navigator";
+@import "./components/card-post";
+@import "./components/card-sider";
+@import "./components/card-headline";
+@import "./components/blog-post";
+@import "./components/markdown";
+@import "./components/headline";
