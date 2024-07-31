@@ -1,5 +1,5 @@
 baseURL = 'https://genway.com.cn/'
-theme = 'gw-tester'
+theme = 'hugo-theme-walden'
 
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
