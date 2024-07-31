@@ -5,11 +5,13 @@
     justify-content: space-between;
 
     margin-bottom: 1rem;
+
     .navigator-item {
         width: 50%;
+
         .item-link {
             font-size: .875rem;
-            display: block;
+            line-height: 1.5rem;
             color: var(--slate-600);
             transition: .5rem;
             &:hover {
@@ -22,14 +24,14 @@
         .left {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: stretch;
             justify-content: flex-start;
     
         }
         .right {
             display: flex;
             flex-direction: row-reverse;
-            align-items: flex-start;
+            align-items: stretch;
             justify-content: flex-start;
     
         }
