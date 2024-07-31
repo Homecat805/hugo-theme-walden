@@ -28,8 +28,15 @@
         padding: 1rem 1.5rem;
         .card-container {
             padding: .75rem;
-
             width: 33.33%;
+        }
+    }
+}
+
+@media (min-width: $xxxl) {
+    #headline-list {
+        .card-container {
+            width: 25%;
         }
     }
 }
