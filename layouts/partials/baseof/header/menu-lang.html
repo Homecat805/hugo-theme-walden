@@ -1,7 +1,7 @@
 {{ if eq .Site.Params.multiLingual true }}
     <ul class="menu">
     <!-- 语言选择 开始 -->
-    {{ if .Site.IsMultiLingual }}
+    {{ if hugo.IsMultilingual }}
     {{- $p := .Site.Language.LanguageName -}}
         {{ range $.Site.Home.AllTranslations }}
             {{- if ne .Language.LanguageName $p }}
