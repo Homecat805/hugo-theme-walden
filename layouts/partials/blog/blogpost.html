@@ -16,10 +16,10 @@
             </span>
         </div>
     </div>
-    {{ with .Resources.Get "headline.jpg" }}
+    {{ with .Resources.Get "thumbnail.jpg" }}
         <img src="{{ .RelPermalink }}" alt="Thumbnail">
     {{ else }}
-        <img src="{{ "images/headline.jpg" | relURL }}" alt="Thumbnail">
+        <img src="{{ "images/thumbnail.jpg" | relURL }}" alt="Thumbnail">
     {{ end }}
     <div class="blog-post-container markdown">
         {{.Content}}
