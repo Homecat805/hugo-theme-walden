@@ -1,0 +1,21 @@
+[[main]]
+  name = 'Home'
+  identifier = "home"
+  pageRef = '/'
+  weight = 10
+
+[[main]]
+  name = 'Blog'
+  identifier = "blog"
+  pageRef = '/blog'
+  weight = 20
+
+[[main]]
+  name = 'Docs'
+  identifier = "docs"
+  pageRef = '/docs'
+  weight = 30
+
+
+
+

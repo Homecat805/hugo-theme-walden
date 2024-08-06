@@ -11,9 +11,11 @@
 @import "./layouts/footer";
 @import "./layouts/middlewares/home";
 @import "./layouts/middlewares/blog";
+@import "./layouts/middlewares/docs";
 
 @import "./components/screen-width";
 @import "./components/menu-main";
+@import "./components/menu-tree";
 @import "./components/breadcrumb";
 @import "./components/paginator";
 @import "./components/navigator";
@@ -21,6 +23,7 @@
 @import "./components/card-sider";
 @import "./components/card-headline";
 @import "./components/blog-post";
+@import "./components/docs-post";
 @import "./components/markdown";
 @import "./components/headline";
 

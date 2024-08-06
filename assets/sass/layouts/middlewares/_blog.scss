@@ -1,63 +1,45 @@
 #breadcrumb {
-  padding: 1rem 1rem 0;
+    padding: 1rem;
 }
 
 #bloglist {
-  padding: .5rem;
-
-  display: flex;
-  flex-flow: wrap;
-  .card-container {
+    display: flex;
+    flex-flow: wrap;
     padding: .5rem;
-    width: 100%;
-  }
-}
-
-#paginator {
-  padding: 2rem;
+    .card-post-container {
+        width: 100%;
+        padding: .5rem;
+    }
 }
 
 #blogpost {
-  padding: 1rem;
+    padding: 1rem;
+}
+
+#paginator {
+    padding: 2rem;
 }
 
 #navigator {
-  padding: 1rem 1rem 2rem;
+    padding: 1rem;
 }
 
-
-
-@media (min-width: $lg) {
-  #breadcrumb {
-    padding: 1rem 2rem 0;
-  }
-
-  #bloglist {
-    padding: .5rem 1.5rem;
-  }
-
-  #blogpost {
-    padding: 1rem 2rem;
-  }
-
-  #navigator {
-    padding: 1rem 2rem 2rem;
-  }
-
+.card-sider-container {
+    margin: 2rem;
 }
 
 @media (min-width: $xl) {
-  #bloglist {
-    .card-container {
-      width: 50%;
+    #bloglist {
+        padding: 0 1rem;
+        .card-post-container {
+            width: 50%;
+        }
     }
-  }
-}
+    #blogpost {
+        padding: 1rem 2rem;
+    }
 
-@media (min-width: $xxxl) {
-  #bloglist {
-    .card-container {
-      width: 33.33%;
+    #navigator {
+        padding: 1rem 2rem;
     }
-  }
 }

@@ -1,5 +1,4 @@
 #stager {
-  main {}
   aside {
     position: fixed;
     top: 60px;
@@ -7,22 +6,15 @@
     bottom: 0;
     z-index: 40;
 
-    width: 100vw;
     background: url("/images/bg-sider.jpg") top center repeat;
-    
-    .sider-inner-container {
+    width: 100vw;
+
+    .inner-container {
       height: 100%;
-      padding: 2rem;
-      overflow: auto; /* 保持可滚动 */
-      scrollbar-width: none; /* 对于 Firefox 隐藏滚动条 */
-      &::-webkit-scrollbar {
-          display: none; /* 对于 Chrome, Safari 和 Opera 隐藏滚动条 */
-      }
-      .card-container {
-        margin-bottom: 2rem;
-      }
+      overflow: auto;
     }
   }
+
   .toggles {
     position: fixed;
     right: .5rem;
@@ -55,17 +47,28 @@
     justify-content: flex-start;
     main {
       flex: 1;
+      overflow: auto;
     }
     aside {
       position: static;
-      width: 250px;
       background: rgba(255,255,255,.2);
-      .sider-inner-container {
-        height: auto;
+
+      .inner-container {
         position: sticky;
-        top: 60px;
+        top: 0;
+        z-index: 20;
+
+        height: auto
+
       }
     }
+    .aside-blog {
+      width: 250px;
+    }
+    .aside-default {
+      width: 250px;
+    }
+
     .toggles {
       .sider-open{
         display: none;
@@ -76,7 +79,7 @@
 
 @media (min-width: $lg) {
   #stager {
-    aside {
+    .aside-blog {
       width: 300px;
     }
   }

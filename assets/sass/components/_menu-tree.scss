@@ -1,0 +1,47 @@
+.menu-tree {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    list-style: none;
+    color: var(--slate-600);
+
+    .menu-tree-title {
+        margin: .25rem 0;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .close {
+                display: none;
+            }
+        }
+    }
+
+    .menu-tree-item {
+        margin: .25rem 0;
+    }
+
+    .menu-tree {
+        padding-left: .5rem;
+        display: none;
+    }
+
+    i {
+        margin-right: .5rem;
+    }
+
+    a {
+        display: block;
+        color: var(--slate-600);
+        &:hover {
+            color: var(--white);
+        }
+    }
+
+    .active {
+        color: var(--white);
+    }
+
+}

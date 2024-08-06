@@ -6,9 +6,9 @@ body {
     background: url("/images/bg.jpg") top center repeat;
     background-attachment: fixed;
     
-    height: 100%;
-
     padding-top: 60px;
+
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -20,17 +20,25 @@ body {
 }
 
 #header {
+    background: url("/images/bg.jpg") top center repeat;
+
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 50;
+    z-index: 40;
 
-    width: 100%;
-
-    background: url("/images/bg.jpg") top center repeat;
+    width: 100vw;
 }
 
 #stager {
     flex: 1;
     background: rgba(255,255,255,0.2);
+}
+
+@media (min-width: $md) {
+    body {
+        padding-top: 0;
+    }
+    #header {
+        position: static;
+    }
 }

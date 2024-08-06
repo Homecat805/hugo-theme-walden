@@ -1,0 +1,19 @@
++++
+title = 'Demo'
+date = 2023-06-17T19:10:02+08:00
+draft = false
+weight = 1
+[params]
+    author = 'Homecat'
++++
+
+Two ways to view the demo：
+
+1. Visit demo site: [notes.genway.com.cn](https://notes.genway.com.cn)
+2. View demo by cloning repository from Github.
+
+```
+git clone https://github.com/homecat805/gw-notes.git gw-notes
+cd gw-notes
+hugo server --source "exampleSite" --themesDir  "../.."
+```

@@ -1,0 +1,13 @@
+title = 'Walden'
+
+contentDir = 'content/en'
+languageName = 'English'
+languageCode = 'en-US'
+
+copyright = 'All rights reserved'
+
+weight = 1
+
+[params]
+    author = 'Homecat'
+    description = 'Like a bridge over the troubled water, I will lay me down.'

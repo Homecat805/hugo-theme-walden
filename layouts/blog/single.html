@@ -4,18 +4,18 @@
         {{ partial "blog/breadcrumb.html" . }}
     </div>
     <div id="blogpost">
-        {{ partial "blog/blogpost.html" . }}
+        {{ partial "blog/blog-post.html" . }}
     </div>
     <div id="navigator">
         {{ partial "blog/navigator.html" . }}
     </div>
 </main>
-<aside>
-    <div class="sider-inner-container">
-        <div class="card-container">
+<aside class="aside-blog">
+    <div class="inner-container">
+        <div class="card-sider-container">
             {{ partial "blog/toc.html" . }}
         </div>
-        <div class="card-container">
+        <div class="card-sider-container">
             {{ partial "blog/related.html" . }}
         </div>
     </div>
@@ -23,5 +23,7 @@
 <div class="toggles">
     <a class="sider-open"><i class="bi bi-layout-sidebar"></i></a>
     <a class="sider-close"><i class="bi bi-x"></i></a>
+    <a href="#"><i class="bi bi-chevron-up"></i></a>
 </div>
 {{ end }}
+

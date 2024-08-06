@@ -1,0 +1,29 @@
+baseURL = 'https://genway.com.cn/'
+theme = 'hugo-theme-walden'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+
+[pagination]
+  disableAliases = false
+  pagerSize = 12
+  path = 'page'
+
+[params]
+  multiLingual = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+# 用于渲染的参数
+[markup]
+    defaultMarkdownHandler = 'goldmark'
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.129.0"

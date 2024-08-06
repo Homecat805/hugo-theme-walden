@@ -1,0 +1,30 @@
+<article class="notes-post">
+    <div class="notes-post-title">
+        <h1>{{.Title}}</h1>
+        <div class="notes-post-meta">
+            <span>
+                <i class="bi bi-calendar3"></i>
+                {{.Date.Format "Jan 2, 2006"}}
+            </span>
+            <span>
+                <i class="bi bi-person-circle"></i>
+                {{ with .Params.author }}
+                    {{ . }}
+                {{ else }}
+                    {{ .Site.Params.author }}
+                {{ end }}
+            </span>
+        </div>
+    </div>
+    <div class="notes-post-container ">
+        <div class="note-content markdown">{{.Content}}</div>
+        <div class="note-toc">
+            <div class="card-sider">
+                <div class="card-sider-title">{{i18n "toc"}}</div>
+                <div class="card-sider-content">
+                    {{ .TableOfContents }}
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,18 @@
+[[main]]
+  name = '首页'
+  identifier = "home"
+  pageRef = '/'
+  pre = 'bi bi-house-fill'
+  weight = 10
+
+[[main]]
+  name = '博客'
+  identifier = "blog"
+  pageRef = '/blog'
+  weight = 20
+
+[[main]]
+  name = '笔记'
+  identifier = "docs"
+  pageRef = '/docs'
+  weight = 30

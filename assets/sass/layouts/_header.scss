@@ -33,7 +33,7 @@
   }
   .menu-main {
     display: none;
-    padding: .5rem;
+    padding: .5rem 0;
     .menu-container {
       padding: .5rem;
     }
@@ -62,7 +62,7 @@
   }
 }
 
-@media (min-width: $lg) {
+@media (min-width: $xxl) {
   #header {
     padding: 0 1rem;
   }
