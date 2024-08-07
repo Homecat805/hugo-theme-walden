@@ -82,14 +82,14 @@ $(document).ready(function(){
 });
 
 // scroll wheel  ---------------------------------------------- start
-/*
+
 $(window).scroll(function() {
     var distance = $(this).scrollTop();
     if ( distance > 100) {
-        $('#header').slideUp(250);
+        $('.toggles').find('.totop').show();
     } else {
-        $('#header').slideDown(250);
+        $('.toggles').find('.totop').hide();
     }
 });
-*/
+
 // scroll wheel ----------------------------------------------- end  

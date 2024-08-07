@@ -33,7 +33,11 @@
           background-color: var(--primary-900);
         }
       }
-     .sider-close {
+      .sider-close {
+        display: none;
+      }
+
+      .totop {
         display: none;
       }
   }
