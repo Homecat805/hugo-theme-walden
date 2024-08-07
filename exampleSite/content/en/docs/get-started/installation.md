@@ -18,8 +18,8 @@ mkdir mysite
 cd mysite
 git init
 git branch -m main
-git submodule add git@github.com:Homecat805/gw-notes.git themes/gw-notes
-cp -rf themes/gw-notes/exampleSite/* ./
+git submodule add git@github.com:Homecat805/hugo-theme-walden.git themes/hugo-theme-walden
+cp -rf themes/hugo-theme-walden/exampleSite/* ./
 ```
 
 ## View Site
