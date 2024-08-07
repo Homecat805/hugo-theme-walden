@@ -5,11 +5,15 @@
 }
 
 #menutree {
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 @media (min-width: $lg) {
     #docspost {
         padding: 1rem 2rem; 
+    }
+
+    #menutree {
+        padding: 1rem;
     }
 }
