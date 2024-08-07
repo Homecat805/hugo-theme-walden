@@ -1,12 +1,13 @@
-.notes-post {
-    height: 100%;
+.docs-post {
     color: var(--slate-600);
-    .notes-post-title {
-        padding: 1rem 0;
+    .post-header {
         border-bottom: 1px solid var(--slate-200);
-        .notes-post-meta {
+        .post-title {
+            padding-top: 1rem;
+        }
+        .post-meta {
+            padding: 1.25rem 0;
             font-size: .875rem;
-            padding: 1rem 0;
             span {
                 margin-right: 1rem;
                 i {
@@ -16,56 +17,35 @@
             }
         }
     }
-    .notes-post-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+    .post-container {
+        margin-bottom: 2rem;
+        .post-content {
 
-        padding-bottom: 2rem;
-
-        .note-content {
-            flex: 1;
-            overflow: auto;
         }
-        .note-toc {
-            font-size: .875rem;
-            width: 100%;
+        .post-toc {
+            background-color: var(--primary-050);
             margin-top: 1rem;
             padding: 1rem;
-            background-color: var(--primary-050);
+            font-size: .875rem;
         }
     }
 }
 
 @media (min-width: $xl) {
-    .notes-post {
-        .notes-post-container {
+    .docs-post {
+        .post-container {
             display: flex;
             flex-direction: row;
-            .note-content {
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .post-content {
+                margin-right: 1rem;
                 flex: 1;
-                padding-right: 2rem;
+                overflow: auto;
             }
-            .note-toc {
+            .post-toc {
                 width: 230px;
-
-            }
-        }
-    }
-}
-
-
-
-@media (min-width: $xxl) {
-    .notes-post {
-        .notes-post-container {
-            .note-content {
-                flex: none;
-                width: 886px;
-            }
-            .note-toc {
-                flex: 1;
             }
         }
     }
