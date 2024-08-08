@@ -63,21 +63,3 @@
     }
 }
 
-#TableOfContents {
-    ul {
-        list-style: disc;
-        margin-left: 1rem;
-
-        li {
-            a {
-                display: block;
-                padding: .25rem 0;
-                color: var(--slate-700);
-                &:hover {
-                    color: var(--white);
-
-                }
-            }
-        }
-    }
-}
