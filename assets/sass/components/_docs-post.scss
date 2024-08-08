@@ -19,14 +19,11 @@
     }
     .post-container {
         margin-bottom: 2rem;
-        .post-content {
-
-        }
         .post-toc {
-            background-color: var(--primary-050);
-            margin-top: 1rem;
-            padding: 1rem;
             font-size: .875rem;
+            background-color: var(--primary-050);
+            padding: 1rem 1rem 1rem 2rem;
+            margin-top: 1rem;
         }
     }
 }

@@ -1,22 +1,15 @@
 #TableOfContents {
-    background-color: var(--primary-100);
-    padding: 1rem;
-    margin-top: 2rem;
-
-    font-size: .875rem;
-
     ul {
         list-style: disc;
-        margin-top: 0;
-
+        margin: 0;
         li {
             a {
                 display: block;
+                padding: .25rem 0;
 
                 color: var(--slate-700);
                 &:hover {
                     color: var(--primary-600);
-
                 }
             }
         }

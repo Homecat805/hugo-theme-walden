@@ -24,5 +24,11 @@
         margin: 0 auto;
         max-width: 800px;
         color: var(--slate-600);
+        .toc {
+            background-color: var(--primary-050);
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: .875rem;
+        }
     }
 }
