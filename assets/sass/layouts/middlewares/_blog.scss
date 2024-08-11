@@ -44,6 +44,12 @@
     }
 }
 
+@media (min-width: $xxl) {
+    #breadcrumb {
+        padding: 1rem 2rem;
+    }
+}
+
 @media (min-width: $xxxl) {
     #bloglist {
         padding: 0 1rem;
