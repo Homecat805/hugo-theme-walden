@@ -88,3 +88,11 @@
     }
   }
 }
+
+@media (min-width: $xxl) {
+  #stager {
+    .aside-default {
+      width: 300px;
+    }
+  }
+}

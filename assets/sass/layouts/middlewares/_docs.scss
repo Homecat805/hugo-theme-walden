@@ -5,7 +5,13 @@
 }
 
 #menutree {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
+}
+
+@media (min-width: $md) {
+    #menutree {
+        padding: 1rem;
+    }
 }
 
 @media (min-width: $lg) {
@@ -15,5 +21,11 @@
 
     #menutree {
         padding: 1rem;
+    }
+}
+
+@media (min-width: $xxl) {
+    #menutree {
+        padding: 1rem 2rem;
     }
 }
