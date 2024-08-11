@@ -47,3 +47,17 @@
         }
     }
 }
+
+@media (min-width: $xxl) {
+    .docs-post {
+        .post-container {
+            .post-content {
+                flex: none;
+                width: 922px;
+            }
+            .post-toc {
+                flex: 1;
+            }
+        }
+    }
+}

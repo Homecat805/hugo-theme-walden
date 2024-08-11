@@ -43,3 +43,13 @@
         padding: 1rem 2rem;
     }
 }
+
+@media (min-width: $xxxl) {
+    #bloglist {
+        padding: 0 1rem;
+        .card-post-container {
+            width: 33.33%;
+        }
+    }
+
+}
