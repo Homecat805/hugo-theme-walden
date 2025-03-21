@@ -14,6 +14,6 @@
 <link rel="stylesheet" href="{{"./vendor/bootstrap-icons-1.11.3/font/bootstrap-icons.css" | relURL }}">
 
 <!-- SASS -->
-{{- with resources.Get "sass/main.scss" | resources.ToCSS (dict "targetPath" "css/main.css" ) }}
+{{- with resources.Get "sass/main.scss" | css.SASS (dict "targetPath" "css/main.css" ) }}
 <link href="{{ .RelPermalink }}" rel="stylesheet" type="text/css">
 {{- end }}
