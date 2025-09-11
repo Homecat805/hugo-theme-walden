@@ -3,42 +3,42 @@ html {
 }
 
 body {
-    background: url("/images/bg.jpg") top center repeat;
-    background-attachment: fixed;
-    
+    height: 100%;
+
     padding-top: 60px;
 
-    height: 100%;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
 
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-
-    font-size: 16px;
-    font-family: $sans;
 }
 
 #header {
-    background: url("/images/bg.jpg") top center repeat;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--slate-100);
 
-    position: fixed;
+    position:fixed;
     top: 0;
-    z-index: 40;
+    left: 0;
+    z-index: 100;
 
-    width: 100vw;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #stager {
     flex: 1;
-    background: rgba(255,255,255,0.2);
+
+    background-color: var(--white);
 }
 
-@media (min-width: $md) {
-    body {
-        padding-top: 0;
-    }
-    #header {
-        position: static;
-    }
+#footer {
+    background-color: var(--white);
+    border-top: 1px solid var(--slate-100);
 }

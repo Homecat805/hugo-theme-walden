@@ -1,0 +1,115 @@
+@use '../abstracts/variables' as *;
+
+.card {
+    margin-bottom: 2rem;
+    .card-title {
+        font-weight: bold;
+        color: var(--slate-700);
+        padding: 0 .5rem .5rem;
+
+    }
+    .card-content {
+        font-size: .875rem;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    a {
+        color: var(--slate-600);
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary-600);
+        }
+    }
+
+    .normal {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+            padding: .125rem .5rem;
+            margin: 1px 0;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+
+    .follow {
+        display: inline-block;
+        padding: .25rem .5rem;
+        margin: 1.125px 0;
+    }
+
+    .dumbbell {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: .875rem;
+
+        padding: .25rem .5rem;
+        margin: 1.125px 0;
+
+        .dashed-line {
+            flex: 1;
+            border-top: 1px dashed var(--slate-600);
+            margin: 0 1rem;
+        }
+
+        &:hover {
+            .dashed-line {
+                flex: 1;
+                border-top: 1px dashed var(--white);
+                margin: 0 1rem;
+            }
+        }
+    }
+
+}
+
+#TableOfContents {
+    ul {
+        font-size: .875rem;
+        list-style: disc inside;
+        li {
+            a {
+                display: inline-block;
+                padding: .125rem .5rem;
+                margin: 1px 0;
+            }
+
+            ul {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .card {
+   
+        .dumbbell {
+            width: 50%;
+
+        }
+    
+    }
+}
+
+@media (min-width: $xl) {
+    .card {
+   
+        .dumbbell {
+            width: 100%;
+
+        }
+    
+    }
+}

@@ -1,7 +1,0 @@
-<!-- Jquery -->
-<script src="{{ "vendor/jquery-3.7.1/jquery.min.js" | relURL }}"></script>
-
-<!-- Local JS -->
-{{- with resources.Get "js/main.js" | js.Build }}
-<script src="{{ .RelPermalink }}"></script>
-{{- end }}

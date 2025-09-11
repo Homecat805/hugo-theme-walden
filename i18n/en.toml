@@ -26,7 +26,7 @@ other = "NEXT"
 other = "LAST"
 
 [read]
-other = "Reading"
+other = "Read More"
 
 [docs]
 other = "Ducument"

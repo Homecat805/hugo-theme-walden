@@ -1,21 +1,14 @@
 [[main]]
-  name = 'Home'
-  identifier = "home"
-  pageRef = '/'
-  weight = 10
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
 
 [[main]]
-  name = 'Blog'
-  identifier = "blog"
-  pageRef = '/blog'
-  weight = 20
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 20
 
 [[main]]
-  name = 'Docs'
-  identifier = "docs"
-  pageRef = '/docs'
-  weight = 30
-
-
-
-
+    name = 'Document'
+    pageRef = '/document'
+    weight = 30

@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+
+.menu-tree {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    list-style: none;
+    color: var(--slate-600);
+
+    .menu-tree-title {
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 1px 0 1px .5rem;
+
+            .close {
+                display: none;
+            }
+        }
+    }
+
+    .menu-tree-item {
+        margin: 1px 0;
+    }
+
+    .menu-tree {
+        padding-left: 1rem;
+        display: none;
+    }
+
+
+
+    a {
+        display: block;
+        padding: .125rem .5rem;
+        color: var(--slate-600);
+        &:hover {
+            background-color: var(--primary-600);
+            color: var(--white);
+        }
+    }
+
+    .active {
+        background-color: var(--primary-600);
+        color: var(--white);
+    }
+
+}

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-title">{{(i18n "categories")}}</div>
+    <div class="card-content">
+    {{ with .Site.Taxonomies.categories }}
+        {{ range . }}
+        <a class="dumbbell" href="{{.Page.Permalink}}">
+            <span>{{.Page.Title}}</span>
+            <span class="dashed-line"></span>
+            <span>{{.Count}}</span>
+        </a>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-title">{{i18n "tags"}}</div>
+    <div class="card-content">
+    {{ with .Site.Taxonomies.tags }}
+        {{ range . }}
+        <a class="follow" href="{{.Page.Permalink}}">
+            <span>{{.Page.Title}}</span>
+            <span class="count">{{.Count}}</span>
+        </a>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

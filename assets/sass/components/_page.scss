@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+.page {
+    margin: 2rem 0;
+    color: var(--slate-700);
+
+    .title {
+        text-align: center;
+        background-color: var(--slate-000);
+        padding: 2rem 1rem 1rem;
+    }
+
+    .meta {
+        text-align: center;
+        background-color: var(--slate-000);
+
+        padding: 0 1rem 2rem;
+
+        span {
+            margin-right: 1rem;
+            i {
+                margin-right: .25rem;
+                font-size: .875rem;
+                color: var(--primary-600);
+            }
+        }
+    }
+
+    .markdown {
+        padding: 2rem 0;
+    }
+}
+
+@media (min-width: $sm) {
+    .page {
+        .markdown {
+            padding: 2rem;
+        }
+    }
+}

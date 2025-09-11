@@ -1,0 +1,21 @@
+<article class="page">
+    <div class="title"><h2>{{.Title}}</h2></div>
+    <div class="meta">
+        <span>
+            <i class="bi bi-calendar3"></i>
+            {{.Date.Format "Jan 2, 2006"}}
+        </span>
+        <span>
+            <i class="bi bi-person-circle"></i>
+            {{ with .Params.author }}
+                {{ . }}
+            {{ else }}
+                {{ .Site.Params.author }}
+            {{ end }}
+        </span>
+    </div>
+
+    <div class="markdown">
+        <div>{{.Content}}</div>
+    </div>
+</article>

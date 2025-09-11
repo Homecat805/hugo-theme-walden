@@ -1,0 +1,32 @@
+{{ with .Site.GetPage "section" .Section }}
+    {{ template "file-tree" (dict "Section" . "CurrentPage" $) }}
+{{ end }}
+
+{{ define "file-tree" }}
+    <ul class="menu-tree">
+    {{ range .Section.Pages.ByWeight}}
+
+        {{ if .IsSection }}
+
+            <li class="menu-tree-title">
+                <div class="container">
+                    <span>{{ .Title }}</span>
+                    <a class="open"><i class="bi bi-chevron-down"></i></a>
+                    <a class="close"><i class="bi bi-chevron-up"></i></a>
+                </div>
+                {{ template "file-tree" (dict "Section" . "CurrentPage" $.CurrentPage) }}
+            </li>
+
+        {{ else if .IsPage}}
+            <li class="menu-tree-item">
+            {{ if eq .Title $.CurrentPage.Title }}
+                <a class="active" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ else }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+            </li>
+        {{ end}}
+        
+    {{ end }}
+    </ul>
+{{ end }}

@@ -1,31 +1,34 @@
-@import "./themes/root";
-@import "./themes/light";
+// 1. 抽象层
 
-@import "./basis/fonts";
-@import "./basis/variables";
-@import "./basis/init";
 
-@import "./layouts/baseof";
-@import "./layouts/header";
-@import "./layouts/stager";
-@import "./layouts/footer";
-@import "./layouts/middlewares/home";
-@import "./layouts/middlewares/blog";
-@import "./layouts/middlewares/docs";
+// 2. 基础样式
+@use 'base/init';
 
-@import "./components/screen-width";
-@import "./components/menu-main";
-@import "./components/menu-tree";
-@import "./components/breadcrumb";
-@import "./components/paginator";
-@import "./components/navigator";
-@import "./components/card-post";
-@import "./components/card-sider";
-@import "./components/card-headline";
-@import "./components/blog-post";
-@import "./components/docs-post";
-@import "./components/markdown";
-@import "./components/headline";
-@import "./components/toc";
+// 3. 布局
+@use 'layouts/baseof';
+@use 'layouts/header';
+@use 'layouts/stager';
 
-@import "./shortcodes/figure";
+// 4. 组件
+@use 'components/copyright';
+@use 'components/breadcrumb';
+@use 'components/masonry';
+@use 'components/markdown';
+@use 'components/page';
+@use 'components/card';
+@use 'components/menutree';
+@use 'components/toggles';
+@use 'components/headline';
+@use 'components/author';
+
+// 5.短代码
+@use 'shortcodes/figure';
+
+// 6.特殊页面
+@use 'pages/about';
+
+// 7. 主题
+@use 'themes/root';
+@use 'themes/red';
+
+// 8. 第三方

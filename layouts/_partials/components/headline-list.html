@@ -1,0 +1,12 @@
+<div class="headline-list">
+{{ range after 1 (first 5 (where .Site.RegularPages "Params.series" "headline")) }}
+
+    <div class="list-item">
+        <img class="item-thumbnail" src="{{ .Params.thumbnail }}" alt="Thumbnail">
+        <a class="item-title" href="{{ .Permalink }}">{{ .Params.title }}</a>
+        <!-- <div class="item-summary">{{.Summary}}</div> -->
+    </div>
+
+{{ end }}
+</div>
+

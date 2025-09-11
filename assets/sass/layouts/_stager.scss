@@ -1,98 +1,89 @@
+@use '../abstracts/variables' as *;
+
 #stager {
-  aside {
-    position: fixed;
-    top: 60px;
-    left: -100vw;
-    bottom: 0;
-    z-index: 40;
+    aside {
+        position: fixed;
+        top: 60px;
+        left: -100vw;
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        z-index: 100;
+        background-color: var(--white);
+        border-right: 1px solid var(--slate-100);
 
-    background: url("/images/bg-sider.jpg") top center repeat;
-    width: 100vw;
-
-    .inner-container {
-      height: 100%;
-      overflow: auto;
-    }
-  }
-
-  .toggles {
-    position: fixed;
-    right: .5rem;
-    bottom: .5rem;
-    z-index: 100;
-
-      a {
-        display: block;
-        margin: .5rem;
-        padding: .5rem;
-        font-size: 1.25rem;
-        border-radius: .25rem;
-        color: var(--white);
-        background-color: var(--primary-700);
-        &:hover {
-          background-color: var(--primary-900);
+        .aside-inner-container {
+            padding: 1rem;
         }
-      }
-      .sider-close {
-        display: none;
-      }
+    }
 
-      .totop {
-        display: none;
-      }
-  }
+    main {
+
+        .main-inner-container-1 {
+            padding: 1rem;
+
+        }
+        .main-inner-container-2 {
+            padding: 2rem;
+            background-color: var(--slate-000);
+        }
+    }
 }
 
 @media (min-width: $md) {
-  #stager {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: flex-start;
-    main {
-      flex: 1;
-      overflow: auto;
-    }
-    aside {
-      position: static;
-      background: rgba(255,255,255,.2);
+    #stager {
 
-      .inner-container {
-        position: sticky;
-        top: 0;
-        z-index: 20;
+        display: flex;
+        flex-direction: row;
 
-        height: auto
+        aside {
+            position: relative;
+            top: auto;
+            left: auto;
+            width: 350px;
+            z-index: auto;
+            .aside-inner-container {
+                padding: 2rem;
+                position: sticky;
+                top: 60px;
+            }
+        }
 
-      }
+        main {
+            flex: 1;
+            .main-inner-container-1 {
+                padding: 2rem;
+            }
+            .main-inner-container-2 {
+                padding: 2rem;
+                background-color:var(--white);
+                border-top: 1px solid var(--slate-100);
+            }
+        }
     }
-    .aside-blog {
-      width: 250px;
-    }
-    .aside-default {
-      width: 250px;
-    }
-
-    .toggles {
-      .sider-open{
-        display: none;
-      }
-    }
-  }
 }
 
-@media (min-width: $lg) {
-  #stager {
-    .aside-blog {
-      width: 300px;
+@media (min-width: $xl) {
+    #stager {
+        main {
+            display: flex;
+            flex-direction: row;
+
+            .main-inner-container-1 {
+                flex: 1;
+            }
+            .main-inner-container-2 {
+                width: 350px;
+                border-top: none;
+                border-left: 1px solid var(--slate-100);
+
+                .container-2-inner {
+                    position: sticky;
+                    top: 92px;
+                }
+            }
+        }
     }
-  }
 }
 
-@media (min-width: $xxl) {
-  #stager {
-    .aside-default {
-      width: 300px;
-    }
-  }
-}
+

@@ -1,0 +1,12 @@
+
+<div class="masonry">
+{{ range .Pages }}
+    <div class="masonry-item">
+        {{ with .Params.thumbnail }}
+                <img src="{{.}}">
+        {{ end }}
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <p>{{.Summary}}</p>
+    </div>
+{{ end }}
+</div>

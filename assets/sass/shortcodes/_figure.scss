@@ -1,11 +1,14 @@
 figure {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     img {
-        margin-top: 0;
+        display: block;
+        margin-bottom: -.875rem;
     }
+
     figcaption {
-        text-align: right;
-        font-size: .875rem;
-        padding: .5rem 0;
+        p {
+            font-size: .875rem;
+            color: var(--slate-600);
+        }
     }
 }

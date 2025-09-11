@@ -1,0 +1,18 @@
+.toggles {
+    border: 2px solid var(--slate-300);
+    border-radius: .5rem;
+
+    a {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--slate-500);
+        
+        &:hover {
+            color: var(--primary-500);
+        }
+    }
+
+    .close-menutree {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="title">{{.Site.Title}}</div>
+
+<div class="header-inner-container">
+    {{ partial "baseof/menu.html" (dict "menuID" "main" "page" .) }}
+
+    {{ $v :=  .Site.Language.LanguageName }}
+    <nav>
+        <ul>
+        {{ range $.Site.Home.AllTranslations }}
+            {{ if not ( eq  .Language.LanguageName $v ) }}
+            <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ end }}
+        {{ end }}
+        </ul>
+    </nav>
+
+    <div class="aside-toggle">
+        <a class="open"><i class="bi bi-list"></i></a>
+        <a class="close"><i class="bi bi-x"></i></a>
+    </div>
+</div>
+
+
+

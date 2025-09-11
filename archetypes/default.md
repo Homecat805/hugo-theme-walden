@@ -1,10 +1,18 @@
 +++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
+date = '{{ .Date }}'
 draft = false
-weight = 1
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+categories = ''
+tags =['']
+series = ''
 [params]
-  author = 'Undefined'
+    author = 'Homecat'
+    thumbnail = ''
+    headline = ''
 +++
 
+Summary
+
 <!--more-->
+
+Content

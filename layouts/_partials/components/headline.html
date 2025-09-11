@@ -1,0 +1,13 @@
+{{ range first 1 (where .Site.RegularPages "Params.series" "headline")  }}
+    <div class="headline" style="background: url({{ .Params.headline }}) center center no-repeat;">
+        <div class="headline-text">
+            <p class="text-category">{{upper .Params.categories}}</p>
+            <p class="text-title" >{{ .Params.title }}</p>
+            <p class="text-author">{{.Params.author}}</p>
+            <p class="text-summary">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}">Reading</a>
+        </div>
+    </div>
+{{ end }}
+
+

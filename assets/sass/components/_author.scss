@@ -1,0 +1,16 @@
+.author {
+    background-color: var(--slate-000);
+    color: var(--slate-600);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    .author-name {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+    .author-bio {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

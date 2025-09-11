@@ -1,21 +1,16 @@
-baseURL = 'https://genway.com.cn/'
+baseURL = 'https://walden.genway.com.cn/'
 theme = 'hugo-theme-walden'
 
+# 默认语言配置
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
-
-[pagination]
-  disableAliases = false
-  pagerSize = 12
-  path = 'page'
 
 [params]
-  multiLingual = true
+    themestyle = 'red'
 
 [taxonomies]
-  category = 'categories'
-  tag = 'tags'
-  series = 'series'
+    category = 'categories'
+    tag = 'tags'
+    series = 'series'
 
 # 用于渲染的参数
 [markup]
@@ -24,6 +19,6 @@ defaultContentLanguageInSubdir = false
         unsafe = true
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.129.0"
+    [module.hugoVersion]
+        extended = true
+        min = "0.149.0"
