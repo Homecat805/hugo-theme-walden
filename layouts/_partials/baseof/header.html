@@ -3,16 +3,18 @@
 <div class="header-inner-container">
     {{ partial "baseof/menu.html" (dict "menuID" "main" "page" .) }}
 
-    {{ $v :=  .Site.Language.LanguageName }}
-    <nav>
-        <ul>
-        {{ range $.Site.Home.AllTranslations }}
-            {{ if not ( eq  .Language.LanguageName $v ) }}
-            <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ if eq .Site.Params.showLangSwitch true }}
+        {{ $v :=  .Site.Language.LanguageName }}
+        <nav>
+            <ul>
+            {{ range $.Site.Home.AllTranslations }}
+                {{ if not ( eq  .Language.LanguageName $v ) }}
+                <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
             {{ end }}
-        {{ end }}
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    {{ end }}
 
     <div class="aside-toggle">
         <a class="open"><i class="bi bi-list"></i></a>
