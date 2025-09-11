@@ -18,10 +18,11 @@
         nav {
             ul {
                 font-size: .875rem;
-                padding: 0 .5rem;
+
+                
                 li {
                     display: inline-block;
-                    margin: 0 .375rem;
+                    margin: 0 .25rem;
                     a {
                         padding: .5rem 0;
                         color: var(--slate-700);
@@ -55,6 +56,21 @@
     }
 }
 
+@media (min-width: $sm) {
+    #header {
+        padding: 0 1rem;
+        .header-inner-container {
+            nav {
+                ul {
+                    padding: 0 .5rem;
+                    li {
+                        margin: 0 .375rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media (min-width: $md) {
