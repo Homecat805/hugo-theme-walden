@@ -6,7 +6,7 @@ defaultContentLanguage = 'en'
 
 [params]
     themestyle = 'red'
-    showLangSwitch = false
+    showLangSwitch = true
 
 [taxonomies]
     category = 'categories'
