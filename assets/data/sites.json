@@ -1,0 +1,12 @@
+{
+    "sites": [
+        { 
+            "name":"ImgURL", 
+            "url":"www.runoob.com", 
+            "img":"https://www.imgurl.org/static/images/logo.png" },
+        { 
+            "name":"Hugo",
+            "url":"gohugo.io",
+            "img":"https://gohugo.io/images/hugo-logo-wide.svg" }
+    ]
+}

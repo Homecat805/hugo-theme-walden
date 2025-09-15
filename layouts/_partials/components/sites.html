@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-title">{{i18n "sites"}}</div>
+    <div class="card-content">
+        {{ $data := dict }}
+        {{ $path := "data/sites.json" }}
+        {{ with resources.Get $path }}
+            {{ with . | transform.Unmarshal }}
+                {{ $data = . }}
+            {{ end }}
+        {{ else }}
+            {{ errorf "Unable to get global resource %q" $path }}
+        {{ end }}
+
+        {{ range $data.sites }}
+        <a class="follow" href="{{.url | absURL }}" target="_blank">
+            <img src="{{.img}}" alt="{{.name}}">
+        </a>
+        {{ end }}
+
+    </div>
+</div>
