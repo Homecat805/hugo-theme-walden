@@ -11,7 +11,7 @@
     // 引用
     blockquote {
         border-left: .375rem solid var(--slate-300);
-        background-color: var(--slate-100);
+        background-color: var(--slate-000);
         margin-top: 1rem;
         padding: 1rem 1.5rem;
         p {
@@ -24,7 +24,7 @@
         font-family:monospace;
         font-size: .875rem;
         line-height: 1.5rem;
-        background-color: var(--slate-100);
+        background-color: var(--slate-000);
         padding: .125rem .375rem;
     }
 
@@ -32,8 +32,8 @@
     pre {
         margin-top: 1rem;
         padding: .5rem 1rem;
-        background-color: var(--slate-100);
-        border: 1px solid var(--slate-200);
+        background-color: var(--slate-000);
+        border: 1px solid var(--slate-100);
 
         overflow-x: auto;
 

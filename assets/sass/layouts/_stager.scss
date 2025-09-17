@@ -1,86 +1,107 @@
 @use '../abstracts/variables' as *;
 
 #stager {
-    aside {
+    display: flex;
+    flex-direction: column;
+
+    .stage-sider-left {
         position: fixed;
         top: 60px;
         left: -100vw;
+        z-index: 100;
+
         width: 100%;
         max-width: 600px;
         height: 100%;
-        z-index: 100;
-        background-color: var(--white);
+
+        background-color: var(--slate-000);
         border-right: 1px solid var(--slate-100);
 
-        .aside-inner-container {
+        .sider-left-inner-container {
+            padding: 1rem;            
+        }
+    }
+
+    .stage-main {
+        .main-inner-container {
             padding: 1rem;
         }
     }
 
-    main {
-
-        .main-inner-container-1 {
-            padding: 1rem;
-
-        }
-        .main-inner-container-2 {
+    .stage-sider-right {
+        background-color: var(--slate-000);
+        .sider-right-inner-container {
             padding: 2rem;
-            background-color: var(--slate-000);
+        }
+    }
+}
+
+@media (min-width: $sm) {
+    #stager {
+        .stage-sider-left {
+            .sider-left-inner-container {
+                padding: 2rem;            
+            }
+        }
+
+        .stage-main {
+            .main-inner-container {
+                padding: 2rem;
+            }
+        }
+
+        .stage-sider-right {
+            .sider-right-inner-container {
+                padding: 2rem;
+            }
         }
     }
 }
 
 @media (min-width: $md) {
     #stager {
-
         display: flex;
         flex-direction: row;
 
-        aside {
-            position: relative;
-            top: auto;
-            left: auto;
+        .stage-main {
+            flex: 1;
+            overflow: auto;
+
+
+        }
+
+        .stage-sider-right {
             width: 350px;
-            z-index: auto;
-            .aside-inner-container {
-                padding: 2rem;
+            flex-shrink: 0;
+            border-left: 1px solid var(--slate-100);
+            background-color: var(--white);
+
+            .sider-right-inner-container {
                 position: sticky;
                 top: 60px;
             }
         }
 
-        main {
-            flex: 1;
-            .main-inner-container-1 {
-                padding: 2rem;
-            }
-            .main-inner-container-2 {
-                padding: 2rem;
-                background-color:var(--white);
-                border-top: 1px solid var(--slate-100);
-            }
-        }
+
     }
 }
 
 @media (min-width: $xl) {
     #stager {
-        main {
-            display: flex;
-            flex-direction: row;
+        .stage-sider-left {
+            position: relative;
+            top: auto;
+            left: auto;
+            z-index: auto;
 
-            .main-inner-container-1 {
-                flex: 1;
-            }
-            .main-inner-container-2 {
-                width: 350px;
-                border-top: none;
-                border-left: 1px solid var(--slate-100);
+            width: 350px;
 
-                .container-2-inner {
-                    position: sticky;
-                    top: 92px;
-                }
+            background-color: var(--white);
+            border-right: 1px solid var(--slate-100);
+
+            .sider-left-inner-container {
+                position: sticky;
+                top: 60px;
             }
         }
     }

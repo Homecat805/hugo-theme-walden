@@ -3,7 +3,7 @@ $(document).ready(function(){
     'use strict';
 
     // nav menu-main ---------------------------------------- start
-    const navTarget = $('#stager').children('aside');
+    const navTarget = $('#stager').children('.stage-sider-left');
     const navOpenBtn = $('#header').find('.open');
     const navCloseBtn = $('#header').find('.close');
     

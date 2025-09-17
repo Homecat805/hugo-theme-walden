@@ -8,12 +8,15 @@
             {{ partial "baseof/header.html" . }}
         </header>
         <div id="stager">
-            <aside>
-                {{ block "stager-aside" . }}{{ end }}
+            <aside class="stage-sider-left">
+                {{ block "stage-sider-left" . }}{{ end }}
             </aside>
-            <main>
+            <main class="stage-main">
                 {{ block "stager-main" . }}{{ end }}
             </main>
+            <aside class="stage-sider-right">
+                {{ block "stage-sider-right" . }}{{ end }}
+            </aside>
         </div>
         <footer id="footer">
             {{ partial "baseof/footer.html" . }}

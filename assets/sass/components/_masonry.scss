@@ -49,25 +49,6 @@
 }
 
 
-
-
-@media (min-width: $sm) {
-    .masonry{
-        -moz-column-count:2; /* Firefox */
-        -webkit-column-count:2; /* Safari 和 Chrome */
-        column-count:2;
-    }
-}
-
-
-@media (min-width: $md) {
-    .masonry{
-        -moz-column-count:1; /* Firefox */
-        -webkit-column-count:1; /* Safari 和 Chrome */
-        column-count:1;
-    }
-}
-
 @media (min-width: $lg) {
     .masonry{
         -moz-column-count:2; /* Firefox */
@@ -76,18 +57,11 @@
     }
 }
 
-@media (min-width: $xl) {
+
+@media (min-width: $xxl) {
     .masonry{
         -moz-column-count:3; /* Firefox */
         -webkit-column-count:3; /* Safari 和 Chrome */
         column-count:3;
-    }
-}
-
-@media (min-width: $xxl) {
-    .masonry{
-        -moz-column-count:4; /* Firefox */
-        -webkit-column-count:4; /* Safari 和 Chrome */
-        column-count:4;
     }
 }

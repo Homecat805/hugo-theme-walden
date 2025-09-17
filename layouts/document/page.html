@@ -1,18 +1,19 @@
-{{ define "stager-aside" }}
-    <div id="menutree" class="aside-inner-container">
+{{ define "stage-sider-left" }}
+    <div id="menutree" class="sider-left-inner-container">
         {{ partial "components/menutree.html" . }}
     </div>
 {{ end }}
 
 {{ define "stager-main" }}
-    <div class="main-inner-container-1">
+    <div class="main-inner-container">
         {{ partial "components/breadcrumb.html" . }}
         {{ partial "components/article.html" . }}
         {{ partial "components/navigator.html" . }}
     </div>
-    <div class="main-inner-container-2">
-        <div class="container-2-inner">
-            {{ partial "components/tableofcontent.html" . }}
-        </div>
+{{ end }}
+
+{{ define "stage-sider-right" }}
+    <div class="sider-right-inner-container">
+        {{ partial "components/tableofcontent.html" . }}
     </div>
 {{ end }}
