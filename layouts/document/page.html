@@ -7,8 +7,13 @@
 {{ define "stager-main" }}
     <div class="main-inner-container">
         {{ partial "components/breadcrumb.html" . }}
-        {{ partial "components/article.html" . }}
-        {{ partial "components/navigator.html" . }}
+        {{ if .IsSection }}
+            <div class="markdown">{{.Content}}</div>
+        {{ else }}
+            {{ partial "components/article.html" . }}
+            {{ partial "components/navigator.html" . }}
+        {{ end }}
+
     </div>
 {{ end }}
 
