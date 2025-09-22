@@ -1,17 +1,8 @@
 <div class="card">
     <div class="card-title">{{i18n "sites"}}</div>
     <div class="card-content">
-        {{ $data := dict }}
-        {{ $path := "data/sites.json" }}
-        {{ with resources.Get $path }}
-            {{ with . | transform.Unmarshal }}
-                {{ $data = . }}
-            {{ end }}
-        {{ else }}
-            {{ errorf "Unable to get global resource %q" $path }}
-        {{ end }}
-
-        {{ range $data.sites }}
+        {{ $data := index .Site.Data "sites" }}
+        {{ range $data }}
         <a class="images" href="{{.url | absURL }}" target="_blank">
             <img src="{{.img}}" alt="{{.name}}">
         </a>
@@ -19,3 +10,4 @@
 
     </div>
 </div>
+
