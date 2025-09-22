@@ -5,8 +5,6 @@ html {
 body {
     height: 100%;
 
-    padding-top: 60px;
-
     font-size: 16px;
     font-family: Poppins, sans-serif;
 
@@ -36,6 +34,8 @@ body {
     flex: 1;
 
     background-color: var(--white);
+
+    margin-top: 60px;
 }
 
 #footer {
