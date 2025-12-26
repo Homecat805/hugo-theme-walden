@@ -71,7 +71,7 @@
         }
 
         .stage-sider-right {
-            width: 350px;
+            width: 280px;
             flex-shrink: 0;
             border-left: 1px solid var(--slate-100);
             background-color: var(--white);
@@ -86,7 +86,7 @@
     }
 }
 
-@media (min-width: $xl) {
+@media (min-width: $lg) {
     #stager {
         .stage-sider-left {
             position: relative;
@@ -94,7 +94,7 @@
             left: auto;
             z-index: auto;
 
-            width: 350px;
+            width: 280px;
 
             background-color: var(--white);
             border-right: 1px solid var(--slate-100);
